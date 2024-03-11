@@ -28,7 +28,7 @@ TEMPLATES_DIR = BASE_DIR / 'templates'
 SECRET_KEY = 'django-insecure-z#qw9)v_rz0e#-2&a1n($f=o41bm*)sj-gr9x=8isakrmuvly7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True if "DEBUG" in os.environ else False
+DEBUG = 'DEBUG' in os.environ 
 
 ALLOWED_HOSTS = ['.gitpod.io','.herokuapp.com']
 CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io','https://*.herokuapp.com']
@@ -91,12 +91,15 @@ WSGI_APPLICATION = 'iCreate.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
+if "DEBUG" in os.environ:
+    DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+else:
+    
 
 
 # Password validation
