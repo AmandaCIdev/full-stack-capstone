@@ -34,9 +34,9 @@ This project utilises a full-stack framework, incorporating Django, Python, Java
 
 Applying fundamental UX principles, we initially focused on devising a strategy by identifying the target audience and determining the features that would offer them the most value.
 
-The intended users of "Love Wellness" are students who are part of the campus community.
+The intended users of "iCreate" ADD community.
 
-The target audience for 'Love Wellness' are:
+The target audience for 'iCreate' are: ADD
 
 - A wide range of students on campus, spanning various age groups, with a predominant presence of individuals interested in wellness.
 - Attendees seeking inspiration and guidance in maintaining their physical and mental well-being through campus events.
