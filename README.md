@@ -8,17 +8,17 @@
 
 
 
-This project utilises a full-stack framework, incorporating Django, Python, JavaScript, HTML, and CSS. Our objective is to develop a responsive website that enables users to perform CRUD operations, as well as post, comment, and interact with events by liking or unliking them. It's important to note that this project has been created solely for educational purposes.
+This project utilises a full-stack framework, incorporating Django, Python, JavaScript, HTML, and CSS. My objective is to develop a responsive website that enables users to perform CRUD operations, as well as post, comment, and interact with events by liking or unliking them. It's important to note that this project has been created solely for educational purposes.
 
 
 
-**[Visit our website](https://8000-amandacidev-lovewellnes-rpx3pkiwlem.ws-eu108.gitpod.io/)**
+**[Visit my website](https://8000-amandacidev-lovewellnes-rpx3pkiwlem.ws-eu108.gitpod.io/)**
 
 ## Overview
 
 ### Services Available:
 
-#### Benefits of Our Services and Website:
+#### Benefits of my Services and Website:
 
 - Index – Table of Contents
 
@@ -32,11 +32,11 @@ This project utilises a full-stack framework, incorporating Django, Python, Java
 
 ## User Experience (UX)
 
-Applying fundamental UX principles, we initially focused on devising a strategy by identifying the target audience and determining the features that would offer them the most value.
+Applying fundamental UX principles, I initially focused on devising a strategy by identifying the target audience and determining the features that would offer them the most value.
 
 The intended users of "iCreate" ADD community.
 
-The target audience for 'iCreate' are: ADD
+The target audience for 'iCreate' are: ADD UX
 
 - A wide range of students on campus, spanning various age groups, with a predominant presence of individuals interested in wellness.
 - Attendees seeking inspiration and guidance in maintaining their physical and mental well-being through campus events.
@@ -69,16 +69,6 @@ Benefits for therapy instructors using the site:
 - Marketing platform: The site serves as a marketing platform for instructors to showcase their expertise, specialties, and testimonials, attracting new clients and building credibility.
 - Flexibility in service delivery: Instructors can customize their therapy offerings, such as individual sessions, group workshops, or online consultations, to accommodate different client needs and preferences.
 - Continuing education: The platform may offer resources, training modules, or peer support groups for instructors to enhance their skills, stay updated on industry trends, and maintain professional development.
-
-
-
-
-
-
-
-
-
-
 
 ### A. User Goals
 1. As a site user, I want to explore various wellness events to stay informed about the latest offerings and activities.
@@ -135,7 +125,7 @@ Benefits for therapy instructors using the site:
    - The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size
 
    <p align="center">
-<img src="static/images/Navbar.png" width="100%" height="100%">
+<img src="static/images/Default.jpeg" width="100%" height="100%">
 </p>
 
 2. **Landing Page Image - wellness**
@@ -145,7 +135,7 @@ Benefits for therapy instructors using the site:
    - The footer is featured on all four pages and contains two sections: social media links and website creators.
 
   <p align="center">
-  <img src="static/images/Footer.png" width="100%" height="100%">
+  <img src="static/images/Default.jpeg" width="100%" height="100%">
 </p> 
 
 4. **Home Page - ‘Home’**
