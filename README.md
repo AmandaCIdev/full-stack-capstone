@@ -44,8 +44,8 @@ The website targets youth, offering a platform for lifelong skill development si
 
 10. [Credits](#credits)
 
-
-# User Experience (UX)
+#
+# UX
 
 Applying fundamental UX principles, I initially focused on devising a strategy by identifying the target audience and determining the features that would offer them the most value.
 
@@ -70,52 +70,54 @@ These users will be looking for:
 This website will provide all of these features while ensuring a safe and supportive online environment for youth to 
 learn, explore, and grow. Additionally, it will incorporate CRUD functionality to allow administrators to manage workshops, courses, registrations, and user data effectively.
 
-## A. User Stories
-1. As a site user, I want to explore various wellness events to stay informed about the latest offerings and activities.
+## User Stories
 
-2. As a site user, I need to find information about the dates, times, and locations of wellness events to attend them in person.
-
-3. As a site user, I expect to have easy access to contact details to inquire about participating in or purchasing tickets for wellness events.
-
-4. As a site user, I desire intuitive navigation throughout the website to enhance my user experience and find relevant information effortlessly.
-
-5. As a student user, I want to easily access information about upcoming wellness events on campus, including workshops, seminars, and classes, so that I can participate in activities that promote my physical and mental well-being.
-
-6. As a student user, I want to have the option to book consultations with wellness professionals, such as nutritionists or counselors, directly through the website, to easily access support and guidance for my health concerns.
-
-7. As a student user, I would like to be able to leave reviews and feedback on wellness services and events that I have attended, to share my experiences with others and help improve the offerings on campus.
-
-8. As a student user, I want the website to provide resources and information about maintaining a healthy lifestyle, including articles, videos, and tips, to support my overall well-being during my time at college.
-
-9. As a site user, I expect to find comprehensive information about available wellness services, including descriptions, schedules, and pricing, to make informed decisions about my health and well-being options on campus.
-
-10. As a site user, I hope to discover a variety of wellness resources, such as articles, videos, and podcasts, curated to address various aspects of mental and physical health, supporting my holistic well-being journey as a college student.
+**Epic: Admin**
+- As a site Admin I can create, edit and delete events and comments so that I can manage the site content
+- As a site Admin I can access the admin panel so that I can manage events and comments
+- As a site Admin I can log out of the admin panel so that I can disconnect from the website
+- As a site Admin I prioritise implementing measures to safeguard youth data and ensure compliance with privacy 
+  regulations, demonstrating our commitment to protecting user information. 
+- As a site Admin I prioritise the inclusion of diverse and inclusive content on the website, ensuring that resources, 
+  events, and services cater to the varied needs and backgrounds of our youth population, promoting accessibility and equity.
+- As a site Admin I seek to establish partnerships with local teachers, therapists, and licensed professionals to expand 
+  the range of services and resources available to youth on our platform, enriching the overall wellness experience and promoting collaboration within the iCreate hub.
 
 
-### B. Owner of Site Goals
-1. As the owner of the site, I want to integrate social media features to share wellness events and resources on platforms like Instagram and Facebook, enabling students to engage with our content and reach a wider audience.
+**Epic: User Interaction**
+- As a logged-in User I can write comments on events so that I can leave my feedback
+- As a logged-in User I can like and unlike events so that I can mark which events I like
+- As a User I can view the number of likes on events so that I can see which events are the most popular
+- As a User I can view comments on events so that I can read other users opinions
 
-2. As the administrator, I aim to create a dedicated section for therapist and instructor profiles, allowing students to learn more about the professionals offering services on campus and fostering a sense of trust and connection.
 
-3. As the site owner, I prioritize implementing measures to safeguard student data and ensure compliance with privacy regulations, demonstrating our commitment to protecting user information and building trust within the community.
+**Epic: User Events**
+- As a logged-in User I can post a event so that other users can see them to sign up
+- As a User I can delete my events so that I can remove any unwanted events that I have made
+- As a User I can edit events so that I can update any changes or mistakes to my events
+- As a logged-in User I can upload an image along with my event so that other users can see an image relating to the event
 
-4. As a site owner, my aim is to establish a seamless booking system for students, allowing them to effortlessly schedule sessions with therapists, instructors, or wellness services. This will facilitate convenient access to support and resources whenever needed.
 
-5. As the site owner, I aim to establish partnerships with local vendors offering healthy food options, allowing students to explore and access nutritious dining choices conveniently through our platform.
+**Epic: Login/Register**
+- As a User I can register for an account so that I can interact with the site content
+- As a User I can log in/out off my account if I wish so that I can connect or disconnect from the website
+- As a User I can easily see if I'm logged-in or logged-out so that I can be sure what my status is
 
-6. As a site owner, I aim to create an interactive forum or community space where students can share their wellness journey, exchange tips, and support one another, fostering a sense of belonging and camaraderie within the campus community.
 
-7. As a site owner, I prioritize the inclusion of diverse and inclusive content on the website, ensuring that resources, events, and services cater to the varied needs and backgrounds of our student population, promoting accessibility and equity.
+**Epic: Navigation**
+- As a young user aged 6-18, I want the navigation of the iCreate platform to be designed with my needs in mind so that I can easily find and access the content I'm interested in.
+- As a young user aged 6-18, I want the navigation of the iCreate platform to work seamlessly on all devices, including smartphones and tablets, so that I can access the platform from anywhere.
+- As a young user aged 6-18, I want the navigation menu of the iCreate platform to be organised into clear categories like Events, About, Resources, Login, Logout so that I can quickly navigate to the content I want to explore.
+- As a young user aged 6-18, I want the navigation of the iCreate platform to use engaging visuals, icons, and colours to make it visually appealing and attractive to me.
+- As a young user aged 6-18, I want the navigation elements of the iCreate platform to be consistent across different pages so that I can easily understand and navigate the website.
+- As a young user aged 6-18, I want the navigation of the iCreate platform to be accessible to users with disabilities, including features like keyboard navigation and screen reader compatibility, so that all users can use the platform effectively.
 
-8. As a site owner, I strive to continuously gather feedback from students through surveys, polls, and reviews, allowing us to adapt and improve our offerings based on user input, enhancing the overall experience and effectiveness of the platform.
+#
+# Scope 
 
-9. As a site owner, I aim to streamline the registration process for students, making it easy and intuitive to sign up for our wellness services, events, and resources, thereby increasing user engagement and participation.
+## **Features**
 
-10. As a site owner, I seek to establish partnerships with local wellness practitioners, therapists, and vendors to expand the range of services and resources available to students on our platform, enriching the overall wellness experience and promoting collaboration within the campus community.
-
-## Features
-
-### Existing Features
+### **Home Page**
 
 1. **Navigation Bar**
    - The navigation bar appears on every page so users can easily navigate through the site
