@@ -14,63 +14,63 @@ This project utilises a full-stack framework, incorporating Django, Python, Java
 
 **[Visit my website](https://8000-amandacidev-lovewellnes-rpx3pkiwlem.ws-eu108.gitpod.io/)**
 
-## Overview
+# Overview
 
-### Services Available:
+The website targets youth, offering a platform for lifelong skill development similar to Boys and Girls Scouts. Our mission is to expand events into an online hub where participants earn badges by mastering skills, fostering interaction, and applying abilities to life challenges. Youth aged 6-18 can transition and grow in a safe space.
 
-#### Benefits of my Services and Website:
 
-- Index – Table of Contents
+# Table of Contents
 
-1. [User Experience (UX)](#user-experience-ux)
-2. [Features](#features)
-3. [Design](#design)
-4. [Technologies Used](#technologies-used)
-5. [Testing](#testing)
-6. [Deployment](#deployment)
-7. [Credits](#credits)
+1. [UX](#ux)
+    - [User Stories](#user-stories)
 
-## User Experience (UX)
+2. [Scope](#scope)
+    - [Features](#features)
+    - [Future Features](#future-features)
+
+3. [Structure](#structure)
+
+4. [Wireframes](#wireframes)
+
+5. [Database schema](#database-schema)
+
+6. [Surface](#surface)
+
+7. [Technologies Used](#technologies-used)
+
+8. [Testing](#testing)
+
+9. [Deployment](#deployment)
+
+10. [Credits](#credits)
+
+
+# User Experience (UX)
 
 Applying fundamental UX principles, I initially focused on devising a strategy by identifying the target audience and determining the features that would offer them the most value.
 
-The intended users of "iCreate" ADD community.
 
-The target audience for 'iCreate' are: ADD UX
+The target audience for 'iCreate Youth' includes:
 
-- A wide range of students on campus, spanning various age groups, with a predominant presence of individuals interested in wellness.
-- Attendees seeking inspiration and guidance in maintaining their physical and mental well-being through campus events.
-- Students enthusiastic about participating in wellness activities and sharing their experiences with peers.
-- Those who are new to wellness practices but are eager to explore and learn from campus event.
-- Students from diverse backgrounds, including those from different academic disciplines and cultural backgrounds.
-- Individuals who prioritise their health and well-being and actively seek opportunities to enhance their overall wellness.
-- Students who are looking for practical strategies and resources to manage stress, improve fitness, and promote mental clarity.
-- Those who enjoy engaging in community events and building connections with like-minded peers through wellness activities on campus.
--  Tailored for students aiming to enhance their brain power, for academic purposes.
+- Youth aged 6-18 years old, aiming to engage them in constructive and educational activities.
+- Individuals seeking to explore their creativity and develop new skills.
+- Students looking for opportunities to participate in events and workshops relevant to their interests.
+- Guardians interested in providing their children with enriching experiences and learning opportunities.
 
-For a learner wellness website, users will be looking for:
+These users will be looking for:
 
-- Accessible Event Information: Clear and detailed descriptions of upcoming wellness events, including dates, times, locations, and any requirements or special instructions.
-- Easy Registration Process: Seamless registration or booking process for events, workshops, or classes, allowing users to sign up with minimal effort and providing confirmation of their attendance.
-- Diverse Event Offerings: A variety of wellness events catering to different interests and needs, such as super brain yoga sessions, Qigong meditation workshops, nutrition talks, cross fitness classes, and mental health seminars.
-- Interactive Features: Opportunities for users to engage with the website, such as leaving reviews or ratings for events they've attended, sharing their experiences, or participating in discussions with other attendees.
-- Personalised Recommendations: Suggestions for relevant events based on user preferences, past attendance history, or wellness goals, helping users discover new opportunities to enhance their well-being.
-- Resourceful Content: Access to additional resources like articles, videos, or downloadable materials related to wellness topics, providing valuable information and guidance beyond event participation.
-- Community Support: Integration of social features or forums where users can connect with like-minded individuals, share tips, ask questions, and offer support to one another on their wellness journey.
-- Mobile-Friendly Experience: A responsive and mobile-friendly website design that allows users to browse and book events conveniently from any device, whether they're using a smartphone, tablet, or desktop computer.
+- An engaging and interactive website tailored to their age group.
+- Opportunities to explore various interests and hobbies through workshops and events.
+- A platform where they can register for events and courses easily.
+- Features to track their progress and achievements, such as earning badges or certificates.
+- A user-friendly interface with intuitive navigation to access content and resources.
+- The ability to post, comment and like events an provide feedback reviews.
+- Functionality to manage their registrations, including canceling or rescheduling participation as needed.
 
-Benefits for therapy instructors using the site:
+This website will provide all of these features while ensuring a safe and supportive online environment for youth to 
+learn, explore, and grow. Additionally, it will incorporate CRUD functionality to allow administrators to manage workshops, courses, registrations, and user data effectively.
 
-- Expanded reach: By listing their therapy sessions on the platform, instructors can extend their reach to a wider audience of potential clients, increasing their visibility and accessibility.
-- Streamlined scheduling: The platform provides tools for instructors to manage their therapy sessions, including scheduling appointments, sending reminders, and tracking client progress.
-- Client engagement: Instructors can engage with clients through the platform, facilitating communication, sharing resources, and providing support between sessions.
-- Feedback loop: The platform allows instructors to collect feedback from clients, enabling them to assess client satisfaction, address concerns, and improve their services.
-- Professional networking: Instructors have the opportunity to network with other therapy professionals, exchange insights, and collaborate on client referrals or joint sessions.
-- Marketing platform: The site serves as a marketing platform for instructors to showcase their expertise, specialties, and testimonials, attracting new clients and building credibility.
-- Flexibility in service delivery: Instructors can customize their therapy offerings, such as individual sessions, group workshops, or online consultations, to accommodate different client needs and preferences.
-- Continuing education: The platform may offer resources, training modules, or peer support groups for instructors to enhance their skills, stay updated on industry trends, and maintain professional development.
-
-### A. User Goals
+## A. User Stories
 1. As a site user, I want to explore various wellness events to stay informed about the latest offerings and activities.
 
 2. As a site user, I need to find information about the dates, times, and locations of wellness events to attend them in person.
