@@ -314,7 +314,6 @@ The live link can be found [https://github.com/AmandaCIdev/iCreate](#).
 - [Pop. ai] https://www.popai.ai - Help me write overview
 - [Stack Overflow] https://stackoverflow.com - crispy forms and superuser issue
 
-
 # Content
 - All other content was written by the developer.
 
