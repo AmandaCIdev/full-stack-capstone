@@ -185,7 +185,9 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 - Django
 - Bootstrap
 - Heroku
-- ElephantSQL
+- https://api.elephantsql.com/console/f9099c0e-f00c-43ef-9d2b-1fdbf72fdeb1/details -ElephantSQL
+- https://console.cloudinary.com/pm/c-39899e96eff98f4fe8a2f2f1fa9dc8/developer-dashboard -Cloudinary
+- 
 
 ## Testing
 
@@ -231,6 +233,11 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 4. On the command line, type "git clone" then paste in the copied URL and press the Enter key to begin the clone process.
 
 ## Credits
+- [Django Crispy Forms] https://django-crispy-forms.readthedocs.io/en/latest/install.html -  Instructional Documentation 
+- [Whitenoise Docs] https://whitenoise.readthedocs.io/en/latest/django.html - Instructional Documentation 
+- [Pop. ai] https://www.popai.ai - Help me write overview
+- [Stack Overflow] https://stackoverflow.com - crispy forms and superuser issue
+
 
 ### Content
 - All other content was written by the developer.
