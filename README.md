@@ -212,6 +212,10 @@ The MVP website for youth aged 6-18 is structured to be intuitive and engaging, 
 
 [Font Awesome](https://fontawesome.com/) - Font Awesome is a library of scalable vector icons that can be easily customized and used to enhance the visual appeal of websites and applications.
 
+[Beautify](https://www.jpkc.com/tools/beautify/) - Beautify is a code formatter tool that automatically formats code to improve readability and consistency.
+
+[Coolors](https://coolors.co) - Coolors is a colour scheme generator tool that helps users create cohesive colour palettes for design projects.
+
 [Balsamiq](https://balsamiq.com/) - Balsamiq is a wireframing tool used for creating low-fidelity mockups of user interfaces, allowing for quick and easy visualization of design ideas.
 
 [Lucidchart](https://lucid.app) - Lucidchart is a web-based diagramming tool that allows users to create and collaborate on flowcharts, ERDs, and other visual representations of data and processes.
