@@ -127,7 +127,7 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
    - The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size
 
    <p align="center">
-<img src="static/images/Default.jpeg" width="100%" height="100%">
+<img src="static/images/logo.jpeg" width="100%" height="100%">
 </p>
 
 2. **Landing Page Image - wellness**
