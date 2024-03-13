@@ -173,7 +173,7 @@ The MVP website for youth aged 6-18 is structured to be intuitive and engaging, 
 # Database schema
 
 <p align="center">
-<img src="assets/images/database-schema.png" width="900" height="100%">
+<img src="static/images/database-schema.png" width="900" height="100%">
 </p>
 
 ## Technologies Used
