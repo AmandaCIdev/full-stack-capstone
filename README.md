@@ -155,7 +155,7 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 ## Design
 
 ### Imagery
-- The design layout features a clean and minimalistic structure with a simple background, providing a visually uncluttered canvas. Imagery is elegantly incorporated with prominent wellness photos, enhancing the aesthetic appeal.
+- The design layout features a clean and minimalistic structure with a simple background, providing a visually uncluttered canvas. The imagery seamlessly integrates with a striking futuristic gaming design, elevating the overall visual appeal.
 
 ### Typography
 - Google Fonts were used to import the Julius font into styles.css. Chosen for it's simple, unembellished, minimalistic feel that is easy to read.
@@ -168,10 +168,10 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 ## Technologies Used
 
 ### Languages Used
-- HTML
-- CSS
-- JavaScript
-- Python
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://www.javascript.com/)
+- [Python](https://www.python.org/)
 
  ## Frameworks, Libraries & Programs Used
 
@@ -245,7 +245,7 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 
 # Deployment
 
-# How this site was deployed
+## How this site was deployed
 Here are the basic steps for deploying a project from Gitpod to Heroku and linking it to GitHub using manual deployment:
 
 Prepare Your Project:
@@ -313,9 +313,6 @@ The live link can be found [https://github.com/AmandaCIdev/iCreate](#).
 - [Whitenoise Docs] https://whitenoise.readthedocs.io/en/latest/django.html - Instructional Documentation 
 - [Pop. ai] https://www.popai.ai - Help me write overview
 - [Stack Overflow] https://stackoverflow.com - crispy forms and superuser issue
-
-# Content
-- All other content was written by the developer.
 
 ## Media
 - The icons in the footer were taken from Font Awesome.
