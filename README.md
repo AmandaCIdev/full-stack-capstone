@@ -217,35 +217,35 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 1. 
 2. The submit button on the form was not responding.
 
-## Deployment
+# Deployment
 
-### How this site was deployed
+# How this site was deployed
 1. In the GitHub repository, navigate to the Settings tab, then choose Pages from the left-hand menu.
 2. From the source section drop-down menu, select the Master Branch.
 3. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 4. Any changes pushed to the master branch will take effect on the live project.
 5. The live link can be found [https://github.com/AmandaCIdev/love_wellness](#).
 
-### How to clone the repository
+## How to clone the repository
 1. Go to the GitHub repository on GitHub.
 2. Click the "Code" button to the right of the screen, click HTTPs and copy the link there.
 3. Open a GitBash terminal and navigate to the directory where you want to locate the clone.
 4. On the command line, type "git clone" then paste in the copied URL and press the Enter key to begin the clone process.
 
-## Credits
+# Credits
 - [Django Crispy Forms] https://django-crispy-forms.readthedocs.io/en/latest/install.html -  Instructional Documentation 
 - [Whitenoise Docs] https://whitenoise.readthedocs.io/en/latest/django.html - Instructional Documentation 
 - [Pop. ai] https://www.popai.ai - Help me write overview
 - [Stack Overflow] https://stackoverflow.com - crispy forms and superuser issue
 
 
-### Content
+# Content
 - All other content was written by the developer.
 
-### Media
+## Media
 - The icons in the footer were taken from Font Awesome.
 - The fonts used were imported from Google Fonts.
 - Favicon: AI-DALL-E 3.
 
-### Acknowledgments
+## Acknowledgments
 - To be added.
