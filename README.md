@@ -160,10 +160,21 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 ### Typography
 - Google Fonts were used to import the Julius font into styles.css. Chosen for it's simple, unembellished, minimalistic feel that is easy to read.
 
+#
+# Structure
+
+The MVP website for youth aged 6-18 is structured to be intuitive and engaging, with clear navigation and visually appealing design elements. The platform prioritizes simplicity and ease of use, ensuring that young users can easily navigate, interact with content, and participate in various activities tailored to their age group. Additionally, the website emphasizes safety and accessibility, providing a secure environment for youth to explore, learn, and engage with the platform's offerings.
+
 ### Wireframes
 - [Main Page Wireframes](#) 
 - [Gallery Page Wireframes](#) 
 - [Contact Page Wireframes](#)
+
+# Database schema
+
+<p align="center">
+<img src="assets/images/Default.png" width="900" height="100%">
+</p>
 
 ## Technologies Used
 
