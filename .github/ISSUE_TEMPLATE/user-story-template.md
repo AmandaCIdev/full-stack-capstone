@@ -1,5 +1,5 @@
 ---
-name: User Story Template
+name: USER STORY TEMPLATE
 about: 'USER STORY:'
 title: ''
 labels: ''
