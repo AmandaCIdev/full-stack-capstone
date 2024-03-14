@@ -12,7 +12,7 @@ This project utilises a full-stack framework, incorporating Django, Python, Java
 
 
 
-**[Visit my website](https://8000-amandacidev-lovewellnes-rpx3pkiwlem.ws-eu108.gitpod.io/)**
+**[Visit my website](https://amanda-ci-dev-full-stack-cap-a6484667fa4d.herokuapp.com/)**
 
 # Overview
 
