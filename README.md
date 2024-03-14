@@ -324,10 +324,12 @@ The live link can be found [https://github.com/AmandaCIdev/iCreate](#).
 - I followed the Code Institute's Coding Coach instructional video to install and set up the Django framework.
 
 # Credits
-- [Django Crispy Forms] https://django-crispy-forms.readthedocs.io/en/latest/install.html -  Instructional Documentation 
+- [Django Crispy Forms] https://django-crispy-forms.readthedocs.io/en/latest/install.html - Instructional Documentation 
 - [Whitenoise Docs] https://whitenoise.readthedocs.io/en/latest/django.html - Instructional Documentation 
 - [Pop. ai] https://www.popai.ai - Help me write overview
-- [Stack Overflow] https://stackoverflow.com - crispy forms and superuser issue
+- [Stack Overflow] https://stackoverflow.com - Crispy Forms instructions 
+- [Django Summernote Docs] https://github.com/summernote/django-summernote - Instructional Documentation
+- [chatGPT] https://chat.openai.com - Answering my many questions
 
 ## Media
 - The icons in the footer were taken from Font Awesome.
