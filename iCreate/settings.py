@@ -22,7 +22,8 @@ import cloudinary
 import cloudinary.api
 import cloudinary.uploader
 
-# Configure cloudinary
+# Configure cloudinarygit status
+
 cloudinary.config(
     cloud_name=os.environ.get('CLOUDINARY_CLOUD_NAME'),
     api_key=os.environ.get('CLOUDINARY_API_KEY'),
