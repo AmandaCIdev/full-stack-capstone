@@ -16,8 +16,8 @@ This project utilises a full-stack framework, incorporating Django, Python, Java
 
 # Overview
 
-The website targets youth, offering a platform for lifelong skill development similar to Boys and Girls Scouts. Our mission is to expand events into an online hub where participants earn badges by mastering skills, fostering interaction, and applying abilities to life challenges. Youth aged 6-18 can transition and grow in a safe space.
-
+The website targets vulnerable and underserved youth, offering a platform for lifelong skill development similar to Boys and Girls Scouts. My mission is to expand events into an online hub where participants earn badges by mastering skills, fostering interaction, and applying abilities to life challenges. Youth aged 6-18 can transition and grow in a safe space. 
+The age limit of 18 years old aligns with the legal definition of adulthood in the USA, which is why it's applicable for the websites purposes.
 
 # Table of Contents
 
