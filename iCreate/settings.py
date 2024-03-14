@@ -115,6 +115,7 @@ WSGI_APPLICATION = 'iCreate.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 if "DEBUG" in os.environ:
+    print("In SQLITE")
     DATABASES = {
         'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -122,10 +123,11 @@ if "DEBUG" in os.environ:
        }
     }
 else:
+    print("In POSTGRES")
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DB_URL'))
         }
-    
+       
 
 
 
