@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+    <h2 id="tagline">Upcoming Events</h2>
+    <div class="container">
+        <div class="row">
+            {% for event in events %}
+            <div class="col-md-4 mb-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="{{ event.image.url }}" alt="{{ event.title }}">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>{{ event.title }}</h3>
+                            <p>Date: {{ event.date }}</p>
+                            <p>Time: {{ event.time }}</p>
+                            <p>Location: {{ event.location }}</p>
+                            <p>Description: {{ event.description }}</p>
+                            <p>Speaker: {{ event.speaker }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
