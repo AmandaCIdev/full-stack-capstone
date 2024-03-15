@@ -1,3 +1,4 @@
+from django.contrib import admin, messages
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone 
@@ -35,3 +36,11 @@ class Reviews(models.Model):
 
     def __str__(self):
         return f"Review | {self.body} | by {self.author}"
+
+class EventAdmin(admin.ModelAdmin):
+    list_display = ['title', 'date', 'time', 'location']
+    
+    def save_model(self, request, obj, form, change):
+        super().save_model(request, obj, form, change)
+        messages.success(request, 'Event saved successfully!')
+

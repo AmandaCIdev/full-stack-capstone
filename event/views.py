@@ -1,5 +1,3 @@
-# views.py
-
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .models import Event, Reviews
@@ -21,11 +19,10 @@ def event_create(request):
             messages.success(request, 'Event created successfully!')
             return redirect('event_list')
         else:
-            messages.error(request, 'Failed to create event. Please check the form.')
+            messages.error(request, 'Failed to create event. Please correct the errors.')
     else:
         form = EventForm()
     return render(request, 'event/event_form.html', {'form': form})
-
 
 def event_update(request, slug):
     event = get_object_or_404(Event, slug=slug)
@@ -35,6 +32,8 @@ def event_update(request, slug):
             form.save()
             messages.success(request, 'Event updated successfully!')
             return redirect('event_list')
+        else:
+            messages.error(request, 'Failed to update event. Please correct the errors.')
     else:
         form = EventForm(instance=event)
     return render(request, 'event/event_form.html', {'form': form})
@@ -61,7 +60,12 @@ def add_review(request, slug):
 def like_event(request, slug):
     event = get_object_or_404(Event, slug=slug)
     if request.method == 'POST':
-        event.likes.add(request.user)
-        messages.success(request, 'Event liked successfully!')
-        return redirect('event_detail', slug=slug)
+        # Toggle like status for the current user
+        if request.user in event.likes.all():
+            event.likes.remove(request.user)
+            messages.success(request, 'Event unliked successfully!')
+        else:
+            event.likes.add(request.user)
+            messages.success(request, 'Event liked successfully!')
     return redirect('event_detail', slug=slug)
+

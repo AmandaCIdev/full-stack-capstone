@@ -1,3 +1,104 @@
 body {
-    background-color: bisque;
+    background-color: dodgerblue;
+}
+
+/* Flexbox structure to handle flip-card positioning */
+.level1-container {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.level1-container>div,
+.level2-container>div {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+/* Apply flex properties to all children elements */
+.level1-container * {
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+/* Set dimensions and perspective for flip cards */
+.flip-card {
+    background-color: transparent;
+    width: 20rem;
+    height: 20rem;
+    perspective: 62.5rem;
+    padding: 1.56rem 0;
+    margin: 0 auto;
+}
+
+/* Container for front and back sides of flip card */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Flip the card horizontally on hover */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and back sides of the flip card */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Styling for the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: var(--offwhite);
+}
+
+.flip-card-front img {
+    width: 20rem;
+    height: 20rem;
+}
+
+/* Styling for the back side of the flip cards */
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+    text-align: left;
+    font-size: large;
+    font-weight: bolder;
+    padding: 1.25rem 3.125rem;
+}
+
+.flip-card-back h2 {
+    padding-top: 1.875rem;
+}
+
+/* Define specific background colors for different flip card backs */
+#flip-card-back-1 {
+    background-color: var(--palepink);
+}
+
+#flip-card-back-2 {
+    background-color: var(--paleorange);
+}
+
+#flip-card-back-3 {
+    background-color: var(--palegreen);
+}
+
+#flip-card-back-4 {
+    background-color: var(--paleblue);
 }

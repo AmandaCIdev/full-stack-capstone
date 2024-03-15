@@ -13,6 +13,9 @@
 <body>
     <h1>This is the base file</h1>
     {% block content %}
+    {% include 'event_list.html' %}
+    {% include 'event_detail.html' %}
+    {% include 'event_form.html' %}
     {% endblock %}
     <script src="{% static 'js/script.js' %}"></script>
 </body>

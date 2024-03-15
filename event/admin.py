@@ -1,8 +1,6 @@
 from django.contrib import admin, messages
 from .models import Event
 
-# Register your models here.
-admin.site.register(Event)
 class EventAdmin(admin.ModelAdmin):
     list_display = ['title', 'date', 'time', 'location']
     
@@ -10,4 +8,5 @@ class EventAdmin(admin.ModelAdmin):
         super().save_model(request, obj, form, change)
         messages.success(request, 'Event saved successfully!')
 
-
+# Register your models here.
+admin.site.register(Event, EventAdmin)

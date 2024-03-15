@@ -5,7 +5,8 @@
 <section>
     <h2 id="tagline">Upcoming Events</h2>
     <div class="container">
-        <div class="row">
+        <div class="row level1-container">
+            <!-- Updated class name -->
             {% if messages %}
             <div class="col-md-12">
                 {% for message in messages %}
@@ -22,13 +23,23 @@
                         <div class="flip-card-front">
                             <img src="{{ event.image.url }}" alt="{{ event.title }}">
                         </div>
-                        <div class="flip-card-back">
+                        <div class="flip-card-back" id="flip-card-back-{{ forloop.counter }}">
                             <h3>{{ event.title }}</h3>
                             <p>Date: {{ event.date }}</p>
                             <p>Time: {{ event.time }}</p>
                             <p>Location: {{ event.location }}</p>
                             <p>Description: {{ event.description }}</p>
                             <p>Speaker: {{ event.speaker }}</p>
+                            <a href="{% url 'event_detail' event.slug %}" class="btn btn-primary">View Details</a>
+                            <form action="{% url 'add_review' event.slug %}" method="POST">
+                                {% csrf_token %}
+                                <textarea name="body" placeholder="Write a review"></textarea>
+                                <button type="submit" class="btn btn-success">Add Review</button>
+                            </form>
+                            <form action="{% url 'like_event' event.slug %}" method="POST">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-secondary">Like</button>
+                            </form>
                         </div>
                     </div>
                 </div>
