@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.utils import timezone  
+from django.utils import timezone 
 from cloudinary.models import CloudinaryField
 
 class Event(models.Model):
@@ -10,10 +10,10 @@ class Event(models.Model):
     content = models.TextField(null=True)
     published_on = models.DateTimeField(auto_now_add=True, null=True)
     image = CloudinaryField('image', blank=True)
-    date = models.DateField(default=timezone.now) 
+    date = models.DateField(default=timezone.now)  
     time = models.TimeField(default=timezone.now)  
-    location = models.CharField(max_length=100)
-    description = models.TextField(default="Default description")  
+    location = models.CharField(max_length=100, default="Default location")  
+    description = models.TextField(default="Default description") 
     speaker = models.CharField(max_length=100)
     likes = models.ManyToManyField(User, related_name='liked_events', blank=True)
 
