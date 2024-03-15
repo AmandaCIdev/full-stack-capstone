@@ -10,10 +10,10 @@ class Event(models.Model):
     content = models.TextField(null=True)
     published_on = models.DateTimeField(auto_now_add=True, null=True)
     image = CloudinaryField('image', blank=True)
-    date = models.DateField(default=timezone.now)  # Add default value for date field
-    time = models.TimeField()
+    date = models.DateField(default=timezone.now) 
+    time = models.TimeField(default=timezone.now)  
     location = models.CharField(max_length=100)
-    description = models.TextField()
+    description = models.TextField(default="Default description")  
     speaker = models.CharField(max_length=100)
     likes = models.ManyToManyField(User, related_name='liked_events', blank=True)
 
