@@ -20,9 +20,12 @@ def event_create(request):
             form.save()
             messages.success(request, 'Event created successfully!')
             return redirect('event_list')
+        else:
+            messages.error(request, 'Failed to create event. Please check the form.')
     else:
         form = EventForm()
     return render(request, 'event/event_form.html', {'form': form})
+
 
 def event_update(request, slug):
     event = get_object_or_404(Event, slug=slug)

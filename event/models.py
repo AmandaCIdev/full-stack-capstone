@@ -1,7 +1,6 @@
-# models.py
-
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils import timezone  
 from cloudinary.models import CloudinaryField
 
 class Event(models.Model):
@@ -11,7 +10,7 @@ class Event(models.Model):
     content = models.TextField(null=True)
     published_on = models.DateTimeField(auto_now_add=True, null=True)
     image = CloudinaryField('image', blank=True)
-    date = models.DateField()
+    date = models.DateField(default=timezone.now)  # Add default value for date field
     time = models.TimeField()
     location = models.CharField(max_length=100)
     description = models.TextField()
@@ -36,4 +35,3 @@ class Reviews(models.Model):
 
     def __str__(self):
         return f"Review | {self.body} | by {self.author}"
-
