@@ -6,6 +6,15 @@
     <h2 id="tagline">Upcoming Events</h2>
     <div class="container">
         <div class="row">
+            {% if messages %}
+            <div class="col-md-12">
+                {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
             {% for event in events %}
             <div class="col-md-4 mb-4">
                 <div class="flip-card">
