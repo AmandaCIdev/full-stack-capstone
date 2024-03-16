@@ -1,6 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Julius;
+    color: #52cadf;
+}
+
 body {
+    font-family: Julius Sans One, sans-serif;
     background-color: dodgerblue;
 }
+
+.brand {
+    font-family: Julius Sans One, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #0e0e18;
+}
+
 
 /* Flexbox structure to handle flip-card positioning */
 .level1-container {
@@ -79,4 +98,77 @@ body {
 
 .flip-card-back h3 {
     padding-top: 1.875rem;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #445261;
+}
+
+.post-link:hover,
+.page-link {
+    color: #0b7bf3;
+}
+
+.post-title {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: lightgray;
+}
+
+.scale {
+    width: 75%;
+}
+
+.btn-signup,
+.btn-edit {
+    background-color: #188181;
+    color: #fefdfc;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #23BBBB;
+}
+
+.link {
+    color: #5a55b7;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #0b7bf3;
+    text-decoration: underline;
+}
+
+.btn-like {
+    color: #0a1bd7;
+    border: none;
+    background: transparent;
+}
+
+.btn-delete {
+    color: #65e143;
+    background: #38b10c;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #06f6de;
+    background: transparent;
+    border: none;
+}
+
+.faded {
+    color: rgb(113, 208, 101);
+}
+
+.approval {
+    color: rgb(207, 229, 13);
 }
