@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-4 text-center">
+            {% if "placeholder" in post.featured_image.url %}
+            <img src="{% static 'images/nobody.jpg' %}" class="scale" alt="placeholder image">
+            {% else %}
+            <img src="{{ about.featured_image.url }}" class="scale" alt="{{ about.title }}">
+            {% endif %}
+        </div>
+        <div class="col-12 col-md-8">
+            <h2>{{ about.title }}</h2>
+            {{ about.content | safe }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-right">
+            <!-- Updated on field goes in here -->
+
+            <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 my-5">
+            <h2>Bring your skill workshops to our iCreate hub and share your expertise with our community!</h2>
+            <p>Connect with our iCreate hub by offering your specialized classes and workshops through our platform.
+                Join us in enriching the community with your expertise and passion.
+                Fill out the form with all the details you would want as part of your ad and we will review it and get
+                back to
+                you.</p>
+
+            <!-- add your form here. Your submit button should 
+                                have the classes of btn, btn-secondary -->
+            <form id="SubmitDetailsForm" method="post" style="margin-top: 1.3em;">
+
+                {{ submit_details_form | crispy }}
+                {% csrf_token %}
+
+                <button id="submitButton" type="submit" class="btn btn-secondary btn-lg">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
