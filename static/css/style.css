@@ -20,6 +20,7 @@ body {
     color: #0e0e18;
 }
 
+/* Custom CSS Styles */
 
 /* Flexbox structure to handle flip-card positioning */
 .level1-container {
@@ -171,4 +172,42 @@ body {
 
 .approval {
     color: rgb(207, 229, 13);
+}
+
+/* Style for the navbar */
+.navbar {
+    background-color: #fff;
+    /* White background color */
+    color: #000;
+    /* Black text color */
+    border-bottom: 1px solid #ccc;
+    /* Bottom border */
+}
+
+/* Active link style for the navbar */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    /* Bold font for active links */
+    color: #007bff;
+    /* Blue color for active links */
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #000;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Center-align text */
+}
+
+/* Social media icons in the footer */
+.footer i {
+    font-size: 24px;
+    /* Font size for social media icons */
+    margin-left: 10px;
+    /* Add space between icons */
+    color: #fff;
+    /* White color for icons */
 }
