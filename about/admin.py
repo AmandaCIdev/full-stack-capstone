@@ -15,4 +15,4 @@ class SubmitDetailsAdmin(admin.ModelAdmin):
     list_display = ('message', 'name', 'email', 'phone_number', 'read',)
 
     # Register your models here.
-admin.site.register(About, SubmitDetails, SubmitDetailsForm)
+admin.site.register(About, SubmitDetails)
