@@ -1,15 +1,48 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.contrib import messages
+from django.views import generic
+from django.http import HttpResponseRedirect
 from .models import Event, Reviews
-from .forms import EventForm
+from .forms import EventForm, ReviewsForm
 
-def event_list(request):
-    events = Event.objects.all()
-    return render(request, 'event/event_list.html', {'events': events})
+class EventList(generic.ListView):
+    queryset = Event.objects.all()
+    template_name = "event/index.html"
+    paginate_by = 6
+
+    def post(self, request, *args, **kwargs):
+        slug = self.kwargs['slug']
+        event = get_object_or_404(Event, slug=slug)
+        if 'like' in request.POST:
+            event.likes.add(request.user)
+            messages.success(request, 'Event liked successfully!')
+        elif 'unlike' in request.POST:
+            event.likes.remove(request.user)
+            messages.success(request, 'Event unliked successfully!')
+        return HttpResponseRedirect(reverse('event_detail', args=[slug]))
 
 def event_detail(request, slug):
-    event = get_object_or_404(Event, slug=slug)
-    return render(request, 'event/event_detail.html', {'event': event})
+    queryset = Event.objects.filter(slug=slug)
+    event = get_object_or_404(queryset, slug=slug)
+    likes = event.likes.count()
+    reviews = event.reviews.all().order_by("-created_on")
+    review_count = event.reviews.filter(approved=True).count()
+    if request.method == "POST":
+        reviews_form = ReviewsForm(data=request.POST)
+        if reviews_form.is_valid():
+            review = reviews_form.save(commit=False)
+            review.author = request.user
+            review.event = event
+            review.save()
+            messages.success(request, "Your review is submitted and awaiting verification")
+    reviews_form = ReviewsForm()
+    return render(request, "event/event_detail.html", {
+        "event": event,
+        "reviews": reviews,
+        "review_count": review_count,
+        "reviews_form": reviews_form,
+        "likes": likes,
+    })
 
 def event_create(request):
     if request.method == 'POST':
@@ -56,16 +89,3 @@ def add_review(request, slug):
         messages.success(request, 'Review added successfully!')
         return redirect('event_detail', slug=slug)
     return render(request, 'event/add_review.html', {'event': event})
-
-def like_event(request, slug):
-    event = get_object_or_404(Event, slug=slug)
-    if request.method == 'POST':
-        # Toggle like status for the current user
-        if request.user in event.likes.all():
-            event.likes.remove(request.user)
-            messages.success(request, 'Event unliked successfully!')
-        else:
-            event.likes.add(request.user)
-            messages.success(request, 'Event liked successfully!')
-    return redirect('event_detail', slug=slug)
-
