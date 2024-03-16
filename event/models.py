@@ -10,6 +10,7 @@ class Event(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="event_posts", null=True)
     content = models.TextField(null=True)
     published_on = models.DateTimeField(auto_now_add=True, null=True)
+    image = CloudinaryField('image', blank=True)
     date = models.DateField(default=timezone.now) 
     time = models.TimeField(default=timezone.now)  
     location = models.CharField(max_length=100, default="Default location")  
