@@ -45,7 +45,7 @@ body {
 }
 
 /* Set dimensions and perspective for flip cards */
-.flip-card {
+.flip-card-custom {
     background-color: transparent;
     width: 20rem;
     height: 20rem;
@@ -54,7 +54,7 @@ body {
 }
 
 /* Container for front and back sides of flip card */
-.flip-card-inner {
+.flip-card-inner-custom {
     position: relative;
     width: 100%;
     height: 100%;
@@ -64,13 +64,13 @@ body {
 }
 
 /* Flip the card horizontally on hover */
-.flip-card:hover .flip-card-inner {
+.flip-card-custom:hover .flip-card-inner-custom {
     transform: rotateY(180deg);
 }
 
 /* Front and back sides of the flip card */
-.flip-card-front,
-.flip-card-back {
+.flip-card-front-custom,
+.flip-card-back-custom {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -78,18 +78,18 @@ body {
 }
 
 /* Styling for the front side (fallback if image is missing) */
-.flip-card-front {
+.flip-card-front-custom {
     background-color: var(--offwhite);
 }
 
-.flip-card-front img {
+.flip-card-front-custom img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 /* Styling for the back side of the flip cards */
-.flip-card-back {
+.flip-card-back-custom {
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -98,14 +98,14 @@ body {
     padding: 20px;
 }
 
-.flip-card-back p {
+.flip-card-back-custom p {
     text-align: left;
     font-size: large;
     font-weight: bolder;
     padding: 1.25rem 3.125rem;
 }
 
-.flip-card-back h2 {
+.flip-card-back-custom h2 {
     padding-top: 1.875rem;
 }
 
@@ -204,14 +204,14 @@ p {
     width: 75%;
 }
 
-.btn-signup,
-.btn-edit {
+.btn-signup-custom,
+.btn-edit-custom {
     background-color: #188181;
     color: #fefdfc;
 }
 
-.btn-signup:hover,
-.btn-signup:active {
+.btn-signup-custom:hover,
+.btn-signup-custom:active {
     background-color: #fff;
     color: #23BBBB;
 }
@@ -233,7 +233,7 @@ p {
     background: transparent;
 }
 
-.btn-delete {
+.btn-delete-custom {
     color: #65e143;
     background: #38b10c;
 }
@@ -257,7 +257,7 @@ p {
 @media screen and (max-width: 992px) {
 
     /* Styles for screens smaller than 992px */
-    .flip-card {
+    .flip-card-custom {
         width: 16rem;
         height: 16rem;
     }
@@ -266,7 +266,7 @@ p {
 @media screen and (max-width: 768px) {
 
     /* Styles for screens smaller than 768px */
-    .flip-card {
+    .flip-card-custom {
         width: 14rem;
         height: 14rem;
     }
@@ -275,7 +275,7 @@ p {
 @media screen and (max-width: 576px) {
 
     /* Styles for screens smaller than 576px */
-    .flip-card {
+    .flip-card-custom {
         width: 12rem;
         height: 12rem;
     }

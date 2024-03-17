@@ -1,4 +1,4 @@
-const editButtons = document.getElementsByClassName("btn-edit");
+const editButtons = document.querySelectorAll(".btn-edit-custom");
 const reviewText = document.getElementById("id_body");
 const reviewForm = document.getElementById("reviewForm");
 const submitButton = document.getElementById("submitButton");
@@ -14,7 +14,7 @@ const submitButton = document.getElementById("submitButton");
  * - Sets the form's action attribute to the `edit_comment/{commentId}` endpoint.
  */
 const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
-const deleteButtons = document.getElementsByClassName("btn-delete");
+const deleteButtons = document.querySelectorAll(".btn-delete-custom");
 const deleteConfirm = document.getElementById("deleteConfirm");
 
 for (let button of editButtons) {
@@ -48,7 +48,7 @@ for (let button of deleteButtons) {
 }
 
 // Add event listeners to flip cards
-document.querySelectorAll('.flip-card-inner').forEach(card => {
+document.querySelectorAll('.flip-card-inner-custom').forEach(card => {
     card.addEventListener('click', function () {
         this.classList.toggle('flipped');
     });
