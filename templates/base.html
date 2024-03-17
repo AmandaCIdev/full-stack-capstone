@@ -26,7 +26,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">iCreate | hub</span></span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">iCreate | hub</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -82,29 +82,14 @@
 
     <main class="flex-shrink-0 main-bg">
         {% block content %}
-        <div class="level1-container">
-            <div class="flip-card">
-                <div class="flip-card-inner-custom">
-                    <div class="flip-card-front-custom">
-                        <!-- Front side content -->
-                        <img src="{% static 'images/readinghub.jpg' %}" alt="Front Image 1">
-                    </div>
-                    <div class="flip-card-back-custom">
-                        <!-- Back side content -->
-                        <h2>Back Side Title</h2>
-                        <p>This is the content on the back side of the flip card.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more flip cards as needed -->
-        </div>
-        {% endblock content %}
+
+        {% endblock %}
     </main>
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-white">{% block copyright %}Full Stack
-            Software Developer{% endblock copyright %}</p>
+            - Amanda Mascurine{% endblock copyright %}</p>
         <p class="m-0 text-center text-white">
             <i class="fab fa-facebook-square ms-3"></i>
             <i class="fab fa-twitter-square ms-3"></i>

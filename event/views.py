@@ -8,7 +8,7 @@ from .forms import EventForm, ReviewsForm
 
 class EventList(generic.ListView):
     queryset = Event.objects.all()
-    template_name = "event/index.html"
+    template_name = "event_list.html"
     paginate_by = 6
 
     def post(self, request, *args, **kwargs):
@@ -24,7 +24,10 @@ class EventList(generic.ListView):
 
 class EventListView(generic.ListView):
     queryset = Event.objects.order_by('-published_on')
-    template_name = 'event_list.html'
+    print("HELLO!!")
+    print(queryset)
+    context_object_name = 'events'
+    template_name = 'event/event_list.html'
     paginate_by = 10
 
 def event_detail(request, slug):

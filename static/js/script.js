@@ -1,3 +1,4 @@
+// Selecting elements
 const editButtons = document.querySelectorAll(".btn-edit-custom");
 const reviewText = document.getElementById("id_body");
 const reviewForm = document.getElementById("reviewForm");

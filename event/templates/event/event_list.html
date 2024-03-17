@@ -16,6 +16,9 @@
             </div>
             {% endif %}
             <div class="col-md-12">
+                {% for event in queryset %}
+                {{event.title}}
+                {% endfor %}
                 <div class="flip-card-container">
                     {% for event in events %}
                     <div class="flip-card">
@@ -33,26 +36,6 @@
                                     <p>Speaker: {{ event.speaker }}</p>
                                     <a href="{% url 'event_detail' event.slug %}" class="btn btn-primary">View
                                         Details</a>
-                                    <!-- Add/Edit/Delete Buttons -->
-                                    <div class="btn-group" role="group">
-                                        <button type="button" class="btn btn-secondary">Edit</button>
-                                        <button type="button" class="btn btn-danger">Delete</button>
-                                    </div>
-                                    <!-- Notification Button -->
-                                    <form action="{% url 'notify_attendees' event.slug %}" method="POST">
-                                        {% csrf_token %}
-                                        <button type="submit" class="btn btn-info">Notify Attendees</button>
-                                    </form>
-                                    <!-- End of Notification Button -->
-                                    <form action="{% url 'add_review' event.slug %}" method="POST">
-                                        {% csrf_token %}
-                                        <textarea name="body" placeholder="Write a review"></textarea>
-                                        <button type="submit" class="btn btn-success">Add Review</button>
-                                    </form>
-                                    <form action="{% url 'like_event' event.slug %}" method="POST">
-                                        {% csrf_token %}
-                                        <button type="submit" class="btn btn-secondary">Like</button>
-                                    </form>
                                 </div>
                             </div>
                         </div>

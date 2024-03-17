@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('about/', include('about.urls')),  # No name parameter here
-    path('', EventListView.as_view(), name='home'),  # Include the 'home' URL pattern here
+    path('events/', include('event.urls')),  
+    path('', include('event.urls')), 
     path('summernote/', include('django_summernote.urls')),
 ]
