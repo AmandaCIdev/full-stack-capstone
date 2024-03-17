@@ -1,11 +1,8 @@
 from django.urls import path
-from . import views
-
-app_name = 'about'  # Example namespace for the 'about' app
+from .views import about
 
 urlpatterns = [
-    path('', views.about_site, name='about'),  # URL pattern
+    path('about/', about, name='about'),
 ]
-
 
 

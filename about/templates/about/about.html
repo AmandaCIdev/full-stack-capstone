@@ -6,7 +6,7 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-12 col-md-4 text-center">
-            {% if "placeholder" in post.featured_image.url %}
+            {% if "placeholder" in about.featured_image.url %}
             <img src="{% static 'images/nobody.jpg' %}" class="scale" alt="placeholder image">
             {% else %}
             <img src="{{ about.featured_image.url }}" class="scale" alt="{{ about.title }}">
@@ -31,9 +31,9 @@
                 back to you.</p>
 
             <!-- Add your form here. -->
-            <form method="post" style="margin-top: 1.3em;">
-                {% crispy submit_details_form %}
+            <form method="post" action="">
                 {% csrf_token %}
+                {{ submit_details_form.as_p }}
 
                 <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
             </form>
