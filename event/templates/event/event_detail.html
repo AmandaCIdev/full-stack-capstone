@@ -1,12 +1,142 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
 {% load static %}
+{% load crispy_forms_tags %}
 
-{% block content %}
-<h1>{{ event.title }}</h1>
-<img src="{{ event.image.url }}" alt="{{ event.title }}">
-<p>Date: {{ event.date }}</p>
-<p>Time: {{ event.time }}</p>
-<p>Location: {{ event.location }}</p>
-<p>Description: {{ event.description }}</p>
-<p>Speaker: {{ event.speaker }}</p>
+<div class="masthead">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-6 masthead-text">
+                <!-- Post title goes in these h1 tags -->
+                <h1 class="post-title">{{ event.title }}</h1>
+                <!-- Post author goes before the | the post's created date goes after -->
+                <p class="post-subtitle">{{ event.author }} | {{ post.created_on }}</p>
+            </div>
+            <div class="d-none d-md-block col-md-6 masthead-image">
+                {% if "placeholder" in post.image.url %}
+                <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder image">
+                {% else %}
+                <img src="{{ event.image.url }}" class="scale" alt="{{ event.title }}">
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col card mb-4  mt-3 left  top">
+            <div class="card-body">
+                <!-- The post content goes inside the card-text. -->
+                <!-- Use the | safe filter inside the template tags -->
+
+                <p class="card-text">
+                    {{ event.content | safe }}
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Displaying count of comments -->
+    <div class="row">
+        <div class="col-12">
+            <strong class="text-secondary">
+                <i class="far fa-comments"></i> {{ review_count }}
+            </strong>
+        </div>
+        <div class="col-12">
+            <hr>
+        </div>
+    </div>
+
+    <!-- Attend button -->
+
+    <br /><br />
+    <hr>
+    <br />
+    <form action="{% url 'like_post' event.slug %}" method="POST">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary btn-sm">Attend</button> Number Attending: {{likes}}
+    </form>
+
+    <!-- Attend button -->
+
+
+
+    <!-- Displaying Comments -->
+    <div class="row">
+        <div class="col-md-8 card mb-4  mt-3 ">
+            <h3>Reviews:</h3>
+            <div class="card-body">
+                <!-- for loop inside the empty control tags
+          to iterate through each comment in comments -->
+                {% for review in reviews %}
+                <div class="p-2 comments
+          {% if not review.approved and review.author == user %}
+          faded{% elif not review.approved %} d-none{% endif %}">
+                    <p class="font-weight-bold">
+                        {{ review.author }}
+                        <span class="font-weight-normal">
+                            {{ reviews.created_on }}
+                        </span> wrote:
+                    </p>
+                    <div id="review{{ review.id }}">
+                        {{ review.body | linebreaks }}
+                    </div>
+                    {% if not review.approved and review.author == user %}
+                    <p class="approval">
+                        This review is awaiting approval
+                    </p>
+                    {% endif %}
+                    {% if user.is_authenticated and review.author == user %}
+                    <button class="btn btn-delete" review_id="{{ review.id }}">Delete</button>
+
+                    <button class="btn btn-edit" review_id="{{ review.id }}">Edit</button>
+                    {% endif %}
+                </div>
+                <!-- Our for loop ends here -->
+                {% endfor %}
+            </div>
+        </div>
+        <!-- Creating New Comments -->
+        <!-- Creating New Comments -->
+        <div class="col-md-4 card mb-4 mt-3">
+            <div class="card-body">
+                {% if user.is_authenticated %}
+                <h3>Leave a review:</h3>
+                <p>Posting as: {{ user.username }}</p>
+                <form id="reviewForm" method="post" style="margin-top: 1.3em;">
+                    {{ reviews_form | crispy }}
+                    {% csrf_token %}
+                    <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+                </form>
+                {% else %}
+                <p>Log in to leave a review</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Delete confirmation modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-review">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Delete review?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete your review?
+                This action cannot be undone.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a id="deleteConfirm" href="#" class="btn
+          btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block extras %}
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock %}

@@ -1,40 +1,48 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
+/* Reset CSS */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Julius;
-    color: #52cadf;
 }
 
+/* Global Styles */
 body {
-    font-family: Julius Sans One, sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #52cadf;
+    /* Text color */
     background-color: dodgerblue;
 }
 
 .brand {
-    font-family: Julius Sans One, sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
     color: #0e0e18;
 }
 
-/* Custom CSS Styles */
-
-/* Flexbox structure to handle flip-card positioning */
+/* Flexbox structure for flip cards */
 .level1-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    /* Adjust the gap between flip cards */
 }
 
-.flip-card-container {
+.level1-ideals-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    text-align: center;
     justify-content: center;
+}
+
+.level1-ideals-container>div,
+.level2-ideals-container>div {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: space-around;
 }
 
 /* Set dimensions and perspective for flip cards */
@@ -44,11 +52,11 @@ body {
     height: 20rem;
     perspective: 1000px;
     margin-bottom: 20px;
-    /* Adjust the margin between flip cards */
 }
 
 /* Container for front and back sides of flip card */
 .flip-card-inner {
+    position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -64,6 +72,7 @@ body {
 /* Front and back sides of the flip card */
 .flip-card-front,
 .flip-card-back {
+    position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -97,117 +106,34 @@ body {
     padding: 1.25rem 3.125rem;
 }
 
-.flip-card-back h3 {
+.flip-card-back h2 {
     padding-top: 1.875rem;
 }
 
-.post-link {
-    text-decoration: none;
-    color: #445261;
+/* Media Queries */
+@media screen and (max-width: 992px) {
+
+    /* Styles for screens smaller than 992px */
+    .flip-card {
+        width: 16rem;
+        height: 16rem;
+    }
 }
 
-.post-link:hover,
-.page-link {
-    color: #0b7bf3;
+@media screen and (max-width: 768px) {
+
+    /* Styles for screens smaller than 768px */
+    .flip-card {
+        width: 14rem;
+        height: 14rem;
+    }
 }
 
-.post-title {
-    margin-top: 10%;
-    margin-left: 5%;
-}
+@media screen and (max-width: 576px) {
 
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
-}
-
-.scale {
-    width: 75%;
-}
-
-.btn-signup,
-.btn-edit {
-    background-color: #188181;
-    color: #fefdfc;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
-}
-
-.link {
-    color: #5a55b7;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #0b7bf3;
-    text-decoration: underline;
-}
-
-.btn-like {
-    color: #0a1bd7;
-    border: none;
-    background: transparent;
-}
-
-.btn-delete {
-    color: #65e143;
-    background: #38b10c;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #06f6de;
-    background: transparent;
-    border: none;
-}
-
-.faded {
-    color: rgb(113, 208, 101);
-}
-
-.approval {
-    color: rgb(207, 229, 13);
-}
-
-/* Style for the navbar */
-.navbar {
-    background-color: #fff;
-    /* White background color */
-    color: #000;
-    /* Black text color */
-    border-bottom: 1px solid #ccc;
-    /* Bottom border */
-}
-
-/* Active link style for the navbar */
-.navbar-nav .nav-link.active {
-    font-weight: bold;
-    /* Bold font for active links */
-    color: #007bff;
-    /* Blue color for active links */
-}
-
-/* Style for the footer */
-.footer {
-    background-color: #000;
-    /* Black background color */
-    color: #fff;
-    /* White text color */
-    text-align: center;
-    /* Center-align text */
-}
-
-/* Social media icons in the footer */
-.footer i {
-    font-size: 24px;
-    /* Font size for social media icons */
-    margin-left: 10px;
-    /* Add space between icons */
-    color: #fff;
-    /* White color for icons */
+    /* Styles for screens smaller than 576px */
+    .flip-card {
+        width: 12rem;
+        height: 12rem;
+    }
 }
