@@ -11,10 +11,10 @@
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ event.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle">{{ event.author }} | {{ post.created_on }}</p>
+                <p class="post-subtitle">{{ event.author }} | {{ event.published_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                {% if "placeholder" in post.image.url %}
+                {% if "placeholder" in event.image.url %}
                 <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder image">
                 {% else %}
                 <img src="{{ event.image.url }}" class="scale" alt="{{ event.title }}">
@@ -56,7 +56,7 @@
     <br />
     <form action="{% url 'like_post' event.slug %}" method="POST">
         {% csrf_token %}
-        <button type="submit" class="btn btn-primary btn-sm">Attend</button> Number Attending: {{likes}}
+        <button type="submit" class="btn btn-primary btn-sm">Attend</button> Number Attending: {{ event.likes.count }}
     </form>
 
     <!-- Attend button -->
@@ -100,10 +100,10 @@
             <div class="card-body">
                 {% if user.is_authenticated %}
                 <h3>Leave a review:</h3>
-                <p>Posting as: {{ user.username }}</p>
+                <p>Posting as: {{ request.user.username }}</p>
                 <form id="reviewForm" method="post" style="margin-top: 1.3em;">
                     {% csrf_token %}
-                    {{ reviews_form | crispy }}
+                    {% crispy reviews_form %}
                     <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
                 {% else %}

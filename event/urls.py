@@ -4,7 +4,7 @@ from . import views
 app_name = 'event'  # Namespace for the event app
 
 urlpatterns = [
-    path('', views.EventList.as_view(), name='event_list'),  # List of all events
+    path('', views.EventListView.as_view(), name='event_list'),  # List of all events
     path('event/<slug:slug>/', views.event_detail, name='event_detail'),  # Event detail view
     path('event/create/', views.event_create, name='event_create'),  # Create a new event
     path('event/<slug:slug>/update/', views.event_update, name='event_update'),  # Update an event

@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from event.views import EventListView  # Assuming EventListView is the home view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('about/', include('about.urls')),  # No name parameter here
-    path('', include('event.urls')),  # No name parameter here
+    path('', EventListView.as_view(), name='home'),  # Include the 'home' URL pattern here
     path('summernote/', include('django_summernote.urls')),
 ]
