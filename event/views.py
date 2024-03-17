@@ -21,6 +21,11 @@ class EventList(generic.ListView):
             messages.success(request, 'Event unliked successfully!')
         return HttpResponseRedirect(reverse('event_detail', args=[slug]))
 
+class EventListView(generic.ListView):
+    queryset = Event.objects.order_by('-published_on')
+    template_name = 'event_list.html'
+    paginate_by = 10
+
 def event_detail(request, slug):
     event = get_object_or_404(Event, slug=slug)
     reviews = event.reviews.all().order_by("-created_on")
