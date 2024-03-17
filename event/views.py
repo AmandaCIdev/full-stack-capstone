@@ -22,9 +22,7 @@ class EventList(generic.ListView):
         return HttpResponseRedirect(reverse('event_detail', args=[slug]))
 
 def event_detail(request, slug):
-    queryset = Event.objects.filter(slug=slug)
-    event = get_object_or_404(queryset, slug=slug)
-    likes = event.likes.count()
+    event = get_object_or_404(Event, slug=slug)
     reviews = event.reviews.all().order_by("-created_on")
     review_count = event.reviews.filter(approved=True).count()
     if request.method == "POST":
@@ -41,7 +39,6 @@ def event_detail(request, slug):
         "reviews": reviews,
         "review_count": review_count,
         "reviews_form": reviews_form,
-        "likes": likes,
     })
 
 def event_create(request):

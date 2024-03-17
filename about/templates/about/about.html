@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load crispy_forms_tags %}
+
 {% block content %}
 <div class="container mt-5">
     <div class="row">
@@ -17,9 +18,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col text-right">
-            <!-- Updated on field goes in here -->
-
+        <div class="col text-end">
             <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
         </div>
     </div>
@@ -29,20 +28,16 @@
             <p>Connect with our iCreate hub by offering your specialized classes and workshops through our platform.
                 Join us in enriching the community with your expertise and passion.
                 Fill out the form with all the details you would want as part of your ad and we will review it and get
-                back to
-                you.</p>
+                back to you.</p>
 
-            <!-- add your form here. Your submit button should 
-                                have the classes of btn, btn-secondary -->
-            <form id="SubmitDetailsForm" method="post" style="margin-top: 1.3em;">
-
-                {{ submit_details_form | crispy }}
+            <!-- Add your form here. -->
+            <form method="post" style="margin-top: 1.3em;">
+                {% crispy submit_details_form %}
                 {% csrf_token %}
 
-                <button id="submitButton" type="submit" class="btn btn-secondary btn-lg">Submit</button>
-
+                <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
             </form>
         </div>
     </div>
 </div>
-{% endblock content %}
+{% endblock %}
