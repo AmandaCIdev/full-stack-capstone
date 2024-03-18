@@ -1,7 +1,8 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends "base.html" %}
+
 
 {% block content %}
+{% load static %}
 <section>
     <h2 id="tagline">Upcoming Events</h2>
     <div class="container">
@@ -15,12 +16,12 @@
                 {% endfor %}
             </div>
             {% endif %}
+            {% for event in event_list %}
             <div class="col-md-12">
-                {% for event in queryset %}
-                {{event.title}}
-                {% endfor %}
                 <div class="flip-card-container">
-                    {% for event in events %}
+
+                    {{event.title}}
+
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -34,15 +35,15 @@
                                     <p>Location: {{ event.location }}</p>
                                     <p>Description: {{ event.description }}</p>
                                     <p>Speaker: {{ event.speaker }}</p>
-                                    <a href="{% url 'event:detail' event.slug %}" class="btn btn-primary">View
+                                    <a href="{% url 'detail' event.slug %}" class="btn btn-primary">View
                                         Details</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {% endfor %}
                 </div>
             </div>
+            {% endfor %}
         </div>
     </div>
 </section>

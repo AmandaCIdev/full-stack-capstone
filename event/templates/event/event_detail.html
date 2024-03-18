@@ -1,7 +1,7 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends "base.html" %}
 
 {% block content %}
+{% load static %}
 {% load crispy_forms_tags %}
 
 <div class="masthead">
@@ -54,9 +54,9 @@
     <br /><br />
     <hr>
     <br />
-    <form action="{% url 'like_post' event.slug %}" method="POST">
-        {% csrf_token %}
-        <button type="submit" class="btn btn-primary btn-sm">Attend</button> Number Attending: {{ event.likes.count }}
+
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary btn-sm">Attend</button> Number Attending: {{ event.likes.count }}
     </form>
 
     <!-- Attend button -->
@@ -132,7 +132,7 @@
     </div>
 </div>
 
-{% endblock content %}
+{% endblock %}
 
 {% block extras %}
 <script src="{% static 'js/script.js' %}"></script>

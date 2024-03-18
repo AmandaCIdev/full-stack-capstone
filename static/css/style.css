@@ -6,11 +6,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Julius', sans-serif;
 }
 
 /* Global Styles */
 body {
     font-family: 'Julius Sans One', sans-serif;
+    font-weight: 500;
     color: #070707;
     background-color: dodgerblue;
 }
@@ -143,7 +145,7 @@ p {
 .author {
     color: white;
     margin: 4px;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .masthead {
@@ -250,7 +252,7 @@ p {
 }
 
 .approval {
-    color: rgb(207, 229, 13);
+    color: rgb(13, 229, 103);
 }
 
 /* Media Queries */

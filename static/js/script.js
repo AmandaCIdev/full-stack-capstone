@@ -48,8 +48,7 @@ for (let button of deleteButtons) {
     });
 }
 
-// Add event listeners to flip cards
-document.querySelectorAll('.flip-card-inner-custom').forEach(card => {
+document.getElementsByClassName('flip-card-inner-custom').forEach(card => {
     card.addEventListener('click', function () {
         this.classList.toggle('flipped');
     });

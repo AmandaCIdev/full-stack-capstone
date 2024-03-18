@@ -7,26 +7,25 @@
     <title>iCreate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Google Fonts CSS -->
+    <!-- GOOGLE FONTS CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome CSS -->
+    <!-- FONT AWESOME CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Bootstrap CSS -->
+    <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
 
-    <!-- Navigation -->
+    <!---- NAVIGATION ---->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'event:home' %}"><span class="brand">iCreate | hub</span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">iCreate | hub</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,13 +34,13 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link {% if request.resolver_match.view_name == 'home' %}active{% endif %}"
-                            href="{% url 'event:home' %}">Home</a>
+                            href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.resolver_match.view_name == 'about' %}active{% endif %}"
                             href="{% url 'about' %}">About</a>
                     </li>
-
+                    <!--IF USER IS AUTHENTICATED-->
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.resolver_match.view_name == 'account_logout' %}active{% endif %}"
@@ -65,7 +64,7 @@
         </div>
     </nav>
 
-    <!-- displaying Django messages -->
+    <!-- DISPLAY DJANGO MESSAGES -->
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -80,33 +79,30 @@
         </div>
     </div>
 
-    <main class="flex-shrink-0 main-bg">
+    <main>
         {% block content %}
-
+        <!-- Content Goes here -->
         {% endblock %}
     </main>
 
-    <!-- Footer -->
+    <!---- FOOTER ---->
     <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 text-center text-white">{% block copyright %}Full Stack
-            - Amanda Mascurine{% endblock copyright %}</p>
-        <p class="m-0 text-center text-white">
-            <i class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i>
-        </p>
+        <div class="m-0 text-center text-black">
+            {% block copyright %}
+            Full Stack Capstone
+            {% endblock copyright %}
+        </div>
+        <div class="m-0 text-center text-white">
+            <a href="https://github.com/AmandaCIdev" target="_blank" style="color: black;">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
     </footer>
 
-    <!-- Bootstrap JS bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
 
-    <!-- Custom JavaScript -->
-    <script src="{% static 'js/script.js' %}"></script>
+    <!-- END OF FOOTER -->
 
-    <!-- JavaScript for flip cards -->
+    <!-- JAVASCRIPT FOR FLIP CARDS -->
     <script>
         // Add event listeners to flip cards
         document.querySelectorAll('.flip-card-inner-custom').forEach(card => {
@@ -116,7 +112,15 @@
         });
     </script>
 
-    {% block extras %}
+    <!-- BOOTSTRAP JS BUNDLE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+    <!-- CUSTOM JAVASRCIPT -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+    {% block scripts %}
     {% endblock %}
 </body>
 

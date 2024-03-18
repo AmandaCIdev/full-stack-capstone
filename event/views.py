@@ -1,26 +1,28 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.urls import reverse
-from django.views import generic
+from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Event, Reviews
 from .forms import EventForm, ReviewsForm
 
 class EventList(generic.ListView):
+    model = Event
     queryset = Event.objects.all()
     template_name = "event_list.html"
     paginate_by = 6
 
-    def post(self, request, *args, **kwargs):
-        slug = self.kwargs['slug']
-        event = get_object_or_404(Event, slug=slug)
-        if 'like' in request.POST:
-            event.likes.add(request.user)
-            messages.success(request, 'Event liked successfully!')
-        elif 'unlike' in request.POST:
-            event.likes.remove(request.user)
-            messages.success(request, 'Event unliked successfully!')
-        return HttpResponseRedirect(reverse('event_detail', args=[slug]))
+    # def post(self, request, *args, **kwargs):
+    #     slug = self.kwargs['slug']
+    #     event = get_object_or_404(Event, slug=slug)
+    #     if 'like' in request.POST:
+    #         event.likes.add(request.user)
+    #         messages.success(request, 'Event liked successfully!')
+    #     elif 'unlike' in request.POST:
+    #         event.likes.remove(request.user)
+    #         messages.success(request, 'Event unliked successfully!')
+    #     return HttpResponseRedirect(reverse('event_detail.', args=[slug]))
+
 
 class EventListView(generic.ListView):
     queryset = Event.objects.order_by('-published_on')
