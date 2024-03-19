@@ -4,6 +4,13 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
+<!-- Attend button -->
+<form method="post" action="{% url 'attend_event' event.slug %}">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary btn-sm">Attend</button> Number Attending: {{ event.likes.count }}
+</form>
+<!-- Attend button -->
+
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
@@ -26,11 +33,10 @@
 
 <div class="container">
     <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
+        <div class="col card mb-4 mt-3 left top">
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
-
                 <p class="card-text">
                     {{ event.content | safe }}
                 </p>
@@ -49,28 +55,16 @@
         </div>
     </div>
 
-    <!-- Attend button -->
-
-    <br /><br />
-    <hr>
-    <br />
-
-    {% csrf_token %}
-    <button type="submit" class="btn btn-primary btn-sm">Attend</button> Number Attending: {{ event.likes.count }}
-    </form>
-
-    <!-- Attend button -->
-
     <!-- Displaying Comments -->
     <div class="row">
-        <div class="col-md-8 card mb-4  mt-3 ">
+        <div class="col-md-8 card mb-4 mt-3">
             <h3>Reviews:</h3>
             <div class="card-body">
                 <!-- for loop inside the empty control tags to iterate through each comment in comments -->
                 {% for review in reviews %}
                 <div class="p-2 comments
-          {% if not review.approved and review.author == user %}
-          faded{% elif not review.approved %} d-none{% endif %}">
+                    {% if not review.approved and review.author == user %}
+                    faded{% elif not review.approved %} d-none{% endif %}">
                     <p class="font-weight-bold">
                         {{ review.author }}
                         <span class="font-weight-normal">
@@ -87,7 +81,6 @@
                     {% endif %}
                     {% if user.is_authenticated and review.author == user %}
                     <button class="btn btn-delete" review_id="{{ review.id }}">Delete</button>
-
                     <button class="btn btn-edit" review_id="{{ review.id }}">Edit</button>
                     {% endif %}
                 </div>
@@ -101,7 +94,8 @@
                 {% if user.is_authenticated %}
                 <h3>Leave a review:</h3>
                 <p>Posting as: {{ request.user.username }}</p>
-                <form id="reviewForm" method="post" style="margin-top: 1.3em;">
+                <form id="reviewForm" method="post" action="{% url 'add_review' event.slug %}"
+                    style="margin-top: 1.3em;">
                     {% csrf_token %}
                     {% crispy reviews_form %}
                     <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
@@ -131,9 +125,11 @@
         </div>
     </div>
 </div>
-
 {% endblock %}
 
+
 {% block extras %}
-<script src="{% static 'js/script.js' %}"></script>
+{{ block.super }}
+<!-- Additional scripts specific to event_list.html -->
+<script src="{% static 'js/event_list_script.js' %}"></script>
 {% endblock %}

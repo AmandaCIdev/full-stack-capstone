@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
-
 {% block content %}
-{% load static %}
 <section>
     <h2 id="tagline">Upcoming Events</h2>
     <div class="container">
@@ -19,9 +17,7 @@
             {% for event in event_list %}
             <div class="col-md-12">
                 <div class="flip-card-container">
-
                     {{event.title}}
-
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -47,4 +43,10 @@
         </div>
     </div>
 </section>
+{% endblock %}
+
+{% block extras %}
+{{ block.super }}
+<!-- Additional scripts specific to event_list.html -->
+<script src="{% static 'js/event_list_script.js' %}"></script>
 {% endblock %}
