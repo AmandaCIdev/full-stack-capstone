@@ -8,22 +8,26 @@ from django.http import HttpResponse
 from django.views import View
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from django.views.generic import ListView
 from .models import Event, Reviews
 from .forms import EventForm, ReviewsForm
 
 
-class EventList(View):
+class EventList(ListView):
 
-    """Home page view for flip card events and view details button"""
+    class EventList(ListView):
+        """Home page view for displaying events"""
+
     model = Event
-    queryset = Event.objects.all()
-    template_name = 'event_list.html'
-    paginate_by = 6
+    template_name = 'event_list.html'  # Specify the template name
+    context_object_name = 'event_list'  # Specify the context object name
+    paginate_by = 6  # Optional: specify the number of items per page
 
-    def get(self, request):
-        return render(request, self.template_name, {'events': self.queryset})
+    def get_queryset(self):
+        """Return the queryset of events."""
+        return Event.objects.all()
 
-
+        
 class EventDetail(View):
     """Event details page"""
 
