@@ -11,11 +11,9 @@ from django.http import HttpResponseRedirect
 from .models import Event, Reviews
 from .forms import EventForm, ReviewsForm
 
-def Event (request):
-    return HttpResponse(HELLO)
-
 
 class EventList(View):
+
     """Home page view for flip card events and view details button"""
     model = Event
     queryset = Event.objects.all()
@@ -23,7 +21,7 @@ class EventList(View):
     paginate_by = 6
 
 
-class EventDetails(View):
+class EventDetail(View):
     """Event details page"""
 
     def get(self, request, slug):
