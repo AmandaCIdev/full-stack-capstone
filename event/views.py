@@ -20,14 +20,14 @@ class EventList(View):
     template_name = 'event_list.html'
     paginate_by = 6
 
+    def get(self, request):
+        return render(request, self.template_name, {'events': self.queryset})
+
 
 class EventDetail(View):
     """Event details page"""
 
     def get(self, request, slug):
-        """get request"""
-
-    def event_detail(self, request, slug):
         queryset = Event.objects.filter(slug=slug)
         event = get_object_or_404(queryset, slug=slug)
         likes = event.likes.count()
