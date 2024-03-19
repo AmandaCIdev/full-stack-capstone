@@ -34,6 +34,9 @@ class EventDetail(View):
         reviews = event.reviews.all().order_by("-created_on")
         review_count = event.reviews.filter(approved=True).count()
 
+        reviews_form = ReviewsForm()  # Define the form initially
+
+
         if request.method == "POST":
             print("Received a POST request")
             reviews_form = ReviewsForm(data=request.POST)
@@ -44,7 +47,8 @@ class EventDetail(View):
                 review.save()
                 messages.add_message(request, messages.SUCCESS, "Your review is submitted and awaiting verification")
 
-                reviews_form = ReviewsForm()
+                
+                reviews_form = ReviewsForm() # Reset the form after successful submission
 
         return render(request, "event/event_detail.html", {"event": event, "reviews": reviews,
                                                            "review_count": review_count, "reviews_form": reviews_form,

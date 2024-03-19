@@ -3,7 +3,7 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.EventList.as_view(), name='home'),  # List and home of all events
+    path('', views.EventList.as_view(), name='home'),  # List and home of all event flip cards
     path('<slug:slug>/', views.EventDetail.as_view(), name='event_detail'),  # Event detail view 
     path('create/', views.event_create, name='create'),  # Create a new event
     path('<slug:slug>/update/', views.event_update, name='update'),  # Update an event
