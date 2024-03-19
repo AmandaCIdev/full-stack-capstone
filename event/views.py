@@ -145,3 +145,4 @@ def add_review(request, slug):
         return redirect('event_detail', slug=slug)
     return render(request, 'event/add_review.html', {'event': event})
 
+

@@ -9,7 +9,6 @@ urlpatterns = [
     path('<slug:slug>/update/', views.event_update, name='update'),  # Update an event
     path('<slug:slug>/delete/', views.event_delete, name='delete'),  # Delete an event
     path('<slug:slug>/add_review/', views.add_review, name='add_review'),  # Add a review to an event
-    path('<slug:slug>/attend/', views.attend_event, name='attend_event'),  # Attend an event
 ]
 
 
