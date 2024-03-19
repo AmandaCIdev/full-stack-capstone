@@ -4,13 +4,6 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-<!-- Attend button -->
-<form method="post" action="{% url 'attend_event' event.slug %}">
-    {% csrf_token %}
-    <button type="submit" class="btn btn-primary btn-sm">Attend</button> Number Attending: {{ event.likes.count }}
-</form>
-<!-- Attend button -->
-
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
@@ -131,5 +124,5 @@
 {% block extras %}
 {{ block.super }}
 <!-- Additional scripts specific to event_detail.html -->
-<script src="{% static 'js/event_list_script.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
