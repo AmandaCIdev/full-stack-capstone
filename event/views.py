@@ -11,6 +11,9 @@ from django.http import HttpResponseRedirect
 from .models import Event, Reviews
 from .forms import EventForm, ReviewsForm
 
+def Event (request):
+    return HttpResponse(HELLO)
+
 
 class EventList(View):
     """Home page view for flip card events and view details button"""
