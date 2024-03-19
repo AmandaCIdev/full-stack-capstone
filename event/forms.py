@@ -10,4 +10,4 @@ class EventForm(forms.ModelForm):
 class ReviewsForm(forms.ModelForm):
     class Meta:
         model = Reviews
-        fields = ['author', 'body']
+        fields = ['body']

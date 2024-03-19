@@ -90,7 +90,7 @@
                 <form id="reviewForm" method="post" action="{% url 'add_review' event.slug %}"
                     style="margin-top: 1.3em;">
                     {% csrf_token %}
-                    {% crispy reviews_form %}
+                    {{ reviews_form | crispy}}
                     <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
                 {% else %}

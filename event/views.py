@@ -37,7 +37,6 @@ class EventDetail(View):
         likes = event.likes.count()
         reviews = event.reviews.all().order_by("-created_on")
         review_count = event.reviews.filter(approved=True).count()
-
         reviews_form = ReviewsForm()  # Define the form initially
 
 
@@ -58,7 +57,7 @@ class EventDetail(View):
                                                            "review_count": review_count, "reviews_form": reviews_form,
                                                            "likes": likes, })
 
-    def review_edit(self, request, slug, review_id):
+def review_edit(self, request, slug, review_id):
         """View to edit comments."""
         if request.method == "POST":
             queryset = Event.objects.all()
@@ -140,6 +139,7 @@ def add_review(request, slug):
         body = request.POST.get('body')
         author = request.user
         review = Reviews.objects.create(event=event, author=author, body=body)
+        reviews = event.reviews.all().order_by("-created_on").filter(approved=True) # filter reviews to show only the one is approved
         review.save()
         messages.success(request, 'Review added successfully!')
         return redirect('event_detail', slug=slug)
