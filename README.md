@@ -136,11 +136,11 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 <img src="static/images/logo.jpeg" width="100%" height="100%">
 </p>
 
-2. **Landing Page Image - wellness**
-   - The landing area includes a photograph and text below that clearly identify the purpose of the business and the type of product and service it offers. 
+2. **Landing Page Image - Event Flip Cards**
+   - The landing area features engaging flip cards designed for children to flip 180°, revealing event details on the reverse side, effectively conveying the website's purpose and the range of services offered.
 
 3. **Footer**
-   - The footer is featured on all four pages and contains two sections: social media links and website creators.
+   - The footer, present on all pages, comprises two sections: one containing social media link to GitHub, and the other acknowledging the website project portfolio by name.
 
   <p align="center">
   <img src="static/images/Default.jpeg" width="100%" height="100%">
@@ -168,9 +168,9 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 
 
 ### Future Features
-- Audio & Video books, music, tutorials
-- Users settings (PARENTAL PERMISSION - safe hub similar to facebook but for kids)
-- Blog Post
+- Audio & Video books, music, educational tutorials tailored for children
+- User Settings: Parental Permission for Safe Hub, a platform similar to Facebook but designed specifically for kids
+- Blog Post for children by children
 - Awards and Certificates to Print
 
 #
