@@ -99,16 +99,6 @@ body {
     object-fit: cover;
 }
 
-/* Styling for the back side of the flip cards */
-.flip-card-back-custom {
-    transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
 .flip-card-back-custom p {
     text-align: left;
     font-size: large;
@@ -120,7 +110,7 @@ body {
     padding-top: 1.875rem;
 }
 
-/* Martin CSS */
+/* NEW CSS */
 
 .flip-card {
     background-color: transparent;
@@ -144,13 +134,17 @@ body {
     transform: rotateY(180deg);
 }
 
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+/* Styling for the back side of the flip cards */
+.flip-card-back-custom {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
+
+
 
 .flip-card-front-custom img {
     width: 100%;
@@ -162,6 +156,18 @@ body {
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
+}
+
+.flip-card-front-custom img,
+.flip-card-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
 }
 
 
