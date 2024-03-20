@@ -19,6 +19,8 @@ This project utilises a full-stack framework, incorporating Django, Python, Java
 The website targets vulnerable and underserved youth, offering a platform for lifelong skill development similar to Boys and Girls Scouts. My mission is to expand events into an online hub where participants earn badges by mastering skills, fostering interaction, and applying abilities to life challenges. Youth aged 6-18 can transition and grow in a safe space. 
 The age limit of 18 years old aligns with the legal definition of adulthood in the USA, which is why it's applicable for the websites purposes.
 
+The name iCreate embodies the boundless potential within each individual child to shape their own reality, transcending limitations imposed by environment or resources. It stands as a powerful affirmation of personal empowerment, urging individuals to craft their unique selves without constraints.
+
 # Table of Contents
 
 1. [UX](#ux)
@@ -133,7 +135,7 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
    - The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size
 
    <p align="center">
-<img src="static/images/logo.jpeg" width="100%" height="100%">
+<img src="static/images/iCreateNavbar.png" width="100%" height="100%">
 </p>
 
 2. **Landing Page Image - Event Flip Cards**
