@@ -183,7 +183,7 @@ Wireframes for each device are linked here:
 # Database schema
 
 <p align="center">
-<img src="static/images/iCreate-Database-Schema.png" width="900" height="100%">
+<img src="static/images/iCreate-Database- Schema.png" width="900" height="100%">
 </p>
 
 ## Technologies Used
