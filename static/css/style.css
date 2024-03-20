@@ -152,9 +152,10 @@ body {
     backface-visibility: hidden;
 }
 
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
+.flip-card-front-custom img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
 }
 
 .flip-card-back {
