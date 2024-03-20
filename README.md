@@ -112,6 +112,12 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 - As a young user aged 6-18, I want the navigation elements of the iCreate platform to be consistent across different pages so that I can easily understand and navigate the website.
 - As a young user aged 6-18, I want the navigation of the iCreate platform to be accessible to users with disabilities, including features like keyboard navigation and screen reader compatibility, so that all users can use the platform effectively.
 
+
+<p align="center">
+<img src="static/images/Kanban Project Board.png" width="100%" height="100%">
+</p>
+
+
 #
 # Scope 
 
