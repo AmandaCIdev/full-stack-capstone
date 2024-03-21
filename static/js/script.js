@@ -1,5 +1,4 @@
-// Selecting elements
-const editButtons = document.querySelectorAll(".btn-edit-custom");
+const editButtons = document.getElementsByClassName("btn-edit");
 const reviewText = document.getElementById("id_body");
 const reviewForm = document.getElementById("reviewForm");
 const submitButton = document.getElementById("submitButton");
@@ -14,9 +13,11 @@ const submitButton = document.getElementById("submitButton");
  * - Updates the submit button's text to "Update".
  * - Sets the form's action attribute to the `edit_comment/{commentId}` endpoint.
  */
+
 const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
-const deleteButtons = document.querySelectorAll(".btn-delete-custom");
+const deleteButtons = document.getElementsByClassName("btn-delete");
 const deleteConfirm = document.getElementById("deleteConfirm");
+
 
 for (let button of editButtons) {
     button.addEventListener("click", (e) => {
@@ -47,7 +48,6 @@ for (let button of deleteButtons) {
         deleteModal.show();
     });
 }
-
 document.getElementsByClassName('flip-card-inner-custom').forEach(card => {
     card.addEventListener('click', function () {
         this.classList.toggle('flipped');

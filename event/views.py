@@ -2,8 +2,7 @@
 Views.py
 """
 # pylint: disable=locally-disabled, no-member
-
-from django.shortcuts import render, get_object_or_404, reverse, redirect
+from django.shortcuts import render, get_object_or_404, reverse
 from django.http import HttpResponse
 from django.views import View
 from django.contrib import messages
@@ -11,6 +10,14 @@ from django.http import HttpResponseRedirect
 from django.views.generic import ListView
 from .models import Event, Reviews
 from .forms import EventForm, ReviewsForm
+
+
+# attends
+def LikeView(request, slug):
+    event = get_object_or_404(Event, slug=slug)
+    event.likes.add(request.user)
+    return HttpResponseRedirect(reverse('event_detail', args=[slug]))
+#attends
 
 
 class EventList(ListView):
@@ -91,8 +98,6 @@ def review_delete(request, slug, review_id):
 
     return HttpResponseRedirect(reverse('event_detail', args=[slug]))
 
-
-"""CRUD"""
 
 
 def event_create(request):
