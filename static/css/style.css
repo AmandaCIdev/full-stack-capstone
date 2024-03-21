@@ -29,6 +29,7 @@ body {
     font-weight: 400;
 }
 
+
 /* Flexbox structure for flip cards */
 .level1-container {
     display: flex;
@@ -123,7 +124,7 @@ body {
     width: 300px;
     height: 300px;
     perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */
+    /* 3D effect */
 }
 
 .flip-card-inner {
