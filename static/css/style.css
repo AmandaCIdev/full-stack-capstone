@@ -23,6 +23,12 @@ body {
     color: #0e0e18;
 }
 
+#tagline {
+    color: black;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+}
+
 /* Flexbox structure for flip cards */
 .level1-container {
     display: flex;
