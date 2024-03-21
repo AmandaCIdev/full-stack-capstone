@@ -356,7 +356,7 @@ p {
 @media (min-width: 768px) {
 
     /* Apply styles for devices larger than mobile */
-    .container {
+    .flip-card-custom {
         display: flex;
         justify-content: center;
         /* Center content horizontally */
@@ -364,4 +364,13 @@ p {
         /* Center content vertically */
     }
 
+    /* Reduce the number of columns */
+    .flip-card-custom {
+        width: calc(100% / 3);
+        /* Adjust the column width to 1/3 of the container width */
+        max-width: 300px;
+        /* Optionally set a maximum width for each column */
+    }
+
+    /* Add more specific styles for individual elements if needed */
 }
