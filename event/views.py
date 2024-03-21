@@ -10,6 +10,7 @@ from django.http import HttpResponseRedirect
 from django.views.generic import ListView
 from .models import Event, Reviews
 from .forms import EventForm, ReviewsForm
+from django.http import JsonResponse
 
 
 # attends
@@ -18,6 +19,23 @@ def LikeView(request, slug):
     event.likes.add(request.user)
     return HttpResponseRedirect(reverse('event_detail', args=[slug]))
 #attends
+
+def update_likes(request):
+    if request.method == 'POST' and request.is_ajax():
+        # Process form data
+        # Update the number of likes for an event
+        event_id = request.POST.get('event_id')
+        # Perform any necessary actions with the data (e.g., update database)
+        # Example: event = Event.objects.get(pk=event_id)
+        # event.likes += 1
+        # event.save()
+        
+        # Return a dummy response
+        likes_count = 50  # likes count
+        return JsonResponse({'likes': likes_count})
+    else:
+        # Handle invalid requests
+        return JsonResponse({'error': 'Invalid request'}, status=400)
 
 
 class EventList(ListView):
