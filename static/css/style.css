@@ -322,6 +322,8 @@ p {
     color: rgb(13, 229, 103);
 }
 
+
+
 /* Media Queries */
 @media screen and (max-width: 992px) {
 
@@ -348,4 +350,18 @@ p {
         width: 12rem;
         height: 12rem;
     }
+}
+
+/* Media query for devices larger than mobile */
+@media (min-width: 768px) {
+
+    /* Apply styles for devices larger than mobile */
+    .container {
+        display: flex;
+        justify-content: center;
+        /* Center content horizontally */
+        align-items: center;
+        /* Center content vertically */
+    }
+
 }
