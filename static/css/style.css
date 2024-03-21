@@ -366,7 +366,7 @@ p {
 
     /* Reduce the number of columns */
     .flip-card-custom {
-        width: calc(100% / 3);
+        width: calc(100% / 2);
         /* Adjust the column width to 1/3 of the container width */
         max-width: 300px;
         /* Optionally set a maximum width for each column */
