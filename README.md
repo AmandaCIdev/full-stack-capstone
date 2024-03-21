@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="static/images/Default.jpeg" width="600" height="100%">
+<img src="static/images/Devices.png" width="600" height="100%">
 </p>
 
 
