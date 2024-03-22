@@ -213,7 +213,7 @@ Wireframes for each device are linked here:
 
  ## Frameworks, Libraries & Programs Used
 
-[GitHub](https://github.com/) - GitHub is a web-based platform for version control using Git, enabling collaborative software development and hosting of code repositories. GitHub connects to GitPod and Heroku.
+[GitHub](https://github.com/) - GitHub is a web-based platform for version control using Git, enabling collaborative software development and hosting of code repositories. GitHub connects to GitPod and Heroku. *****ADD HOW IT HELPED HERE ON EACH LINK****
 
 [GitPod](https://gitpod.io/workspaces) – Connected to GitHub, GitPod hosted the coding space, allowing the project to be built and then committed to the GitHub repository. 
 
@@ -371,17 +371,15 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser we 
 ### Test Cases and Results
 - [Test Cases](#)
 
-### Unfixed Bugs
-- 
-- 
 
-## Known Bugs
+## Bugs and Issues
+- I'm experiencing an unresolved bug related to Bootstrap slight responsiveness on a tablet.
 - User image uploads weren't uploading to Cloudinary. To fix this I added {% load cloudinary %} at the top of the file
 - The  button on the form was not responding
 - The front flip cards were not displaying the image. To fix this I included the {% load static %} at the top of the file
 - The back flip cards were not displaying the text correct. To fix this I reduced the text in admin
 - *****CHECK THE FIX COMMITS IN REPO*****
-- 
+
 
 # Deployment
 
