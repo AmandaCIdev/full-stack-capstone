@@ -116,7 +116,7 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 
 
 <p align="center">
-<img src="static/images/Kanban Project Board.png" width="100%" height="100%">
+<img src="static/images/Kanban project board - readme.png" width="100%" height="100%">
 </p>
 
 
