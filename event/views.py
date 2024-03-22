@@ -37,7 +37,7 @@ class EventList(ListView):
     model = Event
     template_name = 'event_list.html'  # Specify the template name
     context_object_name = 'event_list'  # Specify the context object name
-    paginate_by = 6  # Optional: specify the number of items per page
+    paginate_by = 6  # Specify the number of items per page
 
     def get_queryset(self):
         """Return the queryset of events."""

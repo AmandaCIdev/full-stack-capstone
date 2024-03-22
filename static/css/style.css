@@ -26,7 +26,7 @@ body {
 #tagline {
     color: black;
     font-family: 'Lexend', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 
@@ -379,5 +379,5 @@ p {
         /* Optionally set a maximum width for each column */
     }
 
-    /* Add more specific styles for individual elements if needed */
+
 }

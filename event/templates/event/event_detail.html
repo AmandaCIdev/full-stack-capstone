@@ -59,7 +59,7 @@
             {% csrf_token %}
             {% if user.is_authenticated %}
             {% if user_like %}
-            <button type="submit" , name="slug" , value="{{ event.slug }}" , class="btn btn-danger btn-sm">Can't
+            <button type="submit" , name="slug" , value="{{ event.slug }}" , class="btn btn-danger btn-sm">Delete
                 Attend</button> Number Attending: {{likes}}
             {% else %}
             <button type="submit" , name="slug" , value="{{ event.slug }}" ,
