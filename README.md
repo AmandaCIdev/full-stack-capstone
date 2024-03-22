@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="static/images/responsive-site.png" width="600" height="100%">
+<img src="static/images/Responsive devices - Testing.png" width="600" height="100%">
 </p>
 
 
