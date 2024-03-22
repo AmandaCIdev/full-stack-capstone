@@ -13,29 +13,20 @@ from .forms import EventForm, ReviewsForm
 from django.http import JsonResponse
 
 
-# attends
+
 def LikeView(request, slug):
     event = get_object_or_404(Event, slug=slug)
-    event.likes.add(request.user)
-    return HttpResponseRedirect(reverse('event_detail', args=[slug]))
-#attends
 
-def update_likes(request):
-    if request.method == 'POST' and request.is_ajax():
-        # Process form data
-        # Update the number of likes for an event
-        event_id = request.POST.get('event_id')
-        # Perform any necessary actions with the data (e.g., update database)
-        # Example: event = Event.objects.get(pk=event_id)
-        # event.likes += 1
-        # event.save()
-        
-        # Return a dummy response
-        likes_count = 50  # likes count
-        return JsonResponse({'likes': likes_count})
+    user_like = False
+
+    if event.likes.filter(id=request.user.id).exists():
+        event.likes.remove(request.user)
+        user_like = False
     else:
-        # Handle invalid requests
-        return JsonResponse({'error': 'Invalid request'}, status=400)
+        event.likes.add(request.user)
+        user_like = True
+
+    return HttpResponseRedirect(reverse('event_detail', args=[slug]))
 
 
 class EventList(ListView):
@@ -64,6 +55,10 @@ class EventDetail(View):
         review_count = event.reviews.filter(approved=True).count()
         reviews_form = ReviewsForm()  # Define the form initially
 
+        user_like = False
+        if event.likes.filter(id=request.user.id).exists():
+            user_like = True
+
 
         if request.method == "POST":
             print("Received a POST request")
@@ -80,9 +75,9 @@ class EventDetail(View):
 
         return render(request, "event/event_detail.html", {"event": event, "reviews": reviews,
                                                            "review_count": review_count, "reviews_form": reviews_form,
-                                                           "likes": likes, })
+                                                           "likes": likes, "user_like": user_like, })
 
-def review_edit(self, request, slug, review_id):
+def review_edit(request, slug, review_id):
         """View to edit comments."""
         if request.method == "POST":
             queryset = Event.objects.all()

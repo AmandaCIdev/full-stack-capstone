@@ -178,7 +178,12 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 #
 # Structure
 
-The MVP website for youth aged 6-18 is structured to be intuitive and engaging, with clear navigation and visually appealing design elements. The platform prioritizes simplicity and ease of use, ensuring that young users can easily navigate, interact with content, and participate in various activities tailored to their age group. Additionally, the website emphasizes safety and accessibility, providing a secure environment for youth to explore, learn, and engage with the platform's offerings.
+The MVP website for youth aged 6-18 is structured to be intuitive and engaging, with clear navigation and visually appealing design elements. The platform prioritizes simplicity and ease of use, ensuring that young users can easily navigate, interact with content, and participate in various activities tailored to their age group. Additionally, the website emphasizes safety and accessibility, providing a secure environment for youth to explore, learn, and engage with the platform's offerings. Simplicity helps young users to quickly and easily access the app and navigate within the app.
+
+The website is made from one app:
+- event
+- about
+
 
 # Wireframes
 All wireframes were created used [Balsamiq](https://balsamiq.com/)
@@ -193,6 +198,10 @@ Wireframes for each device are linked here:
 <p align="center">
 <img src="static/images/iCreate-Database- Schema.png" width="900" height="100%">
 </p>
+
+## Font 
+- Julius, sans-serif - main font
+- Lexend - for Event in Home page
 
 ## Technologies Used
 
@@ -226,13 +235,13 @@ Wireframes for each device are linked here:
 
 [DALL-E3](https://openai.com/) - DALL-E3 is an advanced AI model developed by OpenAI that generates images from textual descriptions.
 
+[TinyPNG](https://tinypng.com/) - TinyPNG is a website that offers image compression services to optimize image files for faster loading on webpages while maintaining visual quality.
+
 [Google Fonts](https://fonts.google.com/https://fonts.google.com/) - Google Fonts is a collection of free, open-source fonts that can be easily integrated into websites and other digital projects to enhance typography.
 
 [Font Awesome](https://fontawesome.com/) - Font Awesome is a library of scalable vector icons that can be easily customized and used to enhance the visual appeal of websites and applications.
 
 [Beautify](https://www.jpkc.com/tools/beautify/) - Beautify is a code formatter tool that automatically formats code to improve readability and consistency.
-
-[Coolors](https://coolors.co) - Coolors is a colour scheme generator tool that helps users create cohesive colour palettes for design projects.
 
 [Balsamiq](https://balsamiq.com/) - Balsamiq is a wireframing tool used for creating low-fidelity mockups of user interfaces, allowing for quick and easy visualization of design ideas.
 
@@ -240,15 +249,107 @@ Wireframes for each device are linked here:
 
 [Am I Responsive](http://ami.responsivedesign.is/) - Am I Responsive is a web tool that allows users to quickly preview how their website appears on various devices and screen sizes, helping to ensure responsiveness and compatibility across platforms.
 
+[Diffchecker](https://www.diffchecker.com/text-compare/) - Diffchecker is a text comparison tool used to highlight the differences between two blocks of text, facilitating comparison and analysis.
+
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - The W3C CSS Validator is a tool used to check the validity and syntax of CSS code, ensuring compliance with web standards set by the World Wide Web Consortium (W3C).
 
 [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - The W3C Markup Validator is a tool used to check the validity and syntax of HTML code, ensuring compliance with web standards set by the World Wide Web Consortium (W3C).
 
 [JSHint](https://jshint.com/) - JSHint is a static code analysis tool used for checking JavaScript code for errors, potential problems, and stylistic inconsistencies.
 
+[Lighthouse](https://developer.chrome.com/docs/lighthouse) - an open-source tool used for auditing web page quality, including performance, accessibility, SEO, and cross-browser testing.
 
 
-## Testing
+
+# Testing *****THIS SECTION IS STILL BEING WORKED ON*******
+
+
+## User Story Testing
+
+### **Testing Users Stories form (UX) Section**
+
+**EPIC: Superuser / Admin**
+- As a site Admin I can create, edit and delete events and comments so that I can manage the site content
+- As a site Admin I can access the admin panel so that I can manage events and comments
+- As a site Admin I can log out of the admin panel so that I can disconnect from the website
+
+This was tested by accessing the Django Admin Panel. By creating a Superuser we can access the Django Admin Panel where the administrator can perform all the CRUD functionalitis
+
+**EPIC: User Interaction**
+1. As a logged-in User I can write comments on events so that I can leave my feedback
+
+<p align="center">
+<img src="assets/images/default.png" width="500" height="300">
+</p>
+
+2. As a logged-in User I can like and unlike events  so that I can mark which events I like
+<p align="center">
+<img src="assets/images/default.png" width="300" height="200">
+</p>
+
+3. As a User I can view the number of likes on events so that I can see which events are the most popular
+<p align="center">
+<img src="assets/images/default.png" width="300" height="200">
+</p>
+
+4. As a User I can view comments on events so that I can read other users opinions
+<p align="center">
+<img src="assets/images/default.png" width="800" height="100%">
+</p>
+
+**EPIC: User Events**
+1. As a logged-in User I can post events so that other users can see them
+<p align="center">
+<img src="assets/images-features/add-recipe.png" width="600" height="100%">
+</p>
+2. As a User I can delete my event so that I can remove any unwanted events that I have made
+<p align="center">
+<img src="assets/images-features/delete-recipe-model.png" width="500" height="100%">
+</p>
+3. As a User I can edit events so that I can update any changes or mistakes to my events 
+<p align="center">
+<img src="assets/images-features/edit-recipe.png" width="600" height="100%">
+</p>
+4. As a logged-in User I can upload an image along with my event so that other users can see what the event theme looks like
+<p align="center">
+<img src="assets/images/upload-image.png" width="400" height="100%">
+</p>
+
+
+**EPIC: Login/Register**
+1. As a User I can register for an account so that I can interact with the site content
+<p align="center">
+<img src="assets/images-features/register.png" width="600" height="100%">
+</p>
+
+2. As a User I can log in/out off my account if I wish so that I can connect or disconnect from the website
+<p align="center">
+<img src="assets/images/signout.png" width="600" height="100%">
+</p>
+3. As a User I can easily see if I'm logged-in or logged-out so that I can be sure what my status is
+<p align="center">
+<img src="assets/images/logged-in.png" width="1000" height="100%">
+</p>
+<p align="center">
+<img src="assets/images/signed-out.png" width="1000" height="100%">
+</p>
+
+**EPIC: Navigation**
+1. As a User I can easily navigate through the site so that I can view desired content
+<p align="center">
+<img src="assets/images-features/navbar.png" width="1000" height="100%">
+</p>
+
+2. As a User I can see the most loved events so that I can quickly join in 
+<p align="center">
+<img src="assets/images-features/most-loved-recipes.png" width="600" height="100%">
+</p>
+
+3. As a User I can see the most recent events so that I can keep up to date with my new skills
+<p align="center">
+<img src="assets/images-features/favourite-recipes-page.png" width="600" height="100%">
+</p>
+
 
 ### Validator Testing
 
@@ -269,59 +370,63 @@ Wireframes for each device are linked here:
 - [Test Cases](#)
 
 ### Unfixed Bugs
-- Correction to add: 
-- A 
+- 
+- 
 
-### Known Bugs
-1. 
-2. The submit button on the form was not responding.
+## Known Bugs
+- User image uploads weren't uploading to Cloudinary. To fix this I added {% load cloudinary %} at the top of the file
+- The  button on the form was not responding
+- The front flip cards were not displaying the image. To fix this I included the {% load static %} at the top of the file
+- The back flip cards were not displaying the text correct. To fix this I reduced the text in admin
+- *****CHECK THE FIX COMMITS IN REPO*****
+- 
 
 # Deployment
 
 ## How this site was deployed
 Here are the basic steps for deploying a project from Gitpod to Heroku and linking it to GitHub using manual deployment:
 
-Prepare Your Project:
+## Prepare Your Project:
 
 - Ensure your project is ready for deployment and is working as expected locally.
 Make sure your project includes a requirements.txt file listing all the dependencies and a Procfile to specify the command to start the web server.
 
-Create a GitHub Repository:
+## Create a GitHub Repository:
 
 - If you haven't already, create a GitHub repository for your project.
 Push your project code to this GitHub repository.
 
-Set Up Heroku Account:
+## Set Up Heroku Account:
 
 - Sign up for a Heroku account.
 Install the Heroku CLI (Command Line Interface) on your local machine.
 
-Create a New App on Heroku:
+## Create a New App on Heroku:
 
 - Log in to your Heroku account via the terminal using the Heroku CLI.
 Create a new app on Heroku using the heroku create command.
 
-Link Heroku App to GitHub Repository:
+## Link Heroku App to GitHub Repository:
 
 - Go to the "Deploy" tab of your Heroku app dashboard.
 Under "Deployment method," select GitHub as the deployment method.
 Search for your GitHub repository and connect it to your Heroku app.
 
-Enable Manual Deployment:
+## Enable Manual Deployment:
 
 - Disable automatic deploys to ensure that changes pushed to your GitHub repository do not trigger automatic deployments on Heroku.
 You can do this by clicking on the "Enable Automatic Deploys" button and then turning off the "Wait for CI to pass before deploy" option.
 
-Deploy Your App:
+## Deploy Your App:
 
 - Manually deploy your app by clicking the "Deploy Branch" button in the "Manual deploy" section.
 Choose the branch you want to deploy from (e.g., main or master).
 
-Wait for Deployment:
+## Wait for Deployment:
 
 - Wait for the deployment to finish, and check the logs for any errors.
 
-Test Your Deployed App:
+## Test Your Deployed App:
 
 - Once the deployment is complete, open your app using the provided Heroku URL and test that it works as expected.
 By following these steps, you can manually deploy your project from Gitpod to Heroku and link it to GitHub for version control.
@@ -342,21 +447,24 @@ The live link can be found [https://github.com/AmandaCIdev/iCreate](#).
 - I followed the Code Institute's Coding Coach instructional video to install and set up the Django framework.
 
 # Credits
-- [Django Crispy Forms] https://django-crispy-forms.readthedocs.io/en/latest/install.html - Instructional Documentation 
-- [Whitenoise Docs] https://whitenoise.readthedocs.io/en/latest/django.html - Instructional Documentation 
-- [Pop. ai] https://www.popai.ai - Help me write overview
-- [Stack Overflow] https://stackoverflow.com - Crispy Forms instructions 
-- [Django Summernote Docs] https://github.com/summernote/django-summernote - Instructional Documentation
-- [chatGPT] https://chat.openai.com - Answering my many questions
+- [Django Crispy Forms] (https://django-crispy-forms.readthedocs.io/en/latest/install.html) - Instructional Documentation help
+- [Whitenoise Docs] (https://whitenoise.readthedocs.io/en/latest/django.html) - Instructional Documentation help
+- [Pop. ai] (https://www.popai.ai) - Help me write the readme overview
+- [Stack Overflow] (https://stackoverflow.com) - Crispy Forms instructions help
+- [Django Summernote Docs] (https://github.com/summernote/django-summernote) - Instructional Documentation help
+- [ChatGPT] (https://chat.openai.com) - Answering my many questions
+- [DALL-E 3](https://openai.com/dall-e-3) - Created all my ideas via text and translated them into an image
 
 ## Media
-- The icons in the footer were taken from Font Awesome.
+- The icon in the footer were taken from Font Awesome.
 - The fonts used were imported from Google Fonts.
-- Favicon: AI-DALL-E 3.
+- My favicon were created by DALL-E 3.
+- My images were all created by DALL-E 3.
 
 ## Acknowledgments
 - I am grateful to my mentor for providing valuable feedback.
 - Coding coach Kevin, for his very helpful SME videos.
+- I am grateful to my colleague Tom, who spent his time helping me fix my bugs.
 
 
 

@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lexend:wght@100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lexend:wght@100..900&display=swap');
 /* Reset CSS */
 
 * {
@@ -276,7 +276,7 @@ p {
 
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
+    background-color: #38b10c;
     color: #fefdfc;
 }
 

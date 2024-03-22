@@ -54,31 +54,3 @@ document.getElementsByClassName('flip-card-inner-custom').forEach(card => {
         this.classList.toggle('flipped');
     });
 });
-
-// Form submission using jQuery AJAX
-$(document).ready(function () {
-    // Listen for form submission
-    $("form").submit(function (event) {
-        // Prevent default form submission
-        event.preventDefault();
-
-        // Serialize form data
-        var formData = $(this).serialize();
-
-        // Send AJAX POST request to the server
-        $.ajax({
-            url: $(this).attr('action'),
-            type: 'POST',
-            data: formData,
-            success: function (response) {
-                // Update the number of attendees
-                var likes = response.likes;
-                $(".likes-count").text("Number Attending: " + likes);
-            },
-            error: function (xhr, status, error) {
-                // Handle errors
-                console.error(error);
-            }
-        });
-    });
-});
