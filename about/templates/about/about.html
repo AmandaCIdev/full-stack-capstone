@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col text-end">
+        <div class="col text-right">
             <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
         </div>
     </div>
@@ -31,12 +31,16 @@
                 Fill out the form with all the details you would want as part of your ad and we will review it and get
                 back to you.</p>
 
-            <!-- Add your form here. -->
-            <form method="post" action="">
-                {% csrf_token %}
-                {{ submit_details_form.as_p }}
 
-                <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
+            <!-- add your form here. Your submit button should 
+                                have the classes of btn, btn-secondary -->
+            <form id="SubmitDetailsForm" method="post" style="margin-top: 1.3em;">
+
+                {{ submit_details_form | crispy }}
+                {% csrf_token %}
+
+                <button id="submitButton" type="submit" class="btn btn-secondary btn-lg">Submit</button>
+
             </form>
         </div>
     </div>

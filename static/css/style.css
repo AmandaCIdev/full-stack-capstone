@@ -1,6 +1,7 @@
 /* Import Google Fonts */
-/ @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lexend:wght@100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lexend:wght@100..900&display=swap')
 /* Reset CSS */
+
 * {
     padding: 0;
     margin: 0;
@@ -277,6 +278,13 @@ p {
 .btn-edit-custom {
     background-color: #188181;
     color: #fefdfc;
+}
+
+.custom-btn,
+.btn-signup-custom:hover,
+.btn-signup-custom:active {
+    background-color: #38b10c;
+    /* Sign out button */
 }
 
 .btn-signup-custom:hover,
