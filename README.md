@@ -257,6 +257,8 @@ Wireframes for each device are linked here:
 
 [JSHint](https://jshint.com/) - JSHint is a static code analysis tool used for checking JavaScript code for errors, potential problems, and stylistic inconsistencies.
 
+[Pep8ci](https://pep8ci.herokuapp.com/) - Pep8ci provides Python developers with a tool to check their code against the PEP 8 style guide for adherence to coding standards.
+
 [Lighthouse](https://developer.chrome.com/docs/lighthouse) - an open-source tool used for auditing web page quality, including performance, accessibility, SEO, and cross-browser testing.
 
 
@@ -354,9 +356,9 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser we 
 ### Validator Testing
 
 #### HTML Validator
-- [Results for index.html](#)
-- [Results for gallery.html](#)
-- [Results for contact.html](#)
+- [Results for event_list.html](#)
+- [Results for event_detail.html](#)
+- [Results for event_form.html](#)
 
 #### CSS Validator
 - [Results for styles.css](#)
