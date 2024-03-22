@@ -250,7 +250,7 @@ p {
     /* Determines the stacking order of the element relative to other elements on the page */
 }
 
-.post-link {
+ƒ .post-link {
     text-decoration: none;
     color: #445261;
 }
@@ -274,21 +274,19 @@ p {
     width: 75%;
 }
 
-.btn-signup-custom,
-.btn-edit-custom {
+.btn-signup,
+.btn-edit {
     background-color: #188181;
     color: #fefdfc;
 }
 
-.custom-btn,
-.btn-signup-custom:hover,
-.btn-signup-custom:active {
+.custom-btn {
     background-color: #38b10c;
     /* Sign out button */
 }
 
-.btn-signup-custom:hover,
-.btn-signup-custom:active {
+.btn-signup:hover,
+.btn-signup:active {
     background-color: #fff;
     color: #23BBBB;
 }
