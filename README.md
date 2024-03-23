@@ -145,7 +145,7 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
    - The footer, present on all pages, comprises two sections: one containing social media link to GitHub, and the other acknowledging the website project portfolio by name.
 
   <p align="center">
-  <img src="static/images/Default.jpeg" width="100%" height="100%">
+  <img src="static/images/Footer-iCreate.png" width="100%" height="100%">
 </p> 
 
 4. **Home Page - ‘Home’**
