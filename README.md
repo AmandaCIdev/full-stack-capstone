@@ -598,7 +598,7 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser I c
 </p>
 2. As a User I can delete my event so that I can remove any unwanted events that I have made
 <p align="center">
-<img src="static/images/Delete event-Admin.png" width="500" height="300%">
+<img src="static/images/Delete event-Admin.png" width="600" height="300%">
 </p>
 3. As a User I can edit events so that I can update any changes or mistakes to my events 
 <p align="center">
