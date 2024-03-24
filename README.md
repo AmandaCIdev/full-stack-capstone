@@ -317,10 +317,10 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 ## Technologies Used
 
 ### Languages Used
-- [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [CSS3](https://en.wikipedia.org/wiki/CSS)
-- [JavaScript](https://www.javascript.com/)
-- [Python](https://www.python.org/)
+- [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML)
+- [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS)
+- [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com)
+- [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org)
 
  ## Frameworks, Libraries & Programs Used
 
@@ -328,17 +328,17 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 
 - [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) – Connected to GitHub, GitPod hosted the coding space, allowing the project to be built and then committed to the GitHub repository. I used for version control. (`git add`, `git commit`, `git push`)
 
-[Heroku](https://www.heroku.com/) - Connected to the GitHub repository, Heroku is a cloud application platform used to deploy this project so the backend language can be utilised/tested. I used for hosting the deployed back-end site.
+- [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) - Connected to the GitHub repository, Heroku is a cloud application platform used to deploy this project so the backend language can be utilised/tested. I used for hosting the deployed back-end site.
 
-[Django](https://www.djangoproject.com/) - Django is a high-level web framework for building web applications rapidly with a clean and pragmatic design. I used as the Python framework for the site.
+- [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) - Django is a high-level web framework for building web applications rapidly with a clean and pragmatic design. I used as the Python framework for the site.
 
-[ElephantSQL](https://api.elephantsql.com) - ElephantSQL is a hosted PostgreSQL database service that can be seamlessly integrated with Django applications, providing scalable and reliable database solutions. I used as the Postgres database.
+- [![ElephantSQL](https://img.shields.io/badge/ElephantSQL-grey?logo=postgresql&logoColor=36A6E2)](https://www.elephantsql.com) - ElephantSQL is a hosted PostgreSQL database service that can be seamlessly integrated with Django applications, providing scalable and reliable database solutions. I used as the Postgres database.
 
-[Gunicorn](https://gunicorn.org/) - Gunicorn is a pure-Python HTTP server for WSGI applications. Followed Code Institute instructions to install.
+[![Gunicorn](https://img.shields.io/badge/Gunicorn-grey?logo=gunicorn&logoColor=CE0908)](https://gunicorn.org/) - Gunicorn is a pure-Python HTTP server for WSGI applications. Followed Code Institute instructions to install.
 
 [Dj Database URL](https://pypi.org/project/dj-database-url/) - This allows you to utilise the 12factor inspired DATABASE_URL environment variable to configure your Django application. Followed Code Institute instructions to install.
 
-[Bootstrap](https://getbootstrap.com/) - Bootstrap is a front-end framework for developing responsive and mobile-first websites quickly and efficiently. I utilised for modern responsiveness and pre-built components.
+- [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) - Bootstrap is a front-end framework for developing responsive and mobile-first websites quickly and efficiently. I utilised for modern responsiveness and pre-built components.
 
 [Cloudinary](https://cloudinary.com) - Cloudinary is a cloud-based media management platform that offers solutions for storing, optimising, and delivering images and videos for web and mobile applications. Followed Code Institute instructions to install.
 
@@ -354,7 +354,7 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 
 [Beautify](https://www.jpkc.com/tools/beautify/) - Beautify is a code formatter tool that automatically formats code to improve readability and consistency. Used in Gitpod to help color code and spot errors.
 
-[Balsamiq](https://balsamiq.com/) - Balsamiq is a wireframing tool used for creating low-fidelity mockups of user interfaces, allowing for quick and easy visualisation of design ideas. used for my wireframes.
+- [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) - Balsamiq is a wireframing tool used for creating low-fidelity mockups of user interfaces, allowing for quick and easy visualisation of design ideas. used for my wireframes.
 
 [Lucidchart](https://lucid.app) - Lucidchart is a web-based diagramming tool that allows users to create and collaborate on flowcharts, ERDs, and other visual representations of data and processes. Made a ERD flow chart.
 
