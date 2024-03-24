@@ -537,10 +537,11 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
   </tr>
   <tr>
   <td>Back side flip card overflows card</td>
-    <td><img src="assets/images.png" alt="Image showing "></td>
+    <td><img src="static/images/ISSUE overflow.png" alt="Image showing "></td>
     
-  <td>I added media queries to ensure effective responsiveness</td>
+  <td>Reduced text in admin</td>
   </tr>
+  
   </table>
 
 ## Unfixed Bugs / Issues
@@ -551,8 +552,8 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
     <th>Resolution</th>
   </tr>
   <tr>
-  <td>On table devices the display is not centered on the screen using bootstrap</td>
-    <td><img src="assets/images" alt="Image showing box obscuring the logo on larger devices"></td>
+  <td>Ipad display is not centered on the screen using bootstrap</td>
+    <td><img src="static/images/ISSUE Responsive devices - Testing.png" alt="Image response testing"></td>
     
   <td>Due to time constraints, I could not address the slight misalignment of the Bootstrap responsiveness for iPad. I plan to rectify this in the next sprint.</td>
   </tr>
@@ -634,7 +635,7 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser I c
 **EPIC: Navigation**
 1. As a User I can easily navigate through the site so that I can view desired content
 <p align="center">
-<img src="static/images/Navbar - User Desktop.png" width="1000" height="100%">
+<img src="static/images/Navigation Bar-iCreate.png" width="1000" height="100%">
 </p>
 
 2. As a User I can see the most loved events so that I can quickly join in 
