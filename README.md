@@ -112,26 +112,39 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 
 
 **Epic: User Events**
-- As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more information.
-- As a logged-in User I can post a event so that other users can see them to sign up.
-- As a User I can delete my events so that I can remove any unwanted events that I have made.
-- As a User I can edit events so that I can update any changes or mistakes to my events.
-- As a logged-in User I can upload an image along with my event so that other users can see an image relating to the event.
+| ID  | Content                                                                                                                                               |
+| --- |-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more.      | 
+|     | information.                                                                                                                                          |
+| 2   | As a logged-in User I can post a event so that other users can see them to sign up.                                                                   |
+| 3   | As a User I can delete my events so that I can remove any unwanted events that I have made.                                                           |
+| 4   | As a User I can edit events so that I can update any changes or mistakes to my events.                                                                |
+| 5   | As a logged-in User I can upload an image along with my event so that other users can see an image relating to the event.                             |
 
 
 **Epic: Login/Register**
-- As a User I can register for an account so that I can interact with the site content.
-- As a User I can log in/out off my account if I wish so that I can connect or disconnect from the website.
-- As a User I can easily see if I'm logged-in or logged-out so that I can be sure what my status is.
+| ID  | Content   
+| --- |-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | As a User I can register for an account so that I can interact with the site content.                                                                 |
+| 2   | As a User I can log in/out off my account if I wish so that I can connect or disconnect from the website.                                             |
+| 3   | As a User I can easily see if I'm logged-in or logged-out so that I can be sure what my status is.                                                    |
 
 
 **Epic: Navigation**
-- As a young user aged 6-18, I want the navigation of the iCreate platform to be designed with my needs in mind so that I can easily find and access the content I'm interested in.
-- As a young user aged 6-18, I want the navigation of the iCreate platform to work seamlessly on all devices, including smartphones and tablets, so that I can access the platform from anywhere.
-- As a young user aged 6-18, I want the navigation menu of the iCreate platform to be organised into clear categories like Events, About, Resources, Login, Logout so that I can quickly navigate to the content I want to explore.
-- As a young user aged 6-18, I want the navigation of the iCreate platform to use engaging visuals, icons, and colours to make it visually appealing and attractive to me.
-- As a young user aged 6-18, I want the navigation elements of the iCreate platform to be consistent across different pages so that I can easily understand and navigate the website.
-- As a young user aged 6-18, I want the navigation of the iCreate platform to be accessible to users with disabilities, including features like keyboard navigation and screen reader compatibility, so that all users can use the platform effectively.
+| ID  | Content   
+| --- |----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | As a young user aged 6-18, I want the navigation of the iCreate platform to be designed with my needs in mind so that I can easily find and access the.  | 
+|     | content I'm interested in.                                                                                                                               |
+| 2   | As a young user aged 6-18, I want the navigation of the iCreate platform to work seamlessly on all devices, including smartphones and tablets, so that I |  
+|     |can access the platform from anywhere.                                                                                                                    |
+| 3   |As a young user aged 6-18, I want the navigation menu of the iCreate platform to be organised into clear categories like Events, About, Resources, Login, | 
+|     |Logout so that I can quickly navigate to the content I want to explore.                                                                                   |
+| 4   | As a young user aged 6-18, I want the navigation of the iCreate platform to use engaging visuals, icons, and colours to make it visually appealing and   | 
+|     | attractive to me.                                                                                                                                        |
+| 5   | As a young user aged 6-18, I want the navigation elements of the iCreate platform to be consistent across different pages so that I can easily understand| 
+|     | and navigate the website.                                                                                                                                |
+| 6   | As a young user aged 6-18, I want the navigation of the iCreate platform to be accessible to users with disabilities, including features like keyboard.  | 
+|     | navigation and screen reader compatibility, so that all users can use the platform effectively.                                                          |
 
 
 <p align="center">
