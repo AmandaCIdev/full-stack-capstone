@@ -201,10 +201,20 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
    - The Login / Register button will take users to the login page, if users do not have an account there is a link to the registration page
 
 5. **About Page - ‘About’**
-   - Information on how to get in touch. Contact form for convenient communication.
+   - The About Page provides detailed information about the website, specifically tailored to engage young readers. 
 
    <p align="center">
-  <img src="static/images" width="100%" height="100%">
+  <img src="static/images/About Page-About.png" width="100%" height="100%">
+   </p> 
+
+   - Visitors can learn about the platform's purpose and its commitment to fostering creativity and learning among children. Additionally, the page offers a platform for individuals to connect with the iCreate hub by sharing their expertise through specialised classes and workshops. Users can fill out a form with their details, which will be promptly reviewed by the website administrators.
+
+   <p align="center">
+  <img src="static/images/Skill Workshop Form-About .png" width="100%" height="100%">
+   </p> 
+
+   <p align="center">
+  <img src="static/images/Skill Workshop Form End-About .png" width="100%" height="100%">
    </p> 
 
 6. **Register Page - ‘Register’**
