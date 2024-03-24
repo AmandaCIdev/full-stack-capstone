@@ -224,8 +224,17 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 6. **Register Page - ‘Register’**
    - The register page allows users to create a new account by providing necessary information such as username, email, password, and optional profile details.
 
+   <p align="center">
+  <img src="static/images/Register-iCreate.png" width="100%" height="100%">
+   </p> 
+
+
 7. **Login - ‘Login’**
    - Include username and password fields, a remember me option, error handling for incorrect credentials, a login button, links for forgot password and registration, security measures like CAPTCHA or two-factor authentication.
+
+   <p align="center">
+  <img src="static/images/Login-iCreate.png" width="100%" height="100%">
+   </p> 
 
 ## Design
 
