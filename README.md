@@ -248,7 +248,7 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 - The design layout features a clean and minimalistic structure with a simple background, providing a visually uncluttered canvas. The imagery seamlessly integrates with a striking futuristic gaming design, elevating the overall visual appeal.
 
 ### Typography
-- Google Fonts were used to import the Julius font into styles.css. Chosen for it's simple, unembellished, minimalistic feel that is easy to read.
+- Google Fonts were used to import the Julius font into styles.css. Chosen for it's simple, unembellished, minimalistic feel that is easy to read. Special Font for "Event" on Home Page: Lexend
 
 
 ### Future Features
@@ -378,7 +378,7 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 
 [Code Institute](https://codeinstitute.net/) - The events page on my site drew inspiration from the "I think therefore I blog" walkthrough project by Code Institute. Throughout the past 16 weeks, my participation in the Full Stack skills bootcamp has equipped me with the essential skills needed to develop this website.
 
-## Below, you'll find a comprehensive list of project requirements and their respective versions. Some installed packages were not utilised but were installed as per the instructions provided by Code Institute. This influenced my decision to document the process in the **I think therefore I blog walkthrough project.** 
+### ** Below, you'll find a comprehensive list of project requirements and their respective versions. Some installed packages were not utilised but were installed as per the instructions provided by Code Institute. This influenced my decision to document the process in the **I think therefore I blog walkthrough project.** 
 
 - asgiref==3.7.2  
 - cloudinary==1.36.0  
@@ -417,7 +417,7 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
    <tr>
     <td>As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more information.</td>
     <td>Interactive flip cards designed for children to rotate 180°.The front side displays event images to capture their interest. Back side displays details including a 'view details' button.</td>
-    <td>The display would not does not flex to row.</td>
+    <td>The display would not flex to row.</td>
   </tr>
   <tr>
     <td>As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more information.</td>
@@ -474,7 +474,7 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 <br>
 
 
-### User Stories and Features (to be implelemented next Sprint) 
+### User Stories and Features (to be implemented next Sprint) 
 
 
   <table>
@@ -575,12 +575,12 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser I c
 
 2. As a logged-in User I can like and unlike events  so that I can mark which events I like
 <p align="center">
-<img src="static/images/Likes Event-Event.png" width="300" height="200">
+<img src="static/images/Likes Event-Event.png" width="500" height="300">
 </p>
 
 3. As a User I can view the number of likes on events so that I can see which events are the most popular
 <p align="center">
-<img src="static/images/Likes Event-Event.png" width="300" height="200">
+<img src="static/images/Likes Event-Event.png" width="500" height="300">
 </p>
 
 4. As a User I can view comments on events so that I can read other users opinions
@@ -589,7 +589,7 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser I c
 </p>
 
 **EPIC: User Events**
-1. As a logged-in User I can post events so that other users can see them
+1. As a logged-in User I can create events so that other users can see them
 <p align="center">
 <img src="static/images/Skill Workshop Form-About.png" width="600" height="100%">
 </p>
