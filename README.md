@@ -8,13 +8,12 @@
 
 
 
-This project utilises a full-stack framework, incorporating Django, Python, JavaScript, HTML, and CSS. My objective is to develop a responsive website that enables users to perform CRUD operations, as well as post, comment, and interact with events by liking or unliking them. It's important to note that this project has been created solely for educational purposes.
-
+This project utilises a full-stack framework, incorporating Django, Python, JavaScript, HTML, and CSS. My objective is to develop a responsive website that enables users to perform CRUD operations, as well as post, comment, and interact with events by liking or unliking them. It's essential to emphasise that this project is currently developed purely for educational purposes but will be modified and applied in the future for my volunteer work with youth through an established organization.
 
 
 **[Visit my website](https://amanda-ci-dev-full-stack-cap-a6484667fa4d.herokuapp.com/)**
 
-## SUPERUSER CREDENTIALS:  
+### SUPERUSER CREDENTIALS:  
 - username - heroku_admin 
 - password - 1a2d3m4i5n
   
