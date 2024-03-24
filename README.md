@@ -95,13 +95,14 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 
 
 **Epic: User Interaction**
-- As a logged-in User I can write comments on events so that I can leave my feedback
+- As a logged-in User I can write reviews on events so that I can leave my feedback
 - As a logged-in User I can like and unlike events so that I can mark which events I like
 - As a User I can view the number of likes on events so that I can see which events are the most popular
 - As a User I can view comments on events so that I can read other users opinions
 
 
 **Epic: User Events**
+- As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more information.
 - As a logged-in User I can post a event so that other users can see them to sign up
 - As a User I can delete my events so that I can remove any unwanted events that I have made
 - As a User I can edit events so that I can update any changes or mistakes to my events
@@ -400,7 +401,148 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 
 ## User Story Testing
 
-### **Testing Users Stories form (UX) Section**
+## User Stories, features and bugs
+
+<table>
+  <tr>
+    <th>User Story</th>
+    <th>Features</th>
+    <th>Bugs / Issues - tested across viewports of all devices using Google Dev Tools</th>
+  </tr>
+   <tr>
+    <td>As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more information.</td>
+    <td>Interactive flip cards designed for children to rotate 180°.<br> The front side displays event images to capture their interest. <br>Back side displays details including a 'view details' button.</td>
+    <td>The display would not does not flex to row.</td>
+</tr>
+  <tr>
+    <td>As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more information.</td>
+    <td>Interactive flip cards designed for children to rotate 180°.<br> The front side displays event images to capture their interest. <br>Back side displays details including a 'view details' button.</td>
+    <td>The brief description overflowed flip cards</td>
+  
+  </tr>
+   <tr>
+    <td>As a student I can join events so that I can foster growth in my interests or studies</td>
+    <td>Events page with all events displayed.<br>Organisers know who is attending.</td>
+    <td>On event detail page attending button can't see student status.</td>
+  <tr>
+    <td>As a user I can update my profile so that other users can learn more about me and i see more related content</td>
+    <td>Display name.<br>Display bio.</td>
+    <td>Does not have a list of future events to be attended.<br>Because of the way that the user is prompted to create a student profile, the view function that is triggered will always take them on to the user events page rather than wherever they had come from. </td>
+  </tr>
+  <tr>
+    <td>As a site owner I can collect feedback on events so that I can see which events are successful and popular and which arent.</td>
+    <td>Rate events.<br>Comments system by attendees.</td>
+<td>None deteced.</td>
+    
+  </tr>
+  <tr>
+    <td>As a Organiser I can create events so that students can attend them.</td>
+    <td>Specify date, time, location, course or interest, and max. participants.<br>List of students attending.<br>Add an event picture.</td>
+    <td>List of students when event is expanded not.</td>
+    </tr>
+
+  <tr>
+    <td>As a user, I want the site to be easily navigable.</td>
+    <td>Different features of site are clearly identifiable</td>
+    <td>None detected</td>
+    
+  </tr>
+  <tr>
+    <td>As a user, I want to be able to choose an answer from a pre-populated list.</td>
+    <td>List of answers to be selected</td>
+    <td>None detected</td>
+    
+  </tr>
+  <tr>
+    <td>As a user, I want to receive feedback on the answers.</td>
+    <td>Clear signal of correct / incorrect answer</td>
+    <td>None detected</td>
+    
+  </tr>
+  <tr>
+    <td>As a user, I want the site to be visually appealing.</td>
+    <td> Select complementary colour scheme. <br>
+    Different elements/features delineated.</td>
+    <td>None detected</td>
+</tr>
+  </table>
+
+<br>
+
+
+### User Stories and Features (to be implelemented next Sprint) 
+
+
+  <table>
+  <tr>
+    <th>User Story</th>
+    <th>Features</th>
+    <th>Bugs / Issues</th>
+  </tr>
+
+
+
+  <tr>
+    <td>As a student I want to able to search filter events so that I can attend events of my interest.</td>
+    <td>Filter by category, words or interests.</td>
+    <td>N/A</td>
+  </tr>
+  
+  <tr>
+    <td>As a Student I can get notified of upcoming events so that I am less likely to miss or forget the event.</td>
+    <td>Get notifications from upcoming events.</td>
+    <td>N/A</td>
+  </tr>
+  
+
+  </table>
+
+### Won't haves
+
+  <table>
+  <tr>
+    <th>User Story</th>
+    <th>Features</th>
+    <th>Bugs / Issues</th>
+  </tr>
+  <tr>
+    <td>As a user I want to be able to follow other students.</td>
+    <td>Follow option.</td>
+    <td>N/A</td>
+  </tr>
+
+
+## Fixed Bugs / Issues
+<br>
+<table>
+  <tr>
+    <th>Bug/Issue</th>
+    <th>Image</th>
+    <th>Resolution</th>
+  </tr>
+  <tr>
+  <td>"Select type" option overflows to below options box on smaller devices</td>
+    <td><img src="assets/images/readMeImages/bugs/fixed/questionsoverflow.png" alt="Image showing box obscuring the logo on larger devices"></td>
+    
+  <td>We added media queries to ensure effective responsiveness</td>
+  </tr>
+  </table>
+
+## Unfixed Bugs / Issues
+<table>
+  <tr>
+    <th>Bug/Issue</th>
+    <th>Image</th>
+    <th>Resolution</th>
+  </tr>
+  <tr>
+  <td>On large devices the "Enter name" box obscures the brand logo and feels like a pop-up rather than an integrated element of the UX package</td>
+    <td><img src="assets/images/readMeImages/amiresponsive/loginscreenpng.png" alt="Image showing box obscuring the logo on larger devices"></td>
+    
+  <td>Unfortunately we ran out of time to fix this. We would in future sprints change from an in-browser alert box to a html modal box, that would be styled and centred on the screen etc as part of a user management system.</td>
+  </tr>
+</table>
+
 
 **EPIC: Superuser / Admin**
 - As a site Admin I can create, edit and delete events and comments so that I can manage the site content
