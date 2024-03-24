@@ -194,7 +194,7 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 
   <p align="center">
   <img src="static/images/Footer-iCreate.png" width="100%" height="100%">
-</p> 
+  </p> 
 
 4. **Home Page - ‘Home’**
    - A curated collection of high-quality images categorised by events.
@@ -202,6 +202,10 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 
 5. **About Page - ‘About’**
    - Information on how to get in touch. Contact form for convenient communication.
+
+   <p align="center">
+  <img src="static/images" width="100%" height="100%">
+   </p> 
 
 6. **Register Page - ‘Register’**
    - The register page allows users to create a new account by providing necessary information such as username, email, password, and optional profile details.
