@@ -374,7 +374,7 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 
 [Code Institute](https://codeinstitute.net/) - The events page on my site drew inspiration from the "I think therefore I blog" walkthrough project by Code Institute. Throughout the past 16 weeks, my participation in the Full Stack skills bootcamp has equipped me with the essential skills needed to develop this website.
 
-### **Below, you'll find a comprehensive list of project requirements and their respective versions. Some installed packages were not utilised but were installed as per the instructions provided by Code Institute. This influenced my decision to document the process in the **I think therefore I blog walkthrough project.** 
+### **Below, you'll find a comprehensive list of project requirements and their respective versions. Some installed packages were not utilised but were installed as per the instructions provided by Code Institute. This influenced my decision to document the process in the 'I think therefore I blog 'walkthrough project.** 
 
 - asgiref==3.7.2  
 - cloudinary==1.36.0  
