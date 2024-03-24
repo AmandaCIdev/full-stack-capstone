@@ -22,12 +22,12 @@ These will be needed to access some features of the site.
 
 # Overview
 
-The website targets vulnerable and underserved youth, offering a platform for lifelong skill development similar to Boys and Girls Scouts. My mission is to expand events into an online hub where participants earn badges by mastering skills, fostering interaction, and applying abilities to life challenges. Youth aged 6-18 can transition and grow in a safe space. 
+- The website targets vulnerable and underserved youth, offering a platform for lifelong skill development similar to Boys and Girls Scouts. My mission is to expand events into an online hub where participants earn badges by mastering skills, fostering interaction, and applying abilities to life challenges. Youth aged 6-18 can transition and grow in a safe space. 
 The age limit of 18 years old aligns with the legal definition of adulthood in the USA, which is why it's applicable for the websites purposes.
 
-The name iCreate embodies the boundless potential within each individual child to shape their own reality, transcending limitations imposed by environment or resources. It stands as a powerful affirmation of personal empowerment, urging individuals to craft their unique selves without constraints.
+- The name iCreate embodies the boundless potential within each individual child to shape their own reality, transcending limitations imposed by environment or resources. It stands as a powerful affirmation of personal empowerment, urging individuals to craft their unique selves without constraints.
 
-It's essential to emphasise that this project is currently developed purely for educational purposes but will be modified and applied in the future for my volunteer work with youth through an established organisation.
+- It's important to note that while this project is currently developed solely for educational purposes, it will be further developed for future use by my children and for volunteer work with youth through an established organisation.
 
 # Table of Contents
 
@@ -138,7 +138,7 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 1. **Navigation Bar**
    - The navigation bar appears on every page so users can easily navigate through the site
    - Navigation bar has links for 'Home', 'About' and 'Login/Register' more links will be shown to logged in users
-   - If the user is logged in then the left side of the menu shows links for pages that only authorized users can visit 
+   - If the user is logged in then the left side of the menu shows links for pages that only authorised users can visit 
    - The user name will also appear on the bar, indicating which user is logged in
    - The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size
 
@@ -146,19 +146,48 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 <img src="static/images/iCreateNavbar.png" width="100%" height="100%">
 </p>
 
-2. **Landing Page Image - Event Flip Cards**
-   - The landing area features engaging flip cards designed for children to flip 180°, front is the event image to capture interest, 
-
+2. **Landing Page - Event Flip Cards**
+   - The landing area showcases interactive flip cards designed for children to rotate 180°. The front side displays event images to capture their interest.
+  
    <p align="center">
 <img src="static/images/Feature Flip Cards Front-Event.png" width="100%" height="100%">
 </p>
 
+- Upon flipping, they unveil event details on the reverse side, succinctly showcasing the event's specific information such as time, date, location, and a brief description. This effectively communicates the website's purpose and the specific event offerings. Additionally, each card includes a 'View Details' button for further inquiry.
 
 <p align="center">
 <img src="static/images/Feature Flip Cards Back-Event.png" width="100%" height="100%">
 </p>
 
-- When flipped, they reveal event details on the reverse side, effectively communicating the website's purpose and the array of events provided.
+- View Event Details: Attend Event Button and Like Counts.
+
+<p align="center">
+<img src="static/images/View Details Page Attend-Event.png" width="100%" height="100%">
+</p>
+
+- Event Details: Remove Attend event Button and Like Counts.
+
+<p align="center">
+<img src="static/images/View Details Page Delete Attend-Event.png" width="100%" height="100%">
+</p>
+
+- Event Review Functionality: Users have the ability to leave detailed reviews for events they have attended.
+
+<p align="center">
+<img src="static/images/Reviews Page-Event.png" width="100%" height="100%">
+</p>
+
+- Event Review Management: Users have the ability to edit and update their reviews, ensuring that their feedback remains accurate and current. Each review is associated with the user's name and timestamp, providing transparency and accountability.
+
+<p align="center">
+<img src="static/images/Edit & Update Review-Event.png" width="100%" height="100%">
+</p>
+
+- Event Review Management: Users are empowered to delete their reviews, granting them control over the content they contribute. This feature ensures that users can maintain the relevance and accuracy of reviews over time, enhancing the overall quality of feedback available on the platform.
+
+<p align="center">
+<img src="static/images/Delete review option-Event.png" width="100%" height="100%">
+</p>
 
 3. **Footer**
    - The footer, present on all pages, comprises two sections: one containing social media link to GitHub, and the other acknowledging the website project portfolio by name.
@@ -168,7 +197,8 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 </p> 
 
 4. **Home Page - ‘Home’**
-   - A curated collection of high-quality images categorized by events.
+   - A curated collection of high-quality images categorised by events.
+   - The Login / Register button will take users to the login page, if users do not have an account there is a link to the registration page
 
 5. **About Page - ‘About’**
    - Information on how to get in touch. Contact form for convenient communication.
@@ -200,7 +230,7 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 #
 # Structure
 
-The MVP website for youth aged 6-18 is structured to be intuitive and engaging, with clear navigation and visually appealing design elements. The platform prioritizes simplicity and ease of use, ensuring that young users can easily navigate, interact with content, and participate in various activities tailored to their age group. Additionally, the website emphasizes safety and accessibility, providing a secure environment for youth to explore, learn, and engage with the platform's offerings. Simplicity helps young users to quickly and easily access the app and navigate within the app.
+The MVP website for youth aged 6-18 is structured to be intuitive and engaging, with clear navigation and visually appealing design elements. The platform prioritises simplicity and ease of use, ensuring that young users can easily navigate, interact with content, and participate in various activities tailored to their age group. Additionally, the website emphasises safety and accessibility, providing a secure environment for youth to explore, learn, and engage with the platform's offerings. Simplicity helps young users to quickly and easily access the app and navigate within the app.
 
 The website comprises two applications:
 
@@ -217,7 +247,7 @@ Wireframes for each device are linked here:
 - [Mobile](assets/documents/Mobile-wireframes)
 
 # Database schema
-Prior to initiating any model migrations to my database, I devised an entity relationship diagram to visualize the connections between the models.
+Prior to initiating any model migrations to my database, I devised an entity relationship diagram to visualise the connections between the models.
 
 The entity relationship diagrams were created using [Lucidchart](https://www.lucidchart.com/).
 
@@ -251,29 +281,29 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 
 [Gunicorn](https://gunicorn.org/) - Gunicorn is a pure-Python HTTP server for WSGI applications.
 
-[Dj Database URL](https://pypi.org/project/dj-database-url/) - This allows you to utilize the 12factor inspired DATABASE_URL environment variable to configure your Django application.
+[Dj Database URL](https://pypi.org/project/dj-database-url/) - This allows you to utilise the 12factor inspired DATABASE_URL environment variable to configure your Django application.
 
 [Bootstrap](https://getbootstrap.com/) - Bootstrap is a front-end framework for developing responsive and mobile-first websites quickly and efficiently.
 
-[Cloudinary](https://cloudinary.com) - Cloudinary is a cloud-based media management platform that offers solutions for storing, optimizing, and delivering images and videos for web and mobile applications.
+[Cloudinary](https://cloudinary.com) - Cloudinary is a cloud-based media management platform that offers solutions for storing, optimising, and delivering images and videos for web and mobile applications.
 
 [Summernote](https://summernote.org/) - Summernote is a Django app that enables users to easily integrate a rich text editor into their web applications, enhancing event creation and description functionality.
 
 [DALL-E3](https://openai.com/) - DALL-E3 is an advanced AI model developed by OpenAI that generates images from textual descriptions.
 
-[TinyPNG](https://tinypng.com/) - TinyPNG is a website that offers image compression services to optimize image files for faster loading on webpages while maintaining visual quality.
+[TinyPNG](https://tinypng.com/) - TinyPNG is a website that offers image compression services to optimise image files for faster loading on webpages while maintaining visual quality.
 
 [Google Fonts](https://fonts.google.com/https://fonts.google.com/) - Google Fonts is a collection of free, open-source fonts that can be easily integrated into websites and other digital projects to enhance typography.
 
-[Font Awesome](https://fontawesome.com/) - Font Awesome is a library of scalable vector icons that can be easily customized and used to enhance the visual appeal of websites and applications.
+[Font Awesome](https://fontawesome.com/) - Font Awesome is a library of scalable vector icons that can be easily customised and used to enhance the visual appeal of websites and applications.
 
 [Beautify](https://www.jpkc.com/tools/beautify/) - Beautify is a code formatter tool that automatically formats code to improve readability and consistency.
 
-[Balsamiq](https://balsamiq.com/) - Balsamiq is a wireframing tool used for creating low-fidelity mockups of user interfaces, allowing for quick and easy visualization of design ideas.
+[Balsamiq](https://balsamiq.com/) - Balsamiq is a wireframing tool used for creating low-fidelity mockups of user interfaces, allowing for quick and easy visualisation of design ideas.
 
 [Lucidchart](https://lucid.app) - Lucidchart is a web-based diagramming tool that allows users to create and collaborate on flowcharts, ERDs, and other visual representations of data and processes.
 
-[Am I Responsive](http://ami.responsivedesign.is/) - Am I Responsive is a web tool that allows users to quickly preview how their website appears on various devices and screen sizes, helping to ensure responsiveness and compatibility across platforms.
+[Am I Responsive](http://ami.responsivedesign.is/) - Am I Responsive is a web tool that allows users to quickly preview how their website appears on various devices and screen sises, helping to ensure responsiveness and compatibility across platforms.
 
 [Diffchecker](https://www.diffchecker.com/text-compare/) - Diffchecker is a text comparison tool used to highlight the differences between two blocks of text, facilitating comparison and analysis.
 
