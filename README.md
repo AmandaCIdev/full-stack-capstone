@@ -197,17 +197,21 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
   </p> 
 
 4. **Home Page - ‘Home’**
-   - A curated collection of high-quality images categorised by events.
+   - A curated collection of images, organised into categories represented by flip cards corresponding to various events hosted on the platform. Each flip card displays an image relevant to the event it represents, providing users with a visual overview of the available activities. These flip cards serve as a convenient way for young users to browse through the different events and select those of interest to them.
    - The Login / Register button will take users to the login page, if users do not have an account there is a link to the registration page
 
+<p align="center">
+  <img src="static/images/Login Success to Events-Events.png" width="100%" height="100%">
+   </p> 
+
 5. **About Page - ‘About’**
-   - The About Page provides detailed information about the website, specifically tailored to engage young readers. 
+   - The About Page provides detailed information about the website, specifically tailored to engage young readers. Visitors can learn about the platform's purpose and its commitment to fostering creativity and learning among children.
 
    <p align="center">
   <img src="static/images/About Page-About.png" width="100%" height="100%">
    </p> 
 
-   - Visitors can learn about the platform's purpose and its commitment to fostering creativity and learning among children. Additionally, the page offers a platform for individuals to connect with the iCreate hub by sharing their expertise through specialised classes and workshops. Users can fill out a form with their details, which will be promptly reviewed by the website administrators.
+   -  Additionally, the page offers a platform for individuals to connect with the iCreate hub by sharing their expertise through specialised classes and workshops. Users can fill out a form with their details, which will be promptly reviewed by the website administrators.
 
    <p align="center">
   <img src="static/images/Skill Workshop Form-About .png" width="100%" height="100%">
