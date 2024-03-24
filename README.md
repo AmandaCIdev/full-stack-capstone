@@ -286,25 +286,25 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 ### **Event Model**
 
 <p align="center">
-<img src="assets/images/Event Model-Event.png" width="900" height="100%">
+<img src="static/images/Event Model-Event.png" width="900" height="100%">
 </p>
 
 ### **Reviews Model**
 
 <p align="center">
-<img src="assets/images/Reviews Model-Events.png" width="900" height="100%">
+<img src="static/images/Reviews Model-Events.png" width="900" height="100%">
 </p>
 
 ### **About Model**
 
 <p align="center">
-<img src="assets/images/About Model-About.png" width="900" height="100%">
+<img src="static/images/About Model-About.png" width="900" height="100%">
 </p>
 
 ### **SubmitDetails Model**
 
 <p align="center">
-<img src="assets/images/SubmitDetails model-About.png" width="900" height="100%">
+<img src="static/images/SubmitDetails model-About.png" width="900" height="100%">
 </p>
 
 
