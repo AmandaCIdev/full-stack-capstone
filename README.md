@@ -64,7 +64,7 @@ The target audience for 'iCreate Youth' includes:
 
 - Youth aged 6-18 years old, aiming to engage them in constructive and educational activities.
 - Individuals seeking to explore their creativity and develop new skills.
-- Students looking for opportunities to participate in events and workshops relevant to their interests.
+- Vistors looking for opportunities to participate in events and workshops relevant to their interests.
 - Guardians interested in providing their children with enriching experiences and learning opportunities.
 
 These users will be looking for:
@@ -314,10 +314,6 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 </p>
 
 
-## Font 
-- Main Font: Julius, sans-serif
-- Special Font for "Event" on Home Page: Lexend
-
 ## Technologies Used
 
 ### Languages Used
@@ -492,7 +488,7 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
   </tr>
   
   <tr>
-    <td>As a Student I can get notified of upcoming events so that I am less likely to miss or forget the event.</td>
+    <td>As a user I can get notified of upcoming events so that I am less likely to miss or forget the event.</td>
     <td>Get notifications from upcoming events.</td>
     <td>N/A</td>
   </tr>
@@ -505,7 +501,7 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 
   <tr>
     <td>Award certificates and badges upon completing tasks and mastering skills on the platform so that I am motivated to continue learning and engaging with the platform's activities</td>
-    <td>/Motivate to continue learning and engaging with the platform's activities</td>
+    <td>Motivate to continue learning and engaging with the platform's activities</td>
     <td>N/A</td>
   </tr>
   
@@ -522,7 +518,7 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
   </tr>
   <tr>
     <td>As a user I want to be able to friend other users</td>
-    <td>friend option.</td>
+    <td>Add friend option.</td>
     <td>N/A</td>
   </tr>
 
