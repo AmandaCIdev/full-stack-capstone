@@ -133,6 +133,17 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 <img src="static/images/Kanban project board-Readme md.png" width="100%" height="100%">
 </p>
 
+### MoSCoW Prioritisation
+
+I broke down my Epics into stories before prioritising and implementing them.
+By following this method, I applied MoSCoW prioritisation and labels to my user stories within the Issues tab.
+
+- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
+- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
+- **Could Have**: has small impact if left out (*20% of stories*)
+- **Won't Have**: not a priority for this iteration
+
+
 
 #
 # Scope 
