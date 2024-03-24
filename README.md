@@ -14,6 +14,13 @@ This project utilises a full-stack framework, incorporating Django, Python, Java
 
 **[Visit my website](https://amanda-ci-dev-full-stack-cap-a6484667fa4d.herokuapp.com/)**
 
+SUPERUSER CREDENTIALS:  
+username - heroku_admin 
+password - 1a2d3m4i5n
+  
+These will be needed to access some features of the site.
+
+
 # Overview
 
 The website targets vulnerable and underserved youth, offering a platform for lifelong skill development similar to Boys and Girls Scouts. My mission is to expand events into an online hub where participants earn badges by mastering skills, fostering interaction, and applying abilities to life challenges. Youth aged 6-18 can transition and grow in a safe space. 
@@ -194,6 +201,9 @@ Wireframes for each device are linked here:
 - [Mobile](assets/documents/Mobile-wireframes)
 
 # Database schema
+Prior to initiating any model migrations to my database, I devised an entity relationship diagram to visualize the connections between the models.
+
+The entity relationship diagrams were created using [Lucidchart](https://www.lucidchart.com/).
 
 <p align="center">
 <img src="static/images/iCreate-Database- Schema.png" width="900" height="100%">
@@ -260,6 +270,28 @@ Wireframes for each device are linked here:
 [Pep8ci](https://pep8ci.herokuapp.com/) - Pep8ci provides Python developers with a tool to check their code against the PEP 8 style guide for adherence to coding standards.
 
 [Lighthouse](https://developer.chrome.com/docs/lighthouse) - an open-source tool used for auditing web page quality, including performance, accessibility, SEO, and cross-browser testing.
+
+
+## Below, you can find the comprehensive list of project requirements along with their respective versions.
+
+- asgiref==3.7.2  
+- cloudinary==1.36.0  
+- crispy-bootstrap5==0.7  
+- dj-database-url==0.5.0  
+- dj3-cloudinary-storage==0.0.6  
+- Django==4.2.11  
+- django-allauth==0.57.2  
+- django-bootstrap-v5==1.0.11  
+- django-crispy-forms==2.1  
+- django-summernote==0.8.20.0  
+- gunicorn==20.1.0  
+- oauthlib==3.2.2  
+- psycopg2==2.9.9  
+- PyJWT==2.8.0  
+- python3-openid==3.2.0  
+- requests-oauthlib==1.4.0  
+- sqlparse==0.4.4  
+- whitenoise==5.3.0  
 
 
 
@@ -445,6 +477,7 @@ The live link can be found [https://github.com/AmandaCIdev/iCreate](#).
 
 ## Django and Heroku 
 - I followed the Code Institute's Coding Coach instructional video to install and set up the Django framework.
+- 
 
 # Credits
 - [Django Crispy Forms] (https://django-crispy-forms.readthedocs.io/en/latest/install.html) - Instructional Documentation help
@@ -452,19 +485,19 @@ The live link can be found [https://github.com/AmandaCIdev/iCreate](#).
 - [Pop. ai] (https://www.popai.ai) - Help me write the readme overview
 - [Stack Overflow] (https://stackoverflow.com) - Crispy Forms instructions help
 - [Django Summernote Docs] (https://github.com/summernote/django-summernote) - Instructional Documentation help
-- [ChatGPT] (https://chat.openai.com) - Answering my many questions
+- [ChatGPT] (https://chat.openai.com) - Providing guidance whenever I encountered code I did not grasp.
 - [DALL-E 3](https://openai.com/dall-e-3) - Created all my ideas via text and translated them into an image
 
 ## Media
 - The icon in the footer were taken from Font Awesome.
 - The fonts used were imported from Google Fonts.
-- My favicon were created by DALL-E 3.
-- My images were all created by DALL-E 3.
+- My images including favicon were all created by DALL-E 3.
 
 ## Acknowledgments
 - I am grateful to my mentor for providing valuable feedback.
 - Coding coach Kevin, for his very helpful SME videos.
-- I am grateful to my colleague Tom, who spent his time helping me fix my bugs.
+- Thank you to members of my cohort and cohort facilitator for their continued support throughtout this course.
+
 
 
 
