@@ -398,7 +398,7 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 
 
 
-# Testing *****THIS SECTION IS STILL BEING WORKED ON*******
+# Testing 
 
 
 ## User Story Testing
@@ -666,8 +666,6 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser I c
 - The  button on the form was not responding
 - The front flip cards were not displaying the image. To fix this I included the {% load static %} at the top of the file
 - The back flip cards were not displaying the text correct. To fix this I reduced the text in admin
-- *****CHECK THE FIX COMMITS IN REPO*****
-
 
 # Deployment
 
