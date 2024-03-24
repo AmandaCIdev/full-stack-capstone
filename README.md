@@ -98,15 +98,17 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 
 
 **Epic: User Interaction**
-- As a logged-in User I can attend events so that I can join events easily using a simple button.
-- As a logged-in User I can delete attend events so that I can change my mind to attend events easily using a simple button.
-- As a logged-in User I can create reviews on events so that I can leave my feedback.
-- As a logged-in User I can read reviews on events so that I can leave my feedback.
-- As a logged-in User I can update reviews on events so that I can change my feedback.
-- As a logged-in User I can delete reviews on events so that I can remove my feedback.
-- As a logged-in User I can like and unlike events so that I can mark which events I like.
-- As a User I can view the number of likes on events so that I can see which events are the most popular.
-- As a User I can view comments on events so that I can read other users opinions.
+| ID  | Content                                                                                                                               |
+| --- |---------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | As a logged-in User I can attend events so that I can join events easily using a simple button.                                       |
+| 2   | As a logged-in User I can delete attend events so that I can change my mind to attend events easily using a simple button.            |
+| 3   | As a logged-in User I can create reviews on events so that I can leave my feedback.                                                   |
+| 4   | As a logged-in User I can read reviews on events so that I can leave my feedback.                                                     |
+| 5   | As a logged-in User I can update reviews on events so that I can change my feedback.                                                  |
+| 6   | As a logged-in User I can delete reviews on events so that I can remove my feedback.                                                  |
+| 7   | As a logged-in User I can like and unlike events so that I can mark which events I like.                                              |
+| 8   | As a User I can view the number of likes on events so that I can see which events are the most popular.                               |
+| 9   | As a User I can view comments on events so that I can read other users opinions.                                                      |
 
 
 **Epic: User Events**
