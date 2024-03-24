@@ -585,28 +585,28 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser I c
 
 4. As a User I can view comments on events so that I can read other users opinions
 <p align="center">
-<img src="static/images/Read reviews-Event.png" width="800" height="100%">
+<img src="static/images/Read reviews-Event.png" width="500" height="300%">
 </p>
 
 **EPIC: User Events**
 1. As a logged-in User I can create events so that other users can see them
 <p align="center">
-<img src="static/images/Skill Workshop Form-About .png" width="600" height="100%">
+<img src="static/images/Skill Workshop Form-About .png" width="500" height="300%">
 </p>
 <p align="center">
-<img src="static/images/Skill Workshop Form End-About .png" width="600" height="100%">
+<img src="static/images/Skill Workshop Form End-About .png" width="500" height="300%">
 </p>
 2. As a User I can delete my event so that I can remove any unwanted events that I have made
 <p align="center">
-<img src="static/images/Delete event-Admin.png" width="500" height="100%">
+<img src="static/images/Delete event-Admin.png" width="500" height="300%">
 </p>
 3. As a User I can edit events so that I can update any changes or mistakes to my events 
 <p align="center">
-<img src="static/images/Edit Event-Admin.png" width="600" height="100%">
+<img src="static/images/Edit Event-Admin.png" width="500" height="300%">
 </p>
 4. As a logged-in User I can upload an image along with my event so that other users can see what the event theme looks like
 <p align="center">
-<img src="static/images/Upload image-Admin.png" width="400" height="100%">
+<img src="static/images/Upload image-Admin.png" width="500" height="300%">
 </p>
 
 
