@@ -735,7 +735,7 @@ By following these steps, you can manually deploy your project from Gitpod to He
 
 - Any changes pushed to the master branch will take effect on the live project.
 
-The live link can be found [https://github.com/AmandaCIdev/iCreate](#).
+The live link can be found [https://amanda-ci-dev-full-stack-cap-a6484667fa4d.herokuapp.com/](#).
 
 ## How to clone the repository
 1. Go to the GitHub repository on GitHub.
@@ -745,7 +745,7 @@ The live link can be found [https://github.com/AmandaCIdev/iCreate](#).
 
 ## Django and Heroku 
 - I followed the Code Institute's Coding Coach instructional video to install and set up the Django framework.
-- 
+- I followed the Code Institute's LMS blog and cheatsheet provided.
 
 # Credits
 - [Django Crispy Forms] (https://django-crispy-forms.readthedocs.io/en/latest/install.html) - Instructional Documentation assisted me.
