@@ -309,8 +309,8 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 
 
 ## Font 
-- Julius, sans-serif - main font
-- Lexend - for Event in Home page
+- Main Font: Julius, sans-serif
+- Special Font for "Event" on Home Page: Lexend
 
 ## Technologies Used
 
@@ -370,8 +370,9 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 
 [Lighthouse](https://developer.chrome.com/docs/lighthouse) - an open-source tool used for auditing web page quality, including performance, accessibility, SEO, and cross-browser testing.
 
+[Code Institute](https://codeinstitute.net/) - The events page on my site drew inspiration from the "I think therefore I blog" walkthrough project by Code Institute. Throughout the past 16 weeks, my participation in the Full Stack skills bootcamp has equipped me with the essential skills needed to develop this website.
 
-## Below, you can find the comprehensive list of project requirements along with their respective versions.
+## Below, you'll find a comprehensive list of project requirements and their respective versions. Some installed packages were not utilised but were installed as per the instructions provided by Code Institute. This influenced my decision to document the process in the **I think therefore I blog walkthrough project.** 
 
 - asgiref==3.7.2  
 - cloudinary==1.36.0  
@@ -579,13 +580,14 @@ The live link can be found [https://github.com/AmandaCIdev/iCreate](#).
 - 
 
 # Credits
-- [Django Crispy Forms] (https://django-crispy-forms.readthedocs.io/en/latest/install.html) - Instructional Documentation help
-- [Whitenoise Docs] (https://whitenoise.readthedocs.io/en/latest/django.html) - Instructional Documentation help
-- [Pop. ai] (https://www.popai.ai) - Help me write the readme overview
-- [Stack Overflow] (https://stackoverflow.com) - Crispy Forms instructions help
-- [Django Summernote Docs] (https://github.com/summernote/django-summernote) - Instructional Documentation help
+- [Django Crispy Forms] (https://django-crispy-forms.readthedocs.io/en/latest/install.html) - Instructional Documentation assisted me.
+- [Whitenoise Docs] (https://whitenoise.readthedocs.io/en/latest/django.html) - Instructional Documentation help but deleted due to bug
+- [Pop. ai] (https://www.popai.ai) - Assisted me with grammer for the README overview
+- [Stack Overflow] (https://stackoverflow.com) - The Crispy Forms instructions assisted me.
 - [ChatGPT] (https://chat.openai.com) - Providing guidance whenever I encountered code I did not grasp.
-- [DALL-E 3](https://openai.com/dall-e-3) - Created all my ideas via text and translated them into an image
+- [DALL-E 3](https://openai.com/dall-e-3) - Converted all my textual ideas into visual images.
+- [W3Schools](https://www.w3schools.com/howto/howto_css_flip_card.asp) - W3Schools provided me guidance on creating flip cards, which I incorporated into the website design.
+- [StackOverflow](https://stackoverflow.com/questions/70102494/toggle-flip-cards) - StackOverflow offered me insights on implementing JavaScript for toggle flip cards, enhancing the functionality of the website.
 
 ## Media
 - The icon in the footer were taken from Font Awesome.
