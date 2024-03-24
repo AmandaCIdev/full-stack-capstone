@@ -8,7 +8,7 @@
 
 
 
-This project utilises a full-stack framework, incorporating Django, Python, JavaScript, HTML, and CSS. My objective is to develop a responsive website that enables users to perform CRUD operations, as well as post, comment, and interact with events by liking or unliking them. It's essential to emphasise that this project is currently developed purely for educational purposes but will be modified and applied in the future for my volunteer work with youth through an established organization.
+This project utilises a full-stack framework, incorporating Django, Python, JavaScript, HTML, and CSS. My objective is to develop a responsive website that enables users to perform CRUD operations, as well as post, comment, and interact with events by liking or unliking them. 
 
 
 **[Visit my website](https://amanda-ci-dev-full-stack-cap-a6484667fa4d.herokuapp.com/)**
@@ -26,6 +26,8 @@ The website targets vulnerable and underserved youth, offering a platform for li
 The age limit of 18 years old aligns with the legal definition of adulthood in the USA, which is why it's applicable for the websites purposes.
 
 The name iCreate embodies the boundless potential within each individual child to shape their own reality, transcending limitations imposed by environment or resources. It stands as a powerful affirmation of personal empowerment, urging individuals to craft their unique selves without constraints.
+
+It's essential to emphasise that this project is currently developed purely for educational purposes but will be modified and applied in the future for my volunteer work with youth through an established organisation.
 
 # Table of Contents
 
@@ -145,7 +147,18 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 </p>
 
 2. **Landing Page Image - Event Flip Cards**
-   - The landing area features engaging flip cards designed for children to flip 180°, revealing event details on the reverse side, effectively conveying the website's purpose and the range of services offered.
+   - The landing area features engaging flip cards designed for children to flip 180°, front is the event image to capture interest, 
+
+   <p align="center">
+<img src="static/images/Feature Flip Cards Front-Event.png" width="100%" height="100%">
+</p>
+
+
+<p align="center">
+<img src="static/images/Feature Flip Cards Back-Event.png" width="100%" height="100%">
+</p>
+
+- When flipped, they reveal event details on the reverse side, effectively communicating the website's purpose and the array of events provided.
 
 3. **Footer**
    - The footer, present on all pages, comprises two sections: one containing social media link to GitHub, and the other acknowledging the website project portfolio by name.
@@ -180,16 +193,20 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 - User Settings: Parental Permission for Safe Hub, a platform similar to Facebook but designed specifically for kids
 - Blog Post for children by children
 - Awards and Certificates to Print
+- I plan to implement a JavaScript mouseover sound feature, activating a flip card action to reveal the other side when hovering over or clicking the card at 180 degrees.
+- I'll be incorporating more flip event cards for upcoming events, making them easily accessible with a "Next" button below and a "Previous" button for scrolling through the pages.More events that will be easy to find using a next button below and previous button to scroll through the pages.
+
 
 #
 # Structure
 
 The MVP website for youth aged 6-18 is structured to be intuitive and engaging, with clear navigation and visually appealing design elements. The platform prioritizes simplicity and ease of use, ensuring that young users can easily navigate, interact with content, and participate in various activities tailored to their age group. Additionally, the website emphasizes safety and accessibility, providing a secure environment for youth to explore, learn, and engage with the platform's offerings. Simplicity helps young users to quickly and easily access the app and navigate within the app.
 
-The website is made from one app:
-- event
-- about
+The website comprises two applications:
 
+- Event: The event app oversees Create, Read, Update, and Delete operations, along with managing notifications, for all event-related content. Additionally, it incorporates review functionality for events and includes a feature to count likes, all with the aim of delivering a user-friendly experience tailored for young users while ensuring smooth interaction with the platform.
+
+- About: The "about" app provides website details and empowers professional instructors/users to showcase their skills and organise events. Its objective is to promote engagement with the iCreate hub by facilitating workshops, knowledge sharing, and collaboration to nurture personal and professional growth through specialised classes and meaningful interactions. This page features a form for users to offer their workshops and events. 
 
 # Wireframes
 All wireframes were created used [Balsamiq](https://balsamiq.com/)
