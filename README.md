@@ -324,7 +324,7 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 
  ## Frameworks, Libraries & Programs Used
 
-[GitHub](https://github.com/) - GitHub is a web-based platform for version control using Git, enabling collaborative software development and hosting of code repositories. GitHub connects to GitPod and Heroku. I used for secure online code storage.
+- [![Git](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com)- GitHub is a web-based platform for version control using Git, enabling collaborative software development and hosting of code repositories. GitHub connects to GitPod and Heroku. I used for secure online code storage.
 
 [GitPod](https://gitpod.io/workspaces) – Connected to GitHub, GitPod hosted the coding space, allowing the project to be built and then committed to the GitHub repository. I used for version control. (`git add`, `git commit`, `git push`)
 
