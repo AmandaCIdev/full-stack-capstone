@@ -292,7 +292,7 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 ### **Reviews Model**
 
 <p align="center">
-<img src="static/images/Reviews Model-Events.png" width="900" height="100%">
+<img src="static/images/Reviews Model-Event.png" width="900" height="100%">
 </p>
 
 ### **About Model**
@@ -304,7 +304,7 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 ### **SubmitDetails Model**
 
 <p align="center">
-<img src="static/images/SubmitDetails model-About.png" width="900" height="100%">
+<img src="static/images/SubmitDetails Model-About.png" width="900" height="100%">
 </p>
 
 
