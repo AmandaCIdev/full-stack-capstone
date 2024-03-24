@@ -83,41 +83,44 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 ## User Stories
 
 **Epic: Admin**
-- As a site Admin I can create, edit and delete events and comments so that I can manage the site content
-- As a site Admin I can access the admin panel so that I can manage events and comments
-- As a site Admin I can log out of the admin panel so that I can disconnect from the website
-- As a site Admin I prioritise implementing measures to safeguard youth data and ensure compliance with privacy 
-  regulations, demonstrating our commitment to protecting user information. 
-- As a site Admin I prioritise the inclusion of diverse and inclusive content on the website, ensuring that resources, 
-  events, and services cater to the varied needs and backgrounds of our youth population, promoting accessibility and equity.
-- As a site Admin I seek to establish partnerships with local teachers, therapists, and licensed professionals to expand 
-  the range of services and resources available to youth on our platform, enriching the overall wellness experience and promoting collaboration within the iCreate hub.
+| ID  | Content                                                                                                                               |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | As a site Admin I can create, edit and delete events and comments so that I can manage the site content.                              |
+| 2   | As a site Admin I can access the admin panel so that I can manage events and comments.                                                |
+| 3   | As a site Admin I can log out of the admin panel so that I can disconnect from the website.                                           |
+| 4   | As a site Admin I prioritise implementing measures to safeguard youth data and ensure compliance with privacy                         |
+|     | regulations, demonstrating our commitment to protecting user information                                                              |
+| 5   | As a site Admin I prioritise the inclusion of diverse and inclusive content on the website, ensuring that resources,                  |
+|     | events, and services cater to the varied needs and backgrounds of our youth population, promoting accessibility and equity.           |
+| 6   | As a site Admin I seek to establish partnerships with local teachers, therapists, and licensed professionals to expand the range of.  | 
+|     | services and resources available to youth on our platform, enriching the overall wellness experience and promoting collaboration      | 
+|     | within the iCreate hub.                                                                                                               |
 
 
 **Epic: User Interaction**
-- As a logged-in User I can attend events so that I can join events easily using a simple button
-- As a logged-in User I can delete attend events so that I can change my mind to attend events easily using a simple button
-- As a logged-in User I can create reviews on events so that I can leave my feedback
-- As a logged-in User I can read reviews on events so that I can leave my feedback
-- As a logged-in User I can update reviews on events so that I can change my feedback
-- As a logged-in User I can delete reviews on events so that I can remove my feedback
-- As a logged-in User I can like and unlike events so that I can mark which events I like
-- As a User I can view the number of likes on events so that I can see which events are the most popular
-- As a User I can view comments on events so that I can read other users opinions
+- As a logged-in User I can attend events so that I can join events easily using a simple button.
+- As a logged-in User I can delete attend events so that I can change my mind to attend events easily using a simple button.
+- As a logged-in User I can create reviews on events so that I can leave my feedback.
+- As a logged-in User I can read reviews on events so that I can leave my feedback.
+- As a logged-in User I can update reviews on events so that I can change my feedback.
+- As a logged-in User I can delete reviews on events so that I can remove my feedback.
+- As a logged-in User I can like and unlike events so that I can mark which events I like.
+- As a User I can view the number of likes on events so that I can see which events are the most popular.
+- As a User I can view comments on events so that I can read other users opinions.
 
 
 **Epic: User Events**
 - As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more information.
-- As a logged-in User I can post a event so that other users can see them to sign up
-- As a User I can delete my events so that I can remove any unwanted events that I have made
-- As a User I can edit events so that I can update any changes or mistakes to my events
-- As a logged-in User I can upload an image along with my event so that other users can see an image relating to the event
+- As a logged-in User I can post a event so that other users can see them to sign up.
+- As a User I can delete my events so that I can remove any unwanted events that I have made.
+- As a User I can edit events so that I can update any changes or mistakes to my events.
+- As a logged-in User I can upload an image along with my event so that other users can see an image relating to the event.
 
 
 **Epic: Login/Register**
-- As a User I can register for an account so that I can interact with the site content
-- As a User I can log in/out off my account if I wish so that I can connect or disconnect from the website
-- As a User I can easily see if I'm logged-in or logged-out so that I can be sure what my status is
+- As a User I can register for an account so that I can interact with the site content.
+- As a User I can log in/out off my account if I wish so that I can connect or disconnect from the website.
+- As a User I can easily see if I'm logged-in or logged-out so that I can be sure what my status is.
 
 
 **Epic: Navigation**
@@ -153,11 +156,11 @@ By following this method, I applied MoSCoW prioritisation and labels to my user 
 ### **Home Page**
 
 1. **Navigation Bar**
-   - The navigation bar appears on every page so users can easily navigate through the site
-   - Navigation bar has links for 'Home', 'About' and 'Login/Register' more links will be shown to logged in users
-   - If the user is logged in then the left side of the menu shows links for pages that only authorised users can visit 
-   - The user name will also appear on the bar, indicating which user is logged in
-   - The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size
+   - The navigation bar appears on every page so users can easily navigate through the site.
+   - Navigation bar has links for 'Home', 'About' and 'Login/Register' more links will be shown to logged in users.
+   - If the user is logged in then the left side of the menu shows links for pages that only authorised users can visit. 
+   - The user name will also appear on the bar, indicating which user is logged in.
+   - The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size.
 
    <p align="center">
 <img src="static/images/iCreateNavbar.png" width="100%" height="100%">
@@ -215,7 +218,7 @@ By following this method, I applied MoSCoW prioritisation and labels to my user 
 
 4. **Home Page - ‘Home’**
    - A curated collection of images, organised into categories represented by flip cards corresponding to various events hosted on the platform. Each flip card displays an image relevant to the event it represents, providing users with a visual overview of the available activities. These flip cards serve as a convenient way for young users to browse through the different events and select those of interest to them.
-   - The Login / Register button will take users to the login page, if users do not have an account there is a link to the registration page
+   - The Login / Register button will take users to the login page, if users do not have an account there is a link to the registration page.
 
 <p align="center">
   <img src="static/images/Login Success to Events-Events.png" width="100%" height="100%">
@@ -259,14 +262,14 @@ By following this method, I applied MoSCoW prioritisation and labels to my user 
 - The design layout features a clean and minimalistic structure with a simple background, providing a visually uncluttered canvas. The imagery seamlessly integrates with a striking futuristic gaming design, elevating the overall visual appeal.
 
 ### Typography
-- Google Fonts were used to import the Julius font into styles.css. Chosen for it's simple, unembellished, minimalistic feel that is easy to read. Special Font for "Event" on Home Page: Lexend
+- Google Fonts were used to import the Julius font into styles.css. Chosen for it's simple, unembellished, minimalistic feel that is easy to read. Special Font for 'Event' on Home Page: Lexend.
 
 
 ### Future Features
-- Audio & Video books, music, educational tutorials tailored for children
-- User Settings: Parental Permission for Safe Hub, a platform similar to Facebook but designed specifically for kids
-- Blog Post for children by children
-- Awards and Certificates to Print
+- Audio & Video books, music, educational tutorials tailored for children.
+- User Settings: Parental Permission for Safe Hub, a platform similar to Facebook but designed specifically for kids.
+- Blog Post for children by children.
+- Awards and Certificates to Print.
 - Implement a JavaScript mouseover sound feature, activating a flip card action to reveal the other side when hovering over or clicking the card at 180 degrees.
 - I'll be incorporating more flip event cards for upcoming events, making them easily accessible with a "Next" button below and a "Previous" button for scrolling through the pages.More events that will be easy to find using a next button below and previous button to scroll through the pages.
 
@@ -283,8 +286,7 @@ The website comprises two applications:
 - About: The "about" app provides website details and empowers professional instructors/users to showcase their skills and organise events. Its objective is to promote engagement with the iCreate hub by facilitating workshops, knowledge sharing, and collaboration to nurture personal and professional growth through specialised classes and meaningful interactions. This page features a form for users to offer their workshops and events. 
 
 # Wireframes
-All wireframes were created used [Balsamiq](https://balsamiq.com/)
-
+All wireframes were created using [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes)
 Wireframes for each device are linked here:
 - [Desktop](assets/documents/Desktop-wireframes)
 - [Tablet](assets/documents/Tablet-wireframes)
@@ -293,7 +295,7 @@ Wireframes for each device are linked here:
 # Database schema
 Prior to initiating any model migrations to my database, I devised an entity relationship diagram to visualise the connections between the models.
 
-The entity relationship diagrams were created using [Lucidchart](https://www.lucidchart.com/).
+The entity relationship diagrams were created using [![Lucidchart](https://img.shields.io/badge/Lucidchart-orange?logo=lucidchart&logoColor=white)](https://lucid.app)
 
 <p align="center">
 <img src="static/images/iCreate-Database- Schema.png" width="900" height="100%">
@@ -384,6 +386,8 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 - [![Lighthouse](https://img.shields.io/badge/Lighthouse-grey?logo=google-chrome&logoColor=red)](https://developer.chrome.com/docs/lighthouse)- an open-source tool used for auditing web page quality, including performance, accessibility, SEO, and cross-browser testing. Check for validation.
 
 - [![Code Institute](https://img.shields.io/badge/Code_Institute-grey?logo=codepen&logoColor=black)](https://codeinstitute.net/) - The events page on my site drew inspiration from the "I think therefore I blog" walkthrough project by Code Institute. Throughout the past 16 weeks, my participation in the Full Stack skills bootcamp has equipped me with the essential skills needed to develop this website.
+
+- ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) - 
 
 *Below, you'll find a comprehensive list of project requirements and their respective versions. Some installed packages were not utilised but were installed as per the instructions provided by Code Institute. This influenced my decision to document the process in the 'I think therefore I blog' walkthrough project.*
 
