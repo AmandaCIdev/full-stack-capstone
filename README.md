@@ -14,9 +14,9 @@ This project utilises a full-stack framework, incorporating Django, Python, Java
 
 **[Visit my website](https://amanda-ci-dev-full-stack-cap-a6484667fa4d.herokuapp.com/)**
 
-SUPERUSER CREDENTIALS:  
-username - heroku_admin 
-password - 1a2d3m4i5n
+## SUPERUSER CREDENTIALS:  
+- username - heroku_admin 
+- password - 1a2d3m4i5n
   
 These will be needed to access some features of the site.
 
