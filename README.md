@@ -304,7 +304,6 @@ The website comprises two applications:
 All wireframes were created using [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes)
 Wireframes for each device are linked here:
 - [Desktop](assets/documents/Desktop-wireframes)
-- [Tablet](assets/documents/Tablet-wireframes)
 - [Mobile](assets/documents/Mobile-wireframes)
 
 # Database schema
@@ -402,7 +401,6 @@ The entity relationship diagrams were created using [![Lucidchart](https://img.s
 
 - [![Code Institute](https://img.shields.io/badge/Code_Institute-grey?logo=codepen&logoColor=black)](https://codeinstitute.net/) - The events page on my site drew inspiration from the "I think therefore I blog" walkthrough project by Code Institute. Throughout the past 16 weeks, my participation in the Full Stack skills bootcamp has equipped me with the essential skills needed to develop this website.
 
-- ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) - 
 
 *Below, you'll find a comprehensive list of project requirements and their respective versions. Some installed packages were not utilised but were installed as per the instructions provided by Code Institute. This influenced my decision to document the process in the 'I think therefore I blog' walkthrough project.*
 
@@ -429,7 +427,6 @@ The entity relationship diagrams were created using [![Lucidchart](https://img.s
 
 
 # Testing 
-
 
 ## User Story Testing
 
@@ -673,22 +670,9 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser I c
 
 ### Validator Testing
 
-#### HTML Validator
-- [Results for event_list.html](#)
-- [Results for event_detail.html](#)
-- [Results for event_form.html](#)
+# Testing 
 
-#### CSS Validator
-- [Results for styles.css](#)
-
-#### Browser Compatibility
-- Chrome Version 90.0.4430.212
-- Firefox Version 88.0.1
-- Safari on macOS Catalina (Safari Version 14.0.3)
-
-### Test Cases and Results
-- [Test Cases](#)
-
+Testing and results can be found [here](TESTING.md).
 
 ## Bugs and Issues
 - I'm experiencing an unresolved bug related to Bootstrap slight responsiveness on a tablet.
