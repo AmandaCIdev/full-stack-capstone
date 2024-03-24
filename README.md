@@ -282,6 +282,32 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 <img src="static/images/iCreate-Database- Schema.png" width="900" height="100%">
 </p>
 
+## Models
+### **Event Model**
+
+<p align="center">
+<img src="assets/images/Event Model-Event.png" width="900" height="100%">
+</p>
+
+### **Reviews Model**
+
+<p align="center">
+<img src="assets/images/Reviews Model-Events.png" width="900" height="100%">
+</p>
+
+### **About Model**
+
+<p align="center">
+<img src="assets/images/About Model-About.png" width="900" height="100%">
+</p>
+
+### **SubmitDetails Model**
+
+<p align="center">
+<img src="assets/images/SubmitDetails model-About.png" width="900" height="100%">
+</p>
+
+
 ## Font 
 - Julius, sans-serif - main font
 - Lexend - for Event in Home page
