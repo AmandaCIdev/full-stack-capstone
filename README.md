@@ -95,7 +95,12 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 
 
 **Epic: User Interaction**
-- As a logged-in User I can write reviews on events so that I can leave my feedback
+- As a logged-in User I can attend events so that I can join events easily using a simple button
+- As a logged-in User I can delete attend events so that I can change my mind to attend events easily using a simple button
+- As a logged-in User I can create reviews on events so that I can leave my feedback
+- As a logged-in User I can read reviews on events so that I can leave my feedback
+- As a logged-in User I can update reviews on events so that I can change my feedback
+- As a logged-in User I can delete reviews on events so that I can remove my feedback
 - As a logged-in User I can like and unlike events so that I can mark which events I like
 - As a User I can view the number of likes on events so that I can see which events are the most popular
 - As a User I can view comments on events so that I can read other users opinions
@@ -251,7 +256,7 @@ learn, explore, and grow. Additionally, it will incorporate CRUD functionality t
 - User Settings: Parental Permission for Safe Hub, a platform similar to Facebook but designed specifically for kids
 - Blog Post for children by children
 - Awards and Certificates to Print
-- I plan to implement a JavaScript mouseover sound feature, activating a flip card action to reveal the other side when hovering over or clicking the card at 180 degrees.
+- Implement a JavaScript mouseover sound feature, activating a flip card action to reveal the other side when hovering over or clicking the card at 180 degrees.
 - I'll be incorporating more flip event cards for upcoming events, making them easily accessible with a "Next" button below and a "Previous" button for scrolling through the pages.More events that will be easy to find using a next button below and previous button to scroll through the pages.
 
 
@@ -411,34 +416,32 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
   </tr>
    <tr>
     <td>As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more information.</td>
-    <td>Interactive flip cards designed for children to rotate 180°.<br> The front side displays event images to capture their interest. <br>Back side displays details including a 'view details' button.</td>
+    <td>Interactive flip cards designed for children to rotate 180°.The front side displays event images to capture their interest. Back side displays details including a 'view details' button.</td>
     <td>The display would not does not flex to row.</td>
-</tr>
+  </tr>
   <tr>
     <td>As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more information.</td>
-    <td>Interactive flip cards designed for children to rotate 180°.<br> The front side displays event images to capture their interest. <br>Back side displays details including a 'view details' button.</td>
+    <td>Interactive flip cards designed for children to rotate 180°. The front side displays event images to capture their interest. Back side displays details including a 'view details' button.</td>
     <td>The brief description overflowed flip cards</td>
-  
-  </tr>
+   </tr>
    <tr>
-    <td>As a student I can join events so that I can foster growth in my interests or studies</td>
-    <td>Events page with all events displayed.<br>Organisers know who is attending.</td>
-    <td>On event detail page attending button can't see student status.</td>
+    <td>As a logged-in User I can attend events so that I can join events easily using a simple button</td>
+    <td>The button system displays attendees..<br>Organisers know who is attending.</td>
+    <td>On event detail page attending button unresponsive</td>
+   <tr>
+    <td>As a logged-in User I can delete attend events so that I can change my mind to join events using a simple button</td>
+    <td>Event view details page with event displayed.<br>The button system displays cancelled attendees.</td>
+    <td>Event system by attendees unresponsive.<br>Organisers know who is cancelled attending.</td>
+   </tr>
+   <tr>
+    <td>As a young user aged 6-18, I want the iCreate platform's navigation to be seamless across all devices, enabling me to access it from anywhere, including smartphones and tablets.</td>
+    <td>Study my skills anywhere<br>Easy mobile accessibility</td>
+    <td>None detected.</td> 
+   </tr>
   <tr>
-    <td>As a user I can update my profile so that other users can learn more about me and i see more related content</td>
-    <td>Display name.<br>Display bio.</td>
-    <td>Does not have a list of future events to be attended.<br>Because of the way that the user is prompted to create a student profile, the view function that is triggered will always take them on to the user events page rather than wherever they had come from. </td>
-  </tr>
-  <tr>
-    <td>As a site owner I can collect feedback on events so that I can see which events are successful and popular and which arent.</td>
-    <td>Rate events.<br>Comments system by attendees.</td>
-<td>None deteced.</td>
-    
-  </tr>
-  <tr>
-    <td>As a Organiser I can create events so that students can attend them.</td>
-    <td>Specify date, time, location, course or interest, and max. participants.<br>List of students attending.<br>Add an event picture.</td>
-    <td>List of students when event is expanded not.</td>
+    <td>As a Organiser I can create events so that users can attend them.</td>
+    <td>Specify date, time, location, course or interest, and max. participants.<br>List of users attending.<br>Add an event picture.</td>
+    <td>None detected</td>
     </tr>
 
   <tr>
@@ -448,21 +451,22 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
     
   </tr>
   <tr>
-    <td>As a user, I want to be able to choose an answer from a pre-populated list.</td>
-    <td>List of answers to be selected</td>
+    <td>As a site Admin I prioritise the inclusion of diverse and inclusive content on the website, ensuring that resources, 
+  events, and services cater to the varied needs and backgrounds of our youth population, promoting accessibility and equity.</td>
+    <td>Minililistic design<br>Simple font and layout</td>
     <td>None detected</td>
     
   </tr>
   <tr>
-    <td>As a user, I want to receive feedback on the answers.</td>
-    <td>Clear signal of correct / incorrect answer</td>
+    <td>As a User I can log in/out off my account if I wish so that I can connect or disconnect from the website.</td>
+    <td>Success notifications to alert user</td>
     <td>None detected</td>
     
   </tr>
   <tr>
     <td>As a user, I want the site to be visually appealing.</td>
-    <td> Select complementary colour scheme. <br>
-    Different elements/features delineated.</td>
+    <td>Blue: Calming, reduces stress, promotes relaxation, trust, stability for kids <br>Children enjoy flip cards because they offer interactive engagement and surprise through flipping actions, along with colorful and visually appealing designs.
+    </td>
     <td>None detected</td>
 </tr>
   </table>
@@ -481,9 +485,8 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
   </tr>
 
 
-
   <tr>
-    <td>As a student I want to able to search filter events so that I can attend events of my interest.</td>
+    <td>As a user I want to able to search filter events so that I can attend events of my interest.</td>
     <td>Filter by category, words or interests.</td>
     <td>N/A</td>
   </tr>
@@ -491,6 +494,18 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
   <tr>
     <td>As a Student I can get notified of upcoming events so that I am less likely to miss or forget the event.</td>
     <td>Get notifications from upcoming events.</td>
+    <td>N/A</td>
+  </tr>
+
+  <tr>
+    <td>Implement a JavaScript mouseover sound feature, activating a flip card action to reveal the other side when hovering over or clicking the card at 180 degrees.</td>
+    <td>Add to the fun experience for children</td>
+    <td>N/A</td>
+  </tr>
+
+  <tr>
+    <td>Award certificates and badges upon completing tasks and mastering skills on the platform so that I am motivated to continue learning and engaging with the platform's activities</td>
+    <td>/Motivate to continue learning and engaging with the platform's activities</td>
     <td>N/A</td>
   </tr>
   
@@ -506,8 +521,8 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
     <th>Bugs / Issues</th>
   </tr>
   <tr>
-    <td>As a user I want to be able to follow other students.</td>
-    <td>Follow option.</td>
+    <td>As a user I want to be able to friend other users</td>
+    <td>friend option.</td>
     <td>N/A</td>
   </tr>
 
@@ -521,10 +536,10 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
     <th>Resolution</th>
   </tr>
   <tr>
-  <td>"Select type" option overflows to below options box on smaller devices</td>
-    <td><img src="assets/images/readMeImages/bugs/fixed/questionsoverflow.png" alt="Image showing box obscuring the logo on larger devices"></td>
+  <td>Back side flip card overflows card</td>
+    <td><img src="assets/images.png" alt="Image showing "></td>
     
-  <td>We added media queries to ensure effective responsiveness</td>
+  <td>I added media queries to ensure effective responsiveness</td>
   </tr>
   </table>
 
@@ -536,10 +551,10 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
     <th>Resolution</th>
   </tr>
   <tr>
-  <td>On large devices the "Enter name" box obscures the brand logo and feels like a pop-up rather than an integrated element of the UX package</td>
-    <td><img src="assets/images/readMeImages/amiresponsive/loginscreenpng.png" alt="Image showing box obscuring the logo on larger devices"></td>
+  <td>On table devices the display is not centered on the screen using bootstrap</td>
+    <td><img src="assets/images" alt="Image showing box obscuring the logo on larger devices"></td>
     
-  <td>Unfortunately we ran out of time to fix this. We would in future sprints change from an in-browser alert box to a html modal box, that would be styled and centred on the screen etc as part of a user management system.</td>
+  <td>Due to time constraints, I could not address the slight misalignment of the Bootstrap responsiveness for iPad. I plan to rectify this in the next sprint.</td>
   </tr>
 </table>
 
@@ -549,81 +564,82 @@ The entity relationship diagrams were created using [Lucidchart](https://www.luc
 - As a site Admin I can access the admin panel so that I can manage events and comments
 - As a site Admin I can log out of the admin panel so that I can disconnect from the website
 
-This was tested by accessing the Django Admin Panel. By creating a Superuser we can access the Django Admin Panel where the administrator can perform all the CRUD functionalitis
+This was tested by accessing the Django Admin Panel. By creating a Superuser I can access the Django Admin Panel where the administrator can perform all the CRUD functionalities.
 
 **EPIC: User Interaction**
-1. As a logged-in User I can write comments on events so that I can leave my feedback
+1. As a logged-in User I can write reviews on events so that I can leave my feedback
 
 <p align="center">
-<img src="assets/images/default.png" width="500" height="300">
+<img src="static/images/Create review-Event.png" width="500" height="300">
 </p>
 
 2. As a logged-in User I can like and unlike events  so that I can mark which events I like
 <p align="center">
-<img src="assets/images/default.png" width="300" height="200">
+<img src="static/images/Likes Event-Event.png" width="300" height="200">
 </p>
 
 3. As a User I can view the number of likes on events so that I can see which events are the most popular
 <p align="center">
-<img src="assets/images/default.png" width="300" height="200">
+<img src="static/images/Likes Event-Event.png" width="300" height="200">
 </p>
 
 4. As a User I can view comments on events so that I can read other users opinions
 <p align="center">
-<img src="assets/images/default.png" width="800" height="100%">
+<img src="static/images/Read reviews-Event.png" width="800" height="100%">
 </p>
 
 **EPIC: User Events**
 1. As a logged-in User I can post events so that other users can see them
 <p align="center">
-<img src="assets/images-features/add-recipe.png" width="600" height="100%">
+<img src="static/images/Skill Workshop Form-About.png" width="600" height="100%">
+</p>
+<p align="center">
+<img src="static/images/Skill Workshop Form End-About.png" width="600" height="100%">
 </p>
 2. As a User I can delete my event so that I can remove any unwanted events that I have made
 <p align="center">
-<img src="assets/images-features/delete-recipe-model.png" width="500" height="100%">
+<img src="static/images/Delete event-Admin.png" width="500" height="100%">
 </p>
 3. As a User I can edit events so that I can update any changes or mistakes to my events 
 <p align="center">
-<img src="assets/images-features/edit-recipe.png" width="600" height="100%">
+<img src="static/images/Edit Event-Admin.png" width="600" height="100%">
 </p>
 4. As a logged-in User I can upload an image along with my event so that other users can see what the event theme looks like
 <p align="center">
-<img src="assets/images/upload-image.png" width="400" height="100%">
+<img src="static/images/Upload image-Admin.png" width="400" height="100%">
 </p>
 
 
 **EPIC: Login/Register**
 1. As a User I can register for an account so that I can interact with the site content
 <p align="center">
-<img src="assets/images-features/register.png" width="600" height="100%">
+<img src="static/images/Register-iCreate.png" width="600" height="100%">
 </p>
 
 2. As a User I can log in/out off my account if I wish so that I can connect or disconnect from the website
 <p align="center">
-<img src="assets/images/signout.png" width="600" height="100%">
+<img src="static/images/Login-iCreate.png" width="600" height="100%">
+</p>
+<p align="center">
+<img src="static/images/Logout-iCreate.png" width="600" height="100%">
 </p>
 3. As a User I can easily see if I'm logged-in or logged-out so that I can be sure what my status is
 <p align="center">
-<img src="assets/images/logged-in.png" width="1000" height="100%">
+<img src="static/images/Login Success to Events-Events.png" width="1000" height="100%">
 </p>
 <p align="center">
-<img src="assets/images/signed-out.png" width="1000" height="100%">
+<img src="static/images/Logout success-iCreate.png" width="1000" height="100%">
 </p>
 
 **EPIC: Navigation**
 1. As a User I can easily navigate through the site so that I can view desired content
 <p align="center">
-<img src="assets/images-features/navbar.png" width="1000" height="100%">
+<img src="static/images/Navbar - User Desktop.png" width="1000" height="100%">
 </p>
 
 2. As a User I can see the most loved events so that I can quickly join in 
 <p align="center">
-<img src="assets/images-features/most-loved-recipes.png" width="600" height="100%">
-</p>
-
-3. As a User I can see the most recent events so that I can keep up to date with my new skills
-<p align="center">
-<img src="assets/images-features/favourite-recipes-page.png" width="600" height="100%">
+<img src="static/images/Feature Flip Cards Front-Event.png" width="600" height="100%">
 </p>
 
 
