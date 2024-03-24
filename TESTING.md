@@ -98,4 +98,4 @@
 ## Browser Compatibility
 The website underwent testing across three different browsers, all of which displayed it effectively. 
 
-![](docs/testing/browser_compatibility.png)
+![](assets/images/Cross%20Browser%20Testing-Testing.png)
