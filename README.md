@@ -591,10 +591,10 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser I c
 **EPIC: User Events**
 1. As a logged-in User I can create events so that other users can see them
 <p align="center">
-<img src="static/images/Skill Workshop Form-About.png" width="600" height="100%">
+<img src="static/images/Skill Workshop Form-About .png" width="600" height="100%">
 </p>
 <p align="center">
-<img src="static/images/Skill Workshop Form End-About.png" width="600" height="100%">
+<img src="static/images/Skill Workshop Form End-About .png" width="600" height="100%">
 </p>
 2. As a User I can delete my event so that I can remove any unwanted events that I have made
 <p align="center">
