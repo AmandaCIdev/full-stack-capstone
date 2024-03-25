@@ -18,9 +18,12 @@
 
 - Checked with the official [W3C validator](https://validator.w3.org/). 
 
-
 <p align="center">
 <img src="assets/images/HTML Validation-Testing.png" width="100%" height="100%">
+</p>
+
+<p align="center">
+<img src="assets/images/HTML Validation About-Testing.png" width="100%" height="100%">
 </p>
 
 
@@ -79,6 +82,6 @@ CI Python Linter is a tool integrated into Continuous Integration pipelines to a
 
 
 ## Browser Compatibility
-The website underwent testing across three different browsers, all of which displayed it effectively. 
+The website was tested on three different browsers, all of which displayed it effectively. 
 
 ![](assets/images/Cross%20Browser%20Testing-Testing.png)
