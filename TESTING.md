@@ -55,7 +55,7 @@
 
 # CSS
 
-## Base.css
+## style.css
 <p align="center">
 <img src="assets/images/CSS Validation.png" width="100%" height="100%">
 </p>
@@ -89,7 +89,7 @@
 </p>
 
 # CI Python Linter
- - CI Python Linter is a tool integrated into Continuous Integration pipelines to automatically check Python code for errors and ensure adherence to coding standards. It helps maintain code quality and consistency by identifying issues early in the development process.
+CI Python Linter is a tool integrated into Continuous Integration pipelines to automatically check Python code for errors and ensure adherence to coding standards. It helps maintain code quality and consistency by identifying issues early in the development process.
 
  p align="center">
 <img src="assets/images/CI Python Linter Event-Testing.png" width="600" height="100%">
@@ -98,8 +98,6 @@
 p align="center">
 <img src="assets/images/CI Python Linter About-Testing.png" width="600" height="100%">
 </p>
-
-
 
 
 # Responsiveness
