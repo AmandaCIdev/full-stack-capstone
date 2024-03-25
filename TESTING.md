@@ -16,16 +16,11 @@
 
 # HTML
 
-- All Pages were checked with the official [W3C validator](https://validator.w3.org/). To accomplish this, the direct input method was employed, necessitated by the inclusion of Django template tags within the HTML files. This involved pasting the HTML code obtained by right-clicking and selecting "inspect source."
+- Checked with the official [W3C validator](https://validator.w3.org/). 
 
-## base
-
-<p align="center">
-<img src="assets/images/HTML Validation 1-Testing.png" width="100%" height="100%">
-</p>
 
 <p align="center">
-<img src="assets/images/HTML Validation2-Testing.png" width="100%" height="100%">
+<img src="assets/images/HTML Validation-Testing.png" width="100%" height="100%">
 </p>
 
 
