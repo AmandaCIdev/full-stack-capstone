@@ -595,22 +595,22 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser I c
 1. As a logged-in User I can write reviews on events so that I can leave my feedback
 
 <p align="center">
-<img src="static/images/Create review-Event.png" width="600" height="300">
+<img src="static/images/Create review-Event.png" width="800" height="300">
 </p>
 
 2. As a logged-in User I can like and unlike events  so that I can mark which events I like
 <p align="center">
-<img src="static/images/Likes Event-Event.png" width="600" height="300">
+<img src="static/images/Likes Event-Event.png" width="800" height="300">
 </p>
 
 3. As a User I can view the number of likes on events so that I can see which events are the most popular
 <p align="center">
-<img src="static/images/Likes Event-Event.png" width="600" height="300">
+<img src="static/images/Likes Event-Event.png" width="800" height="300">
 </p>
 
 4. As a User I can view comments on events so that I can read other users opinions
 <p align="center">
-<img src="static/images/Read reviews-Event.png" width="600" height="300%">
+<img src="static/images/Read reviews-Event.png" width="800" height="300%">
 </p>
 
 **EPIC: User Events**
