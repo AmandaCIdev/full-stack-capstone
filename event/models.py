@@ -7,15 +7,15 @@ from django.utils.text import slugify
 
 
 class Event(models.Model):
-    title = models.CharField(max_length=100)
-    slug = models.SlugField(max_length=100, unique=True, null=True)  
+    title = models.CharField(max_length=75)
+    slug = models.SlugField(max_length=75, unique=True, null=True)  
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="event_posts", null=True)
     content = models.TextField(null=True)
     published_on = models.DateTimeField(auto_now_add=True, null=True)
     image = CloudinaryField('image', blank=True)
     date = models.DateField(default=timezone.now) 
     time = models.TimeField(default=timezone.now)  
-    location = models.CharField(max_length=100, default="Default location")  
+    location = models.CharField(max_length=75, default="Default location")  
     description = models.TextField(default="Default description")  
     speaker = models.CharField(max_length=75, null=True)  
     likes = models.ManyToManyField(User, related_name='liked_events', blank=True)
@@ -46,7 +46,7 @@ class Reviews(models.Model):
 
     def __str__(self):
         return f"Review | {self.body} | by {self.author}"
-        
+
 
 class EventAdmin(admin.ModelAdmin):
     list_display = ['title', 'date', 'time', 'location']
