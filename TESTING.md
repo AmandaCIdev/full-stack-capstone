@@ -18,38 +18,14 @@
 
 - All Pages were checked with the official [W3C validator](https://validator.w3.org/). To accomplish this, the direct input method was employed, necessitated by the inclusion of Django template tags within the HTML files. This involved pasting the HTML code obtained by right-clicking and selecting "inspect source."
 
-## Event_list.HTML
+## base
 
 <p align="center">
-<img src="assets/" width="100%" height="100%">
+<img src="assets/images/HTML Validation 1-Testing.png" width="100%" height="100%">
 </p>
 
-
-## Event_Detail.HTML
-
 <p align="center">
-<img src="assets/" width="100%" height="100%">
-</p>
-
-
-
-##  Event_Form.HTML
-
-<p align="center">
-<img src="assets/" width="100%" height="100%">
-</p>
-
-
-##  About.HTML
-
-<p align="center">
-<img src="assets/" width="100%" height="100%">
-</p>
-
-##  Base.HTML
-
-<p align="center">
-<img src="assets" width="100%" height="100%">
+<img src="assets/images/HTML Validation2-Testing.png" width="100%" height="100%">
 </p>
 
 
