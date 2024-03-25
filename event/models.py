@@ -26,7 +26,7 @@ class Event(models.Model):
         return self.likes.count()
 
     def save(self, *args, **kwargs):
-        if not self.slug:  # Generate slug if not provided
+        if not self.slug:  
             self.slug = slugify(self.title)
         super().save(*args, **kwargs)
 

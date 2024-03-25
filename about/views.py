@@ -1,4 +1,3 @@
-# views.py
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib import messages
@@ -29,4 +28,3 @@ def about_site(request):
 
 
 
-# Create your views here.

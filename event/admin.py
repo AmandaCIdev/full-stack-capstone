@@ -17,6 +17,6 @@ class ReviewsAdmin(admin.ModelAdmin):
         super().save_model(request, obj, form, change)
         messages.success(request, 'Review saved successfully!')
 
-# Register your models here.
+
 admin.site.register(Event, EventAdmin)
 admin.site.register(Reviews, ReviewsAdmin)
