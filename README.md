@@ -616,44 +616,44 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser I c
 **EPIC: User Events**
 1. As a logged-in User I can create events so that other users can see them
 <p align="center">
-<img src="static/images/Skill Workshop Form-About .png" width="600" height="300%">
+<img src="static/images/Skill Workshop Form-About .png" width="800" height="300%">
 </p>
 <p align="center">
-<img src="static/images/Skill Workshop Form End-About .png" width="600" height="300%">
+<img src="static/images/Skill Workshop Form End-About .png" width="800" height="300%">
 </p>
 2. As a User I can delete my event so that I can remove any unwanted events that I have made
 <p align="center">
-<img src="static/images/Delete event-Admin.png" width="600" height="300%">
+<img src="static/images/Delete event-Admin.png" width="800" height="300%">
 </p>
 3. As a User I can edit events so that I can update any changes or mistakes to my events 
 <p align="center">
-<img src="static/images/Edit Event-Admin.png" width="600" height="300%">
+<img src="static/images/Edit Event-Admin.png" width="800" height="300%">
 </p>
 4. As a logged-in User I can upload an image along with my event so that other users can see what the event theme looks like
 <p align="center">
-<img src="static/images/Upload image-Admin.png" width="600" height="300%">
+<img src="static/images/Upload image-Admin.png" width="800" height="300%">
 </p>
 
 
 **EPIC: Login/Register**
 1. As a User I can register for an account so that I can interact with the site content
 <p align="center">
-<img src="static/images/Register-iCreate.png" width="600" height="300%">
+<img src="static/images/Register-iCreate.png" width="800" height="300%">
 </p>
 
 2. As a User I can log in/out off my account if I wish so that I can connect or disconnect from the website
 <p align="center">
-<img src="static/images/Login-iCreate.png" width="600" height="300%">
+<img src="static/images/Login-iCreate.png" width="800" height="300%">
 </p>
 <p align="center">
-<img src="static/images/Logout-iCreate.png" width="600" height="300%">
+<img src="static/images/Logout-iCreate.png" width="800" height="300%">
 </p>
 3. As a User I can easily see if I'm logged-in or logged-out so that I can be sure what my status is
 <p align="center">
-<img src="static/images/Login Success to Events-Events.png" width="600" height="300%">
+<img src="static/images/Login Success to Events-Events.png" width="800" height="300%">
 </p>
 <p align="center">
-<img src="static/images/Logout success-iCreate.png" width="6000" height="300%">
+<img src="static/images/Logout success-iCreate.png" width="8000" height="300%">
 </p>
 
 **EPIC: Navigation**
@@ -662,9 +662,9 @@ This was tested by accessing the Django Admin Panel. By creating a Superuser I c
 <img src="static/images/Navigation Bar-iCreate.png" width="1000" height="100%">
 </p>
 
-2. As a User I can see the most loved events so that I can quickly join in 
+2. As a User I can see the most favourite events so that I can quickly join in 
 <p align="center">
-<img src="static/images/Feature Flip Cards Front-Event.png" width="600" height="300%">
+<img src="static/images/Feature Flip Cards Front-Event.png" width="800" height="300%">
 </p>
 
 
