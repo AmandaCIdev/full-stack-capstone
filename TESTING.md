@@ -10,7 +10,7 @@
 # Lighthouse 
 
 <p align="center">
-<img src="assets/documents/README_docs/validators/bookstore-lighthouse.png" width="800" height="100%">
+<img src="assets/" width="800" height="100%">
 </p>
 
 
@@ -21,14 +21,14 @@
 ## Event_list.HTML
 
 <p align="center">
-<img src="assets/documents/README_docs/validators/home-page-validator.png" width="100%" height="100%">
+<img src="assets/" width="100%" height="100%">
 </p>
 
 
 ## Event_Detail.HTML
 
 <p align="center">
-<img src="assets/documents/README_docs/validators/home-page-validator.png" width="100%" height="100%">
+<img src="assets/" width="100%" height="100%">
 </p>
 
 
@@ -36,20 +36,20 @@
 ##  Event_Form.HTML
 
 <p align="center">
-<img src="assets/documents/README_docs/validators/home-page-validator.png" width="100%" height="100%">
+<img src="assets/" width="100%" height="100%">
 </p>
 
 
 ##  About.HTML
 
 <p align="center">
-<img src="assets/documents/README_docs/validators/home-page-validator.png" width="100%" height="100%">
+<img src="assets/" width="100%" height="100%">
 </p>
 
 ##  Base.HTML
 
 <p align="center">
-<img src="assets/documents/README_docs/validators/home-page-validator.png" width="100%" height="100%">
+<img src="assets" width="100%" height="100%">
 </p>
 
 
