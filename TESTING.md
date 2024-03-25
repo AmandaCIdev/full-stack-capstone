@@ -9,8 +9,16 @@
 
 # Lighthouse 
 
+Desktop
+
 <p align="center">
-<img src="assets/" width="800" height="100%">
+<img src="assets/images/Lighthouse Testing-Desktop.png" width="800" height="100%">
+</p>
+
+Mobile
+
+<p align="center">
+<img src="assets/images/Lighthouse Testing-Mobile.png" width="800" height="100%">
 </p>
 
 
