@@ -735,7 +735,7 @@ By following these steps, you can manually deploy your project from Gitpod to He
 
 - Any changes pushed to the master branch will take effect on the live project.
 
-The live link can be found [https://amanda-ci-dev-full-stack-cap-a6484667fa4d.herokuapp.com/](#).
+The live link can be found [https://amanda-ci-dev-full-stack-cap-a6484667fa4d.herokuapp.com](#).
 
 ## How to clone the repository
 1. Go to the GitHub repository on GitHub.
